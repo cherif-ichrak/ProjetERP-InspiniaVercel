@@ -1,11 +1,6 @@
 <div class="row wrapper border-bottom white-bg page-heading">
   <div class="col-lg-10">
-    <h2>Compétitions</h2>
-    <ol class="breadcrumb">
-      <li>
-        <a>liste des compétitions</a>
-      </li>
-    </ol>
+    <h2>Matchs</h2>
   </div>
   <div class="col-lg-2 text-right">Club Africain 2023</div>
 </div>
@@ -19,7 +14,7 @@
           >
             <button
               data-toggle="modal"
-              data-target="#myModal"
+              data-target="#myModal5"
               class="btn btn-lg btn-primary"
               class="btn btn-outline btn-info add dim"
               title="Ajouter"
@@ -28,28 +23,26 @@
             </button>
           </div>
           <div
-            class="modal inmodal"
-            id="myModal"
+            class="modal inmodal fade"
+            id="myModal5"
             tabindex="-1"
             role="dialog"
             aria-hidden="true"
           >
-            <div class="modal-dialog">
-              <div class="modal-content animated bounceInRight">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
                 <div class="modal-header">
-                  <h6 class="modal-title text-left">Ajouter Compétition</h6>
                   <button type="button" class="close" data-dismiss="modal">
                     <span aria-hidden="true">&times;</span
-                    ><span class="sr-only">Fermer</span>
+                    ><span class="sr-only">Close</span>
                   </button>
+                  <h4 class="modal-title">Ajouter Compétition</h4>
                 </div>
-                <br /><br />
-
                 <div class="modal-body">
                   <form>
                     <div class="form-row">
                       <div class="col-md-6 mb-3">
-                        <label>Féderation </label>
+                        <label for="validationDefault02">Féderation </label>
                         <select class="form-control">
                           <option>Libre</option>
                           <option selected>Féderation</option>
@@ -60,7 +53,7 @@
                         </select>
                       </div>
                       <div class="col-md-6 mb-3">
-                        <label f>Compétition </label>
+                        <label for="validationDefault04">Compétition </label>
                         <input
                           type="text"
                           class="form-control"
@@ -71,48 +64,34 @@
                       </div>
                     </div>
                     <div class="form-row">
-                      <div class="col-md-4 mb-3">
-                        <label f>Saison </label>
+                      <div class="col-md-6 mb-3">
+                        <label for="validationDefault03">Saison </label>
                         <select class="form-control">
                           <option value="" selected>2023-2024</option>
                           <option value="option1">2022-2023</option>
                         </select>
                       </div>
 
-                      <div class="col-md-4 mb-3">
-                        <label>Etat </label>
+                      <div class="col-md-6 mb-3">
+                        <label for="validationDefault04">Etat </label>
                         <select class="form-control">
                           <option>Ouverte</option>
                           <option selected>Clôturée</option>
                         </select>
                       </div>
-                      <div class="col-md-4 mb-3">
-                        <label>Logo </label>
-                        <input
-                          type="file"
-                          class="form-control"
-                          id="validationDefault04"
-                          placeholder=""
-                          required
-                        />
-                      </div>
                     </div>
                   </form>
                 </div>
-                <br /><br />
-                <div class="row" class="text-right">
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-white"
-                      data-dismiss="modal"
-                    >
-                      Annuler
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Ajouter
-                    </button>
-                  </div>
+
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-white"
+                    data-dismiss="modal"
+                  >
+                    Annuler
+                  </button>
+                  <button type="button" class="btn btn-primary">Ajouter</button>
                 </div>
               </div>
             </div>
@@ -137,13 +116,12 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th>Logo</th>
-              <th>Compétition</th>
-              <th>Fédération</th>
-              <th>Saison</th>
-              <th>Etat</th>
-
-              <th>Action</th>
+              <th style="width: 10%">Logo</th>
+              <th style="width: 20%">Adversaire</th>
+              <th style="width: 20%">Compétition</th>
+              <th style="width: 10%">Date</th>
+              <th style="width: 10%">Statut</th>
+              <th style="width: 10%">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -157,39 +135,39 @@
                   height="30%"
                 />
               </td>
+              <td>Union Sportive de Ben Guerdane</td>
+              <td>USMO</td>
+              <td>22/10/2023</td>
+              <td>Joué</td>
+              <td class="overflow-hidden">
+                <div class="btn-group">
+                  <button
+                    data-toggle="dropdown"
+                    class="btn btn-primary btn-xs dropdown-toggle"
+                  >
+                    Action <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Modifier</a></li>
+                    <li><a href="#">Supprimer</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="assets/img/logostade.png"
+                  alt="image"
+                  class="img-circle"
+                  width="30%"
+                  height="30%"
+                />
+              </td>
+              <td>USMO</td>
               <td>CHAMPIONNAT</td>
-              <td>FÉDÉRATION LOCALE</td>
-              <td>2023-2024</td>
-              <td>Ouverte</td>
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Modifier</a></li>
-                    <li><a href="#">Supprimer</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  src="assets/img/logostade.png"
-                  alt="image"
-                  class="img-circle"
-                  width="30%"
-                  height="30%"
-                />
-              </td>
-              <td>CHAMPIONS LEAGUE</td>
-              <td>CAF</td>
-              <td>2023-2024</td>
-              <td>Ouverte</td>
+              <td>22/10/2023</td>
+              <td>A jouer</td>
 
               <td class="overflow-hidden">
                 <div class="btn-group">
@@ -216,10 +194,10 @@
                   height="30%"
                 />
               </td>
-              <td>CHAMPIONS LEAGUE</td>
-              <td>CAF</td>
-              <td>2023-2024</td>
-              <td>Ouverte</td>
+              <td>Stade Tunisien</td>
+              <td>CHAMPIONNAT</td>
+              <td>29/10/2023</td>
+              <td>A jouer</td>
 
               <td class="overflow-hidden">
                 <div class="btn-group">
@@ -239,68 +217,17 @@
             <tr>
               <td>
                 <img
-                  src="assets/img/logostade.png"
+                  src="assets/img/logosfax.png"
                   alt="image"
                   class="img-circle"
                   width="30%"
                   height="30%"
                 />
               </td>
+              <td>Club Sportif Sfaxien</td>
               <td>CHAMPIONS LEAGUE</td>
-              <td>CAF</td>
-              <td>2023-2024</td>
-              <td>Ouverte</td>
-
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Modifier</a></li>
-                    <li><a href="#">Supprimer</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  src="assets/img/logostade.png"
-                  alt="image"
-                  class="img-circle"
-                  width="30%"
-                  height="30%"
-                />
-              </td>
-              <td>CHAMPIONS LEAGUE</td>
-              <td>CAF</td>
-              <td>2023-2024</td>
-              <td>Ouverte</td>
-
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Modifier</a></li>
-                    <li><a href="#">Supprimer</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>CHAMPIONS LEAGUE</td>
-              <td>CAF</td>
-              <td>2023-2024</td>
-              <td>Ouverte</td>
+              <td>29/10/2023</td>
+              <td>joué</td>
 
               <td class="overflow-hidden">
                 <div class="btn-group">
