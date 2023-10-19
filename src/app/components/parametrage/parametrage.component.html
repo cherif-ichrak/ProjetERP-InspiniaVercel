@@ -1,0 +1,66 @@
+<div class="row border-bottom white-bg dashboard-header">
+  <div class="col-lg-10">
+    <h2>Paramétrage Abonnée</h2>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a
+      class="nav-link active"
+      id="Générale-tab"
+      data-toggle="tab"
+      href="#Générale"
+      role="tab"
+      >Identification</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      id="Utilisateur-tab"
+      data-toggle="tab"
+      href="#Utilisateur"
+      role="tab"
+    >
+      Utilisateurs</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      id="Groupes-tab"
+      data-toggle="tab"
+      href="#Groupes"
+      role="tab"
+    >
+      Groupes</a
+    >
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div
+    class="tab-pane fade"
+    id="Générale"
+    role="tabpanel"
+    aria-labelledby="Générale-tab"
+  >
+    <app-identification></app-identification>
+  </div>
+  <div
+    class="tab-pane fade"
+    id="Utilisateur"
+    role="tabpanel"
+    aria-labelledby="Utilisateur-tab"
+  >
+    <app-users></app-users>
+  </div>
+  <div
+    class="tab-pane fade"
+    id="Groupes"
+    role="tabpanel"
+    aria-labelledby="Groupes-tab"
+  >
+    <app-groupes></app-groupes>
+  </div>
+</div>
