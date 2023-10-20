@@ -32,215 +32,159 @@
                   <span aria-hidden="true">&times;</span
                   ><span class="sr-only">Fermer</span>
                 </button>
-                <h4 class="modal-title">Ajouter Match</h4>
+                <h4 class="modal-title">Ajouter Joueur</h4>
               </div>
               <div class="modal-body">
-                <div>
-                  <input
-                    type="radio"
-                    [(ngModel)]="selectedOption"
-                    [value]="'option1'"
-                  />
-                  Match Libre
-                  <input
-                    type="radio"
-                    [(ngModel)]="selectedOption"
-                    [value]="'option2'"
-                  />
-                  Match Compétition
-                </div>
-
-                <div *ngIf="selectedOption === 'option1'">
-                  <form class="form-horizontal">
-                    <div class="form-row">
-                      <div class="col-md-6">
-                        <label>Adversaire</label>
-                        <select class="form-control">
-                          <option>Stade Tunisien</option>
-                          <option>Union Sportive de Ben Guerdane</option>
-                          <option>Club Sportif Sfaxien</option>
-                          <option>USMO</option>
-                          <option>ASA</option>
-                        </select>
-                      </div>
-                      <div class="col-md-6">
-                        <label>Date et Heure de Match</label>
-
-                        <div class="input-group">
-                          <div class="col-md-6 mb-3">
-                            <input
-                              type="date"
-                              class="form-control"
-                              id="validationDefault04"
-                              placeholder=""
-                              required
-                            />
-                          </div>
-                          <div class="col-md-6 mb-3">
-                            <input
-                              type="time"
-                              class="form-control"
-                              id="validationDefault04"
-                              placeholder=""
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
+                <form class="form-horizontal">
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <label>Nom Complet</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefault04"
+                        placeholder=""
+                        required
+                      />
                     </div>
-
-                    <div class="form-row">
-                      <div class="col-md-6">
-                        <label> Lieu</label>
-
-                        <input
-                          type="text"
-                          placeholder="Lieu"
-                          class="form-control"
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label>Domicile</label>
-
-                        <select class="form-control">
-                          <option selected>Local</option>
-                          <option>Exterieur</option>
-                        </select>
-                      </div>
+                    <div class="col-md-6">
+                      <label>Surnom</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefault04"
+                        placeholder=""
+                        required
+                      />
                     </div>
+                  </div>
 
-                    <div class="form-row">
-                      <div class="col-md-12">
-                        <label>Etat</label>
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <label> N° Tel</label>
 
-                        <select class="form-control">
-                          <option selected>A Jouer</option>
-                          <option>Joué</option>
-                        </select>
-                      </div>
+                      <input
+                        type="text"
+                        placeholder=" N° Tel"
+                        class="form-control"
+                      />
                     </div>
+                    <div class="col-md-6">
+                      <label> N° Maillot</label>
 
-                    <div class="row" class="text-right">
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-white btn-xs dropdown-toggle"
-                          data-dismiss="modal"
-                        >
-                          Annuler
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-primary btn-xs dropdown-toggle"
-                        >
-                          Ajouter
-                        </button>
-                      </div>
+                      <input
+                        type="text"
+                        placeholder="N° Maillot"
+                        class="form-control"
+                      />
                     </div>
-                  </form>
-                </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <label>Email</label>
 
-                <div *ngIf="selectedOption === 'option2'">
-                  <form class="form-horizontal">
-                    <div class="form-row">
-                      <div class="col-md-12">
-                        <label>Compétition</label>
-
-                        <select class="form-control">
-                          <option selected>Championnat</option>
-                          <option>Champions League</option>
-                          <option>Coupe de la CAF</option>
-                          <option>Coupe</option>
-                        </select>
-                      </div>
+                      <input
+                        type="text"
+                        placeholder="Email"
+                        class="form-control"
+                      />
                     </div>
-                    <div class="form-row">
-                      <div class="col-md-6">
-                        <label>Adversaire</label>
-                        <select class="form-control">
-                          <option>Stade Tunisien</option>
-                          <option>Union Sportive de Ben Guerdane</option>
-                          <option>Club Sportif Sfaxien</option>
-                          <option>USMO</option>
-                          <option>ASA</option>
-                        </select>
-                      </div>
-                      <div class="col-md-6">
-                        <label>Date et Heure de Match</label>
+                    <div class="col-md-6">
+                      <label> Nationnalité</label>
 
-                        <div class="input-group">
-                          <div class="col-md-6">
-                            <input
-                              type="date"
-                              class="form-control"
-                              id="validationDefault04"
-                              placeholder=""
-                              required
-                            />
-                          </div>
-                          <div class="col-md-6">
-                            <input
-                              type="time"
-                              class="form-control"
-                              id="validationDefault04"
-                              placeholder=""
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
+                      <select class="form-control">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option selcted>Tunisienne</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
                     </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-12">
+                      <label> Position</label>
 
-                    <div class="form-row">
-                      <div class="col-md-6">
-                        <label> Lieu</label>
-
-                        <input
-                          type="text"
-                          placeholder="Lieu"
-                          class="form-control"
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label>Domicile</label>
-
-                        <select class="form-control">
-                          <option selected>Local</option>
-                          <option>Exterieur</option>
-                        </select>
-                      </div>
+                      <select class="form-control">
+                        <option>Défenseur Central</option>
+                        <option>Latéral Gauche</option>
+                        <option>Latéral Droit</option>
+                        <option selcted>Gardien</option>
+                        <option>Milieu Défensif</option>
+                        <option>Milieu Droit</option>
+                        <option>Milieu Gauche</option>
+                        <option>Milieu défensif</option>
+                      </select>
                     </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-4">
+                      <label>N° Licence</label>
 
-                    <div class="form-row">
-                      <div class="col-md-12">
-                        <label>Etat</label>
-
-                        <select class="form-control">
-                          <option selected>A Jouer</option>
-                          <option>Joué</option>
-                        </select>
-                      </div>
+                      <input type="text" placeholder="" class="form-control" />
                     </div>
+                    <div class="col-md-4">
+                      <label> Date de début du Contrat</label>
 
-                    <div class="row" class="text-right">
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-white"
-                          data-dismiss="modal"
-                        >
-                          Annuler
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-primary btn-xs dropdown-toggle"
-                        >
-                          Ajouter
-                        </button>
-                      </div>
+                      <input type="date" placeholder="" class="form-control" />
                     </div>
-                  </form>
-                </div>
+                    <div class="col-md-4">
+                      <label>Date d'expiration du Contrat </label>
+
+                      <input type="date" placeholder="" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-4">
+                      <label>N° Licence</label>
+
+                      <input type="text" placeholder="" class="form-control" />
+                    </div>
+                    <div class="col-md-4">
+                      <label> Date de début de la Licence</label>
+
+                      <input type="date" placeholder="" class="form-control" />
+                    </div>
+                    <div class="col-md-4">
+                      <label>Date d'expiration de la Licence </label>
+
+                      <input type="date" placeholder="" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="col-md-12">
+                      <label> Date d'expiration du passeport</label>
+
+                      <input
+                        type="date"
+                        placeholder=" N° Tel"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="row" class="text-right">
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-white btn-xs dropdown-toggle"
+                        data-dismiss="modal"
+                      >
+                        Annuler
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-xs dropdown-toggle"
+                      >
+                        Ajouter
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -260,7 +204,6 @@
           </span>
         </div>
       </div>
-
       <br /><br />
       <div class="col-lg-4">
         <div class="contact-box">
@@ -281,7 +224,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -303,7 +269,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -326,7 +315,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -349,7 +361,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -372,7 +407,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -394,7 +452,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -416,7 +497,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -438,7 +542,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -461,7 +588,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -484,7 +634,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -507,7 +680,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -529,7 +725,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -551,7 +770,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -573,7 +815,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -596,7 +861,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -618,7 +906,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -640,7 +951,30 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -662,8 +996,202 @@
               <p>Passeport: 01/01/2026</p>
               <address><strong>Contrat: 01/01/2026</strong><br /></address>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-center"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalModifier"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Modifier"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Supprimer"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </a>
+        </div>
+      </div>
+      <div
+        class="modal inmodal fade"
+        id="myModalModifier"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span
+                ><span class="sr-only">Fermer</span>
+              </button>
+              <h4 class="modal-title">Modifier Joueur</h4>
+            </div>
+            <div class="modal-body">
+              <form class="form-horizontal">
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <label>Nom Complet</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault04"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label>Surnom</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault04"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <label> N° Tel</label>
+
+                    <input
+                      type="text"
+                      placeholder=" N° Tel"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label> N° Maillot</label>
+
+                    <input
+                      type="text"
+                      placeholder="N° Maillot"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <label>Email</label>
+
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label> Nationnalité</label>
+
+                    <select class="form-control">
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                      <option selcted>Tunisienne</option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12">
+                    <label> Position</label>
+
+                    <select class="form-control">
+                      <option>Défenseur Central</option>
+                      <option>Latéral Gauche</option>
+                      <option>Latéral Droit</option>
+                      <option selcted>Gardien</option>
+                      <option>Milieu Défensif</option>
+                      <option>Milieu Droit</option>
+                      <option>Milieu Gauche</option>
+                      <option>Milieu défensif</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-4">
+                    <label>N° Licence</label>
+
+                    <input type="text" placeholder="" class="form-control" />
+                  </div>
+                  <div class="col-md-4">
+                    <label> Date de début du Contrat</label>
+
+                    <input type="date" placeholder="" class="form-control" />
+                  </div>
+                  <div class="col-md-4">
+                    <label>Date d'expiration du Contrat </label>
+
+                    <input type="date" placeholder="" class="form-control" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-4">
+                    <label>N° Licence</label>
+
+                    <input type="text" placeholder="" class="form-control" />
+                  </div>
+                  <div class="col-md-4">
+                    <label> Date de début de la Licence</label>
+
+                    <input type="date" placeholder="" class="form-control" />
+                  </div>
+                  <div class="col-md-4">
+                    <label>Date d'expiration de la Licence </label>
+
+                    <input type="date" placeholder="" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12">
+                    <label> Date d'expiration du passeport</label>
+
+                    <input
+                      type="date"
+                      placeholder=" N° Tel"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+
+                <div class="row" class="text-right">
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-white btn-xs dropdown-toggle"
+                      data-dismiss="modal"
+                    >
+                      Annuler
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-xs dropdown-toggle"
+                    >
+                      Modifier
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
