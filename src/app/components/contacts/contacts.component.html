@@ -26,13 +26,12 @@
             <div class="modal-dialog">
               <div class="modal-content animated bounceInRight">
                 <div class="modal-header">
-                  <h6 class="modal-title text-left">Ajouter Contact</h6>
+                  <h6 class="modal-title">Ajouter Contact</h6>
                   <button type="button" class="close" data-dismiss="modal">
                     <span aria-hidden="true">&times;</span
                     ><span class="sr-only">Fermer</span>
                   </button>
                 </div>
-                <br /><br />
 
                 <div class="modal-body">
                   <form>
@@ -91,22 +90,26 @@
                         />
                       </div>
                     </div>
+                    <br /><br />
+
+                    <div class="row" class="text-right">
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-white btn-xs dropdown-toggle"
+                          data-dismiss="modal"
+                        >
+                          Annuler
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-xs dropdown-toggle"
+                        >
+                          Ajouter
+                        </button>
+                      </div>
+                    </div>
                   </form>
-                </div>
-                <br /><br />
-                <div class="row" class="text-right">
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-white"
-                      data-dismiss="modal"
-                    >
-                      Annuler
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Ajouter
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -151,12 +154,16 @@
                 <div class="btn-group">
                   <button
                     data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
+                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
                   >
                     Action <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Modifier</a></li>
+                    <li>
+                      <a data-toggle="modal" data-target="#myModalModifier"
+                        >Modifier</a
+                      >
+                    </li>
                     <li><a href="#">Supprimer</a></li>
                   </ul>
                 </div>
@@ -172,12 +179,16 @@
                 <div class="btn-group">
                   <button
                     data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
+                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
                   >
                     Action <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Modifier</a></li>
+                    <li>
+                      <a data-toggle="modal" data-target="#myModalModifier"
+                        >Modifier</a
+                      >
+                    </li>
                     <li><a href="#">Supprimer</a></li>
                   </ul>
                 </div>
@@ -193,12 +204,16 @@
                 <div class="btn-group">
                   <button
                     data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
+                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
                   >
                     Action <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Modifier</a></li>
+                    <li>
+                      <a data-toggle="modal" data-target="#myModalModifier"
+                        >Modifier</a
+                      >
+                    </li>
                     <li><a href="#">Supprimer</a></li>
                   </ul>
                 </div>
@@ -214,12 +229,16 @@
                 <div class="btn-group">
                   <button
                     data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
+                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
                   >
                     Action <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Modifier</a></li>
+                    <li>
+                      <a data-toggle="modal" data-target="#myModalModifier"
+                        >Modifier</a
+                      >
+                    </li>
                     <li><a href="#">Supprimer</a></li>
                   </ul>
                 </div>
@@ -235,12 +254,16 @@
                 <div class="btn-group">
                   <button
                     data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
+                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
                   >
                     Action <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Modifier</a></li>
+                    <li>
+                      <a data-toggle="modal" data-target="#myModalModifier"
+                        >Modifier</a
+                      >
+                    </li>
                     <li><a href="#">Supprimer</a></li>
                   </ul>
                 </div>
@@ -256,12 +279,16 @@
                 <div class="btn-group">
                   <button
                     data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
+                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
                   >
                     Action <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Modifier</a></li>
+                    <li>
+                      <a data-toggle="modal" data-target="#myModalModifier"
+                        >Modifier</a
+                      >
+                    </li>
                     <li><a href="#">Supprimer</a></li>
                   </ul>
                 </div>
@@ -269,6 +296,104 @@
             </tr>
           </tbody>
         </table>
+        <div
+          class="modal inmodal"
+          id="myModalModifier"
+          tabindex="-1"
+          role="dialog"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content animated bounceInRight">
+              <div class="modal-header">
+                <h6 class="modal-title">Ajouter Contact</h6>
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">&times;</span
+                  ><span class="sr-only">Fermer</span>
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <form>
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label>Nom et Prénom </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefault04"
+                        placeholder=""
+                        required
+                      />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label>N° Tel 1</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefault04"
+                        placeholder=""
+                        required
+                      />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label>N° Tel 2</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefault04"
+                        placeholder=""
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label>Qualité </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefault04"
+                        placeholder="Qualité"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <label>Email </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefault04"
+                        placeholder="Email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <br /><br />
+
+                  <div class="row" class="text-right">
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-white btn-xs dropdown-toggle"
+                        data-dismiss="modal"
+                      >
+                        Annuler
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-xs dropdown-toggle"
+                      >
+                        Modifier
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
