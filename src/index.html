@@ -71,5 +71,15 @@
 
     <!-- Toastr -->
     <script src="assets/js/plugins/toastr/toastr.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Local script for demo purpose only
+
+        $("#leftVersion").click(function (event) {
+          event.preventDefault();
+          $("#vertical-timeline").toggleClass("center-orientation");
+        });
+      });
+    </script>
   </body>
 </html>
