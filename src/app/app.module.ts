@@ -1,6 +1,5 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -13,7 +12,6 @@ import { CompetitionsComponent } from './components/competitions/competitions.co
 import { MatchesComponent } from './components/matches/matches.component';
 import { ParametragePwdComponent } from './components/parametrage-pwd/parametrage-pwd.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
-import { FormsModule } from '@angular/forms';
 import { JoueursComponent } from './components/joueurs/joueurs.component';
 import { BiblioComponent } from './components/biblio/biblio.component';
 import { MobiliteComponent } from './components/mobilite/mobilite.component';
@@ -32,6 +30,7 @@ import { ImprimerFichePresenceComponent } from './components/imprimer-fiche-pres
 
 import { ConvocationJoueurComponent } from './components/convocation-joueur/convocation-joueur.component';
 import { AfficherEventComponent } from './components/afficher-event/afficher-event.component';
+import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [
