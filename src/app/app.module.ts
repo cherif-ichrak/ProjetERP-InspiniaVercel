@@ -29,10 +29,7 @@ import { StaffComponent } from './components/staff/staff.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { ImprimerFichePresenceComponent } from './components/imprimer-fiche-presence/imprimer-fiche-presence.component';
-import {
-  NgbDatepickerModule,
-  NgbDropdownModule,
-} from '@ng-bootstrap/ng-bootstrap';
+
 import { ConvocationJoueurComponent } from './components/convocation-joueur/convocation-joueur.component';
 import { AfficherEventComponent } from './components/afficher-event/afficher-event.component';
 
@@ -65,14 +62,7 @@ import { AfficherEventComponent } from './components/afficher-event/afficher-eve
     ConvocationJoueurComponent,
     AfficherEventComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-    NgbDatepickerModule,
-    NgbDropdownModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

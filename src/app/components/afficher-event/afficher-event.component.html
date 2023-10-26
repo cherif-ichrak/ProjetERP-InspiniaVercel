@@ -802,7 +802,7 @@
                         role="dialog"
                         aria-hidden="true"
                       >
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-lg">
                           <div class="modal-content animated bounceInRight">
                             <div class="modal-header">
                               <h6 class="modal-title">Ajouter Présence</h6>
@@ -1357,7 +1357,7 @@
                                     role="dialog"
                                     aria-hidden="true"
                                   >
-                                    <div class="modal-dialog">
+                                    <div class="modal-dialog modal-lg">
                                       <div
                                         class="modal-content animated bounceInRight"
                                       >
@@ -1639,7 +1639,7 @@
                               role="dialog"
                               aria-hidden="true"
                             >
-                              <div class="modal-dialog">
+                              <div class="modal-dialog modal-lg">
                                 <div
                                   class="modal-content animated bounceInRight"
                                 >
@@ -2062,7 +2062,7 @@
               role="dialog"
               aria-hidden="true"
             >
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content animated bounceInRight">
                   <div class="modal-header">
                     <h6 class="modal-title">Ajouter Convocation</h6>
@@ -2441,7 +2441,7 @@
               role="dialog"
               aria-hidden="true"
             >
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content animated bounceInRight">
                   <div class="modal-header">
                     <h6 class="modal-title">Ajouter Programme</h6>
@@ -3146,7 +3146,7 @@
               role="dialog"
               aria-hidden="true"
             >
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content animated bounceInRight">
                   <div class="modal-header">
                     <h6 class="modal-title">Ajouter Mobilité</h6>
@@ -3156,755 +3156,456 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    <form>
-                      <div>
-                        <label for="options">Mobilité</label>
-                        <select
-                          class="form-control"
-                          id="options"
-                          [(ngModel)]="selectedOption"
+                    <div>
+                      <label for="options">Mobilité</label>
+                      <select
+                        class="form-control"
+                        id="options"
+                        [(ngModel)]="selectedOption"
+                      >
+                        <option selected value="option1">Bus Club</option>
+                        <option value="option2">Bus Location</option>
+                        <option value="option3">Avion</option>
+                      </select>
+                    </div>
+                    <div class="wrapper wrapper-content animated fadeInDown">
+                      <div class="row">
+                        <div *ngIf="selectedOption === 'option1'">
+                          <form class="form-horizontal">
+                            <div class="form-row">
+                              <div class="col-md-4">
+                                <label>Matricule</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault04"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+                              <div class="col-md-4">
+                                <label>Nom Chauffure</label>
+
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault04"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+                              <div class="col-md-4">
+                                <label>N° Chauffure</label>
+
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault04"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <br />
+                            <div class="form-row">
+                              <div class="col-md-12">
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-xl dropdown-toggle"
+                                >
+                                  Ajouter
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                          <!-- Mettez ici les champs du formulaire pour l'Option 1 -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrapper wrapper-content animated fadeInDown">
+                      <div class="row">
+                        <div *ngIf="selectedOption === 'option2'">
+                          <form class="form-horizontal">
+                            <div class="form-row">
+                              <div class="col-md-6">
+                                <label>Matricule</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault04"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+                              <div class="col-md-6">
+                                <label>Company</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault04"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="col-md-4">
+                                <label>Nom Chauffure</label>
+
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault04"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+                              <div class="col-md-4">
+                                <label>N° Chauffure</label>
+
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault04"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <br />
+                            <div class="form-row">
+                              <div class="col-md-12">
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-xl dropdown-toggle"
+                                >
+                                  Ajouter
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                          <!-- Mettez ici les champs du formulaire pour l'Option 2 -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrapper wrapper-content animated fadeInDown">
+                      <div class="row">
+                        <div *ngIf="selectedOption === 'option3'">
+                          <form class="form-horizontal">
+                            <div class="form-row">
+                              <div class="col-md-6">
+                                <label>Matricule</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault04"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+                              <div class="col-md-6">
+                                <label>Company</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault04"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="col-md-6">
+                                <label>Nom Chauffure</label>
+
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault04"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+                              <div class="col-md-6">
+                                <label>N° Chauffure</label>
+
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault04"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <br />
+                            <div class="form-row">
+                              <div class="col-md-12">
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-xl dropdown-toggle"
+                                >
+                                  Ajouter
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                          <!-- Mettez ici les champs du formulaire pour l'Option 2 -->
+                        </div>
+                      </div>
+                    </div>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Mobilité</th>
+                          <th>Matricule</th>
+                          <th>Nom Chaffaure</th>
+                          <th>Compagne</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span class="label label-primary"
+                              ><i class="fa fa-check"></i> Bus Club</span
+                            >
+                          </td>
+
+                          <td>123E42</td>
+                          <td>Ahmde ss</td>
+                          <td>23245435</td>
+                          <td class="overflow-hidden">
+                            <div class="btn-group">
+                              <button
+                                data-toggle="dropdown"
+                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                              >
+                                Action <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    data-toggle="modal"
+                                    data-target="#myModalPresence"
+                                    >Présence</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    data-toggle="modal"
+                                    data-target="#myModalResto"
+                                    >Restauration</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="label label-primary"
+                              ><i class="fa fa-check"></i> Bus Club</span
+                            >
+                          </td>
+
+                          <td>123E42</td>
+                          <td>Ahmde ss</td>
+                          <td>23245435</td>
+                          <td class="overflow-hidden">
+                            <div class="btn-group">
+                              <button
+                                data-toggle="dropdown"
+                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                              >
+                                Action <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    data-toggle="modal"
+                                    data-target="#myModalPresence"
+                                    >Présence</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    data-toggle="modal"
+                                    data-target="#myModalResto"
+                                    >Restauration</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="label label-primary"
+                              ><i class="fa fa-check"></i> Bus Club</span
+                            >
+                          </td>
+
+                          <td>123E42</td>
+                          <td>Ahmde ss</td>
+                          <td>23245435</td>
+                          <td class="overflow-hidden">
+                            <div class="btn-group">
+                              <button
+                                data-toggle="dropdown"
+                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                              >
+                                Action <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    data-toggle="modal"
+                                    data-target="#myModalPresence"
+                                    >Présence</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    data-toggle="modal"
+                                    data-target="#myModalResto"
+                                    >Restauration</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="label label-primary"
+                              ><i class="fa fa-check"></i> Bus Club</span
+                            >
+                          </td>
+
+                          <td>123E42</td>
+                          <td>Ahmde ss</td>
+                          <td>23245435</td>
+                          <td class="overflow-hidden">
+                            <div class="btn-group">
+                              <button
+                                data-toggle="dropdown"
+                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                              >
+                                Action <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    data-toggle="modal"
+                                    data-target="#myModalPresence"
+                                    >Présence</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    data-toggle="modal"
+                                    data-target="#myModalResto"
+                                    >Restauration</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="label label-primary"
+                              ><i class="fa fa-check"></i> Bus Club</span
+                            >
+                          </td>
+
+                          <td>123E42</td>
+                          <td>Ahmde ss</td>
+                          <td>23245435</td>
+                          <td class="overflow-hidden">
+                            <div class="btn-group">
+                              <button
+                                data-toggle="dropdown"
+                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                              >
+                                Action <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    data-toggle="modal"
+                                    data-target="#myModalPresence"
+                                    >Présence</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    data-toggle="modal"
+                                    data-target="#myModalResto"
+                                    >Restauration</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="label label-primary"
+                              ><i class="fa fa-check"></i> Bus Club</span
+                            >
+                          </td>
+
+                          <td>123E42</td>
+                          <td>Ahmde ss</td>
+                          <td>23245435</td>
+                          <td class="overflow-hidden">
+                            <div class="btn-group">
+                              <button
+                                data-toggle="dropdown"
+                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                              >
+                                Action <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    data-toggle="modal"
+                                    data-target="#myModalPresence"
+                                    >Présence</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    data-toggle="modal"
+                                    data-target="#myModalResto"
+                                    >Restauration</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="text-right">
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-white btn-xs dropdown-toggle"
+                          data-dismiss="modal"
                         >
-                          <option selected value="option1">Bus Club</option>
-                          <option value="option2">Bus Location /Avion</option>
-                        </select>
+                          Annuler
+                        </button>
+                        <button
+                          type="submit"
+                          class="btn btn-primary btn-xs dropdown-toggle"
+                        >
+                          Valider
+                        </button>
                       </div>
-                      <div class="wrapper wrapper-content animated fadeInDown">
-                        <div class="row">
-                          <div *ngIf="selectedOption === 'option1'">
-                            <form class="form-horizontal">
-                              <div class="form-row">
-                                <div class="col-md-4">
-                                  <label>Matricule</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="validationDefault04"
-                                    placeholder=""
-                                    required
-                                  />
-                                </div>
-                                <div class="col-md-4">
-                                  <label>Nom Chauffure</label>
-
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="validationDefault04"
-                                    placeholder=""
-                                    required
-                                  />
-                                </div>
-                                <div class="col-md-4">
-                                  <label>N° Chauffure</label>
-
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="validationDefault04"
-                                    placeholder=""
-                                    required
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-row">
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs dropdown-toggle"
-                                >
-                                  Ajouter
-                                </button>
-                              </div>
-                            </form>
-                            <!-- Mettez ici les champs du formulaire pour l'Option 1 -->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="wrapper wrapper-content animated fadeInDown">
-                        <div class="row">
-                          <div *ngIf="selectedOption === 'option2'">
-                            <form class="form-horizontal">
-                              <div class="form-row">
-                                <div class="col-md-6">
-                                  <label>Matricule</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="validationDefault04"
-                                    placeholder=""
-                                    required
-                                  />
-                                </div>
-                                <div class="col-md-6">
-                                  <label>Company</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="validationDefault04"
-                                    placeholder=""
-                                    required
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-row">
-                                <div class="col-md-4">
-                                  <label>Nom Chauffure</label>
-
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="validationDefault04"
-                                    placeholder=""
-                                    required
-                                  />
-                                </div>
-                                <div class="col-md-4">
-                                  <label>N° Chauffure</label>
-
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="validationDefault04"
-                                    placeholder=""
-                                    required
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-row">
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs dropdown-toggle"
-                                >
-                                  Ajouter
-                                </button>
-                              </div>
-                            </form>
-                            <!-- Mettez ici les champs du formulaire pour l'Option 2 -->
-                          </div>
-                        </div>
-                      </div>
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th>Date</th>
-                            <th>Heure</th>
-                            <th>Désignation</th>
-                            <th>Complexe</th>
-                            <th>Actions</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-                            <td>10:00</td>
-                            <td></td>
-
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-                            <td>10:00</td>
-                            <td></td>
-
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="label label-primary"
-                                ><i class="fa fa-check"></i> 12/03/2023</span
-                              >
-                            </td>
-
-                            <td>10:00</td>
-                            <td></td>
-                            <td>Hotel 1</td>
-                            <td class="overflow-hidden">
-                              <div class="btn-group">
-                                <button
-                                  data-toggle="dropdown"
-                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                >
-                                  Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalPresence"
-                                      >Présence</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      data-toggle="modal"
-                                      data-target="#myModalResto"
-                                      >Restauration</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <div class="text-right">
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-white btn-xs dropdown-toggle"
-                            data-dismiss="modal"
-                          >
-                            Annuler
-                          </button>
-                          <button
-                            type="submit"
-                            class="btn btn-primary btn-xs dropdown-toggle"
-                          >
-                            Valider
-                          </button>
-                        </div>
-                      </div>
-                    </form>
+                    </div>
                   </div>
                   <br /><br />
                 </div>
@@ -3931,7 +3632,7 @@
               role="dialog"
               aria-hidden="true"
             >
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content animated bounceInRight">
                   <div class="modal-header">
                     <h6 class="modal-title">Ajouter Programme</h6>
@@ -4636,7 +4337,7 @@
               role="dialog"
               aria-hidden="true"
             >
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content animated bounceInRight">
                   <div class="modal-header">
                     <h6 class="modal-title">Ajouter Programme</h6>
