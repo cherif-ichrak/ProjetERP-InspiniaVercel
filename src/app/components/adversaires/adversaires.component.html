@@ -1,3 +1,9 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Adversaires</h2>
+  </div>
+  <div class="col-lg-2 text-right">Club Africain 2023</div>
+</div>
 <div class="wrapper wrapper-content animated fadeInDown">
   <div class="row">
     <div class="ibox-content">
@@ -8,7 +14,7 @@
           >
             <button
               data-toggle="modal"
-              data-target="#myModalContacts"
+              data-target="#myModal"
               class="btn btn-lg btn-primary"
               class="btn btn-outline btn-info add dim"
               title="Ajouter"
@@ -18,7 +24,7 @@
           </div>
           <div
             class="modal inmodal"
-            id="myModalContacts"
+            id="myModal"
             tabindex="-1"
             role="dialog"
             aria-hidden="true"
@@ -26,18 +32,19 @@
             <div class="modal-dialog">
               <div class="modal-content animated bounceInRight">
                 <div class="modal-header">
-                  <h6 class="modal-title">Ajouter Contact</h6>
+                  <h6 class="modal-title">Ajouter Adversaires</h6>
                   <button type="button" class="close" data-dismiss="modal">
                     <span aria-hidden="true">&times;</span
                     ><span class="sr-only">Fermer</span>
                   </button>
                 </div>
+                <br /><br />
 
                 <div class="modal-body">
                   <form>
                     <div class="form-row">
                       <div class="col-md-4 mb-3">
-                        <label>Nom et Prénom </label>
+                        <label>Nom Complete </label>
                         <input
                           type="text"
                           class="form-control"
@@ -47,17 +54,49 @@
                         />
                       </div>
                       <div class="col-md-4 mb-3">
-                        <label>N° Tel 1</label>
+                        <label>Abbreviation</label>
                         <input
                           type="text"
                           class="form-control"
                           id="validationDefault04"
-                          placeholder=""
+                          placeholder="Abbreviation"
                           required
                         />
                       </div>
                       <div class="col-md-4 mb-3">
-                        <label>N° Tel 2</label>
+                        <label>Nationalité </label>
+                        <select class="form-control">
+                          <option>Tunisienne</option>
+                          <option selected>espagnol</option>
+                          <option>Marocain</option>
+                          <option>Algérien</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-4 mb-3">
+                        <label>N° Tel </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="validationDefault04"
+                          placeholder="N° Tel"
+                          required
+                        />
+                      </div>
+
+                      <div class="col-md-4 mb-3">
+                        <label>President du club </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="validationDefault04"
+                          placeholder="President du club"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label>Complexe </label>
                         <input
                           type="text"
                           class="form-control"
@@ -68,29 +107,23 @@
                       </div>
                     </div>
                     <div class="form-row">
-                      <div class="col-md-6 mb-3">
-                        <label>Qualité </label>
+                      <div class="col-md-12 mb-3">
+                        <label>Logo </label>
                         <input
-                          type="text"
+                          type="file"
                           class="form-control"
                           id="validationDefault04"
-                          placeholder="Qualité"
+                          placeholder=""
                           required
                         />
-                      </div>
-
-                      <div class="col-md-6 mb-3">
-                        <label>Email </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="validationDefault04"
-                          placeholder="Email"
-                          required
-                        />
+                        <div>
+                          <img
+                            id="imageAffiche"
+                            style="max-width: 300px; max-height: 300px"
+                          />
+                        </div>
                       </div>
                     </div>
-
                     <div class="row" class="text-right">
                       <div class="modal-footer">
                         <button
@@ -110,6 +143,7 @@
                     </div>
                   </form>
                 </div>
+                <br /><br />
               </div>
             </div>
           </div>
@@ -133,22 +167,26 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th>Nom & Prénom</th>
-              <th>N° Tel 1</th>
-              <th>N° Tel 2</th>
-              <th>Qualité</th>
-              <th>Email</th>
+              <th style="width: 10%">Logo</th>
+              <th style="width: 10%">Abbreviation</th>
+              <th style="width: 10%">Complexe</th>
 
-              <th>Action</th>
+              <th style="width: 10%">Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Ahmed Ahmed</td>
-              <td>23 454 367</td>
-              <td>23 454 367</td>
-              <td>Président</td>
-              <td>Ahmed@gmail.com</td>
+              <td>
+                <img
+                  src="assets/img/logostade.png"
+                  alt="image"
+                  class="img-circle"
+                  width="20%"
+                  height="20%"
+                />
+              </td>
+              <td>ST</td>
+              <td>Stade tunisien</td>
               <td class="overflow-hidden">
                 <div class="btn-group">
                   <button
@@ -159,9 +197,7 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a
-                        data-toggle="modal"
-                        data-target="#myModalContactsModifier"
+                      <a data-toggle="modal" data-target="#myModalModifier"
                         >Modifier</a
                       >
                     </li>
@@ -171,11 +207,17 @@
               </td>
             </tr>
             <tr>
-              <td>Ahmed Ahmed</td>
-              <td>23 454 367</td>
-              <td>23 454 367</td>
-              <td>Président</td>
-              <td>Ahmed@gmail.com</td>
+              <td>
+                <img
+                  src="assets/img/LOGOCLUBsvg.png"
+                  alt="image"
+                  class="img-circle"
+                  width="20%"
+                  height="20%"
+                />
+              </td>
+              <td>CA</td>
+              <td>Stade olympique de Radès</td>
               <td class="overflow-hidden">
                 <div class="btn-group">
                   <button
@@ -186,9 +228,7 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a
-                        data-toggle="modal"
-                        data-target="#myModalContactsModifier"
+                      <a data-toggle="modal" data-target="#myModalModifier"
                         >Modifier</a
                       >
                     </li>
@@ -198,11 +238,17 @@
               </td>
             </tr>
             <tr>
-              <td>Ahmed Ahmed</td>
-              <td>23 454 367</td>
-              <td>23 454 367</td>
-              <td>Président</td>
-              <td>Ahmed@gmail.com</td>
+              <td>
+                <img
+                  src="assets/img/EST.png"
+                  alt="image"
+                  class="img-circle"
+                  width="20%"
+                  height="20%"
+                />
+              </td>
+              <td>EST</td>
+              <td>Stade tunisien</td>
               <td class="overflow-hidden">
                 <div class="btn-group">
                   <button
@@ -213,9 +259,7 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a
-                        data-toggle="modal"
-                        data-target="#myModalContactsModifier"
+                      <a data-toggle="modal" data-target="#myModalModifier"
                         >Modifier</a
                       >
                     </li>
@@ -225,11 +269,17 @@
               </td>
             </tr>
             <tr>
-              <td>Ahmed Ahmed</td>
-              <td>23 454 367</td>
-              <td>23 454 367</td>
-              <td>Président</td>
-              <td>Ahmed@gmail.com</td>
+              <td>
+                <img
+                  src="assets/img/logostade.png"
+                  alt="image"
+                  class="img-circle"
+                  width="20%"
+                  height="20%"
+                />
+              </td>
+              <td>ST</td>
+              <td>Stade tunisien</td>
               <td class="overflow-hidden">
                 <div class="btn-group">
                   <button
@@ -240,9 +290,7 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a
-                        data-toggle="modal"
-                        data-target="#myModalContactsModifier"
+                      <a data-toggle="modal" data-target="#myModalModifier"
                         >Modifier</a
                       >
                     </li>
@@ -252,11 +300,17 @@
               </td>
             </tr>
             <tr>
-              <td>Ahmed Ahmed</td>
-              <td>23 454 367</td>
-              <td>23 454 367</td>
-              <td>Président</td>
-              <td>Ahmed@gmail.com</td>
+              <td>
+                <img
+                  src="assets/img/logostade.png"
+                  alt="image"
+                  class="img-circle"
+                  width="20%"
+                  height="20%"
+                />
+              </td>
+              <td>ST</td>
+              <td>Stade tunisien</td>
               <td class="overflow-hidden">
                 <div class="btn-group">
                   <button
@@ -267,9 +321,7 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a
-                        data-toggle="modal"
-                        data-target="#myModalContactsModifier"
+                      <a data-toggle="modal" data-target="#myModalModifier"
                         >Modifier</a
                       >
                     </li>
@@ -279,11 +331,17 @@
               </td>
             </tr>
             <tr>
-              <td>Ahmed Ahmed</td>
-              <td>23 454 367</td>
-              <td>23 454 367</td>
-              <td>Président</td>
-              <td>Ahmed@gmail.com</td>
+              <td>
+                <img
+                  src="assets/img/EST.png"
+                  alt="image"
+                  class="img-circle"
+                  width="20%"
+                  height="20%"
+                />
+              </td>
+              <td>EST</td>
+              <td>Stade tunisien</td>
               <td class="overflow-hidden">
                 <div class="btn-group">
                   <button
@@ -294,9 +352,7 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a
-                        data-toggle="modal"
-                        data-target="#myModalContactsModifier"
+                      <a data-toggle="modal" data-target="#myModalModifier"
                         >Modifier</a
                       >
                     </li>
@@ -309,7 +365,7 @@
         </table>
         <div
           class="modal inmodal"
-          id="myModalContactsModifier"
+          id="myModalModifier"
           tabindex="-1"
           role="dialog"
           aria-hidden="true"
@@ -317,18 +373,19 @@
           <div class="modal-dialog">
             <div class="modal-content animated bounceInRight">
               <div class="modal-header">
-                <h6 class="modal-title">Modifier Contact</h6>
+                <h6 class="modal-title">Modifier Adversaires</h6>
                 <button type="button" class="close" data-dismiss="modal">
                   <span aria-hidden="true">&times;</span
                   ><span class="sr-only">Fermer</span>
                 </button>
               </div>
+              <br /><br />
 
               <div class="modal-body">
                 <form>
                   <div class="form-row">
                     <div class="col-md-4 mb-3">
-                      <label>Nom et Prénom </label>
+                      <label>Nom Complete </label>
                       <input
                         type="text"
                         class="form-control"
@@ -338,51 +395,82 @@
                       />
                     </div>
                     <div class="col-md-4 mb-3">
-                      <label>N° Tel 1</label>
+                      <label>Abbreviation</label>
                       <input
                         type="text"
                         class="form-control"
                         id="validationDefault04"
-                        placeholder=""
+                        placeholder="Abbreviation"
                         required
                       />
                     </div>
                     <div class="col-md-4 mb-3">
-                      <label>N° Tel 2</label>
+                      <label>Nationalité </label>
+                      <select class="form-control">
+                        <option>Tunisienne</option>
+                        <option selected>espagnol</option>
+                        <option>Marocain</option>
+                        <option>Algérien</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label>N° Tel </label>
                       <input
                         type="text"
                         class="form-control"
                         id="validationDefault04"
-                        placeholder=""
+                        placeholder="N° Tel"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                      <label>President du club </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefault04"
+                        placeholder="President du club"
                         required
                       />
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
-                      <label>Qualité </label>
+                      <label>Complexe </label>
                       <input
-                        type="text"
+                        type="file"
                         class="form-control"
                         id="validationDefault04"
-                        placeholder="Qualité"
+                        placeholder=""
                         required
                       />
+                      <div>
+                        <img
+                          id="imageAffiche"
+                          style="max-width: 300px; max-height: 300px"
+                        />
+                      </div>
                     </div>
-
                     <div class="col-md-6 mb-3">
-                      <label>Email </label>
+                      <label>Logo </label>
                       <input
-                        type="text"
+                        type="file"
                         class="form-control"
                         id="validationDefault04"
-                        placeholder="Email"
+                        placeholder=""
                         required
                       />
+                      <div>
+                        <img
+                          id="imageAffiche"
+                          style="max-width: 300px; max-height: 300px"
+                        />
+                      </div>
                     </div>
                   </div>
-                  <br /><br />
-
                   <div class="row" class="text-right">
                     <div class="modal-footer">
                       <button
@@ -396,12 +484,13 @@
                         type="button"
                         class="btn btn-primary btn-xs dropdown-toggle"
                       >
-                        Modifier
+                        Ajouter
                       </button>
                     </div>
                   </div>
                 </form>
               </div>
+              <br /><br />
             </div>
           </div>
         </div>

@@ -20,6 +20,21 @@ import { MobiliteComponent } from './components/mobilite/mobilite.component';
 import { EvenementsComponent } from './components/evenements/evenements.component';
 import { DetaileJoueurComponent } from './components/detaile-joueur/detaile-joueur.component';
 import { ConfigurerGroupeComponent } from './components/configurer-groupe/configurer-groupe.component';
+import { AdversairesComponent } from './components/adversaires/adversaires.component';
+import { InfoJoueurComponent } from './components/info-joueur/info-joueur.component';
+import { BlessuresComponent } from './components/blessures/blessures.component';
+import { SanctionsComponent } from './components/sanctions/sanctions.component';
+import { CalendrierComponent } from './components/calendrier/calendrier.component';
+import { StaffComponent } from './components/staff/staff.component';
+import { HttpClientModule } from '@angular/common/http';
+
+import { ImprimerFichePresenceComponent } from './components/imprimer-fiche-presence/imprimer-fiche-presence.component';
+import {
+  NgbDatepickerModule,
+  NgbDropdownModule,
+} from '@ng-bootstrap/ng-bootstrap';
+import { ConvocationJoueurComponent } from './components/convocation-joueur/convocation-joueur.component';
+import { AfficherEventComponent } from './components/afficher-event/afficher-event.component';
 
 @NgModule({
   declarations: [
@@ -40,8 +55,24 @@ import { ConfigurerGroupeComponent } from './components/configurer-groupe/config
     EvenementsComponent,
     DetaileJoueurComponent,
     ConfigurerGroupeComponent,
+    AdversairesComponent,
+    InfoJoueurComponent,
+    BlessuresComponent,
+    SanctionsComponent,
+    CalendrierComponent,
+    StaffComponent,
+    ImprimerFichePresenceComponent,
+    ConvocationJoueurComponent,
+    AfficherEventComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    NgbDatepickerModule,
+    NgbDropdownModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

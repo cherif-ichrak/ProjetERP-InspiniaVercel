@@ -1,1 +1,276 @@
-<p>detaile-joueur works!</p>
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="row">
+    <div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="InfoJoueur-tab"
+            data-toggle="tab"
+            href="#InfoJoueur"
+            role="tab"
+            >Info Joueur</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="Medical-tab"
+            data-toggle="tab"
+            href="#Medical"
+            role="tab"
+            >Médical</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="Sanction-tab"
+            data-toggle="tab"
+            href="#Sanction"
+            role="tab"
+            >Sanction</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="Blessure-tab"
+            data-toggle="tab"
+            href="#Blessure"
+            role="tab"
+            >Blessure</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="InfoJoueur"
+          role="tabpanel"
+          aria-labelledby="InfoJoueur-tab"
+        >
+          <app-info-joueur></app-info-joueur>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="Medical"
+          role="tabpanel"
+          aria-labelledby="Medical-tab"
+        >
+          <form class="form-horizontal">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label>Taille</label>
+
+                <input type="text" placeholder="Taille" class="form-control" />
+              </div>
+              <div class="col-md-6">
+                <label>Poids</label>
+
+                <input type="text" placeholder="Poids" class="form-control" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-6">
+                <label>Masse Grasse</label>
+
+                <input
+                  type="text"
+                  placeholder="Masse Grasse"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-md-6">
+                <label>Masse Maigre</label>
+
+                <input
+                  type="text"
+                  placeholder="Masse Maigre"
+                  class="form-control"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-6">
+                <label>BPM Max</label>
+
+                <input type="text" placeholder="BPM Max" class="form-control" />
+              </div>
+
+              <div class="col-md-6">
+                <label>VO2 Max </label>
+
+                <input
+                  type="text"
+                  placeholder="VO2 Max
+"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6">
+                <label>Vitesse Moy</label>
+
+                <input
+                  type="text"
+                  placeholder="Vitesse Moy"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-md-6">
+                <label>Vitesse Max</label>
+
+                <input
+                  type="text"
+                  placeholder="Vitesse Max"
+                  class="form-control"
+                />
+              </div>
+            </div>
+
+            <div class="row" class="text-right">
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-white"
+                  data-dismiss="modal"
+                >
+                  Annuler
+                </button>
+                <button type="button" class="btn btn-primary">Ajouter</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div
+          class="tab-pane fade show active"
+          id="Sanction"
+          role="tabpanel"
+          aria-labelledby="Sanction-tab"
+        >
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th style="width: 10%">Catégorie</th>
+                <th style="width: 10%">Cause</th>
+                <th style="width: 10%">Date Début</th>
+                <th style="width: 10%">Date Fin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PV League</td>
+                <td></td>
+                <td>10/10/2023</td>
+                <td>10/11/2023</td>
+              </tr>
+              <tr>
+                <td>PV League</td>
+                <td></td>
+                <td>10/10/2023</td>
+                <td>10/11/2023</td>
+              </tr>
+              <tr>
+                <td>PV League</td>
+                <td></td>
+                <td>10/10/2023</td>
+                <td>10/11/2023</td>
+              </tr>
+              <tr>
+                <td>PV League</td>
+                <td></td>
+                <td>10/10/2023</td>
+                <td>10/11/2023</td>
+              </tr>
+              <tr>
+                <td>PV League</td>
+                <td></td>
+                <td>10/10/2023</td>
+                <td>10/11/2023</td>
+              </tr>
+              <tr>
+                <td>
+                  <tr>
+                    <td>PV League</td>
+                    <td></td>
+                    <td>10/10/2023</td>
+                    <td>10/11/2023</td>
+                  </tr>
+                </td>
+                <td></td>
+                <td>10/10/2023</td>
+                <td>10/11/2023</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="Blessure"
+          role="tabpanel"
+          aria-labelledby="Blessure-tab"
+        >
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th style="width: 10%">Catégorie</th>
+                <th style="width: 10%">Note</th>
+                <th style="width: 10%">Date Début</th>
+                <th style="width: 10%">Date Fin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PV League</td>
+                <td></td>
+                <td>10/10/2023</td>
+                <td>10/11/2023</td>
+              </tr>
+              <tr>
+                <td>PV League</td>
+                <td></td>
+                <td>10/10/2023</td>
+                <td>10/11/2023</td>
+              </tr>
+              <tr>
+                <td>PV League</td>
+                <td></td>
+                <td>10/10/2023</td>
+                <td>10/11/2023</td>
+              </tr>
+              <tr>
+                <td>PV League</td>
+                <td></td>
+                <td>10/10/2023</td>
+                <td>10/11/2023</td>
+              </tr>
+              <tr>
+                <td>PV League</td>
+                <td></td>
+                <td>10/10/2023</td>
+                <td>10/11/2023</td>
+              </tr>
+              <tr>
+                <td>
+                  <tr>
+                    <td>PV League</td>
+                    <td></td>
+                    <td>10/10/2023</td>
+                    <td>10/11/2023</td>
+                  </tr>
+                </td>
+                <td></td>
+                <td>10/10/2023</td>
+                <td>10/11/2023</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

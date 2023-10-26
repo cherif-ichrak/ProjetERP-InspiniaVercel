@@ -5,50 +5,116 @@
 </div>
 <div class="wrapper wrapper-content">
   <div class="row">
+    <div class="col-sm-3 pull-right">
+      <div class="input-group">
+        <input
+          type="text"
+          placeholder="Rechercher"
+          class="input-sm form-control"
+        />
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-sm btn-primary">
+            <i class="fa fa-search"></i>
+          </button>
+        </span>
+      </div>
+    </div>
+    <br /><br />
     <div class="col-lg-3">
       <div class="ibox float-e-margins">
         <div class="ibox-content">
           <div class="file-manager">
-            <h5>Show:</h5>
-            <a href="#" class="file-control active">Ale</a>
-            <a href="#" class="file-control">Documents</a>
-            <a href="#" class="file-control">Audio</a>
-            <a href="#" class="file-control">Images</a>
+            <button
+              data-toggle="modal"
+              data-target="#myModal"
+              class="btn btn-primary btn-block"
+            >
+              Télécharger Fichier
+            </button>
+            <div
+              class="modal inmodal"
+              id="myModal"
+              tabindex="-1"
+              role="dialog"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content animated bounceInRight">
+                  <div class="modal-header">
+                    <h6 class="modal-title">Télécharger Fichier</h6>
+                    <button type="button" class="close" data-dismiss="modal">
+                      <span aria-hidden="true">&times;</span
+                      ><span class="sr-only">Fermer</span>
+                    </button>
+                  </div>
+                  <br /><br />
+
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                          <label>Sélectionner Repertoire</label>
+                          <select class="form-control">
+                            <option>Contrats</option>
+                            <option selected>Photos</option>
+                            <option>Licences</option>
+                            <option>Passeports</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                          <label>Télecharger Fichier</label>
+                          <input
+                            type="file"
+                            class="form-control"
+                            id="validationDefault04"
+                            placeholder=""
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row" class="text-right">
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-white btn-xs dropdown-toggle"
+                            data-dismiss="modal"
+                          >
+                            Annuler
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-xs dropdown-toggle"
+                          >
+                            Ajouter
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <br /><br />
+                </div>
+              </div>
+            </div>
             <div class="hr-line-dashed"></div>
-            <button class="btn btn-primary btn-block">Upload Files</button>
-            <div class="hr-line-dashed"></div>
-            <h5>Folders</h5>
+            <h5>Dossiers</h5>
             <ul class="folder-list" style="padding: 0">
               <li>
-                <a href=""><i class="fa fa-folder"></i> Files</a>
+                <a href=""><i class="fa fa-folder"></i> Contrats</a>
               </li>
               <li>
-                <a href=""><i class="fa fa-folder"></i> Pictures</a>
+                <a href=""><i class="fa fa-folder"></i> Licences</a>
               </li>
               <li>
-                <a href=""><i class="fa fa-folder"></i> Web pages</a>
+                <a href=""><i class="fa fa-folder"></i>Passeports</a>
               </li>
               <li>
-                <a href=""><i class="fa fa-folder"></i> Illustrations</a>
-              </li>
-              <li>
-                <a href=""><i class="fa fa-folder"></i> Films</a>
-              </li>
-              <li>
-                <a href=""><i class="fa fa-folder"></i> Books</a>
+                <a href=""><i class="fa fa-folder"></i>Photos</a>
               </li>
             </ul>
-            <h5 class="tag-title">Tags</h5>
-            <ul class="tag-list" style="padding: 0">
-              <li><a href="">Family</a></li>
-              <li><a href="">Work</a></li>
-              <li><a href="">Home</a></li>
-              <li><a href="">Children</a></li>
-              <li><a href="">Holidays</a></li>
-              <li><a href="">Music</a></li>
-              <li><a href="">Photography</a></li>
-              <li><a href="">Film</a></li>
-            </ul>
+
             <div class="clearfix"></div>
           </div>
         </div>

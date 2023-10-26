@@ -9,6 +9,15 @@ import { BiblioComponent } from './components/biblio/biblio.component';
 import { MobiliteComponent } from './components/mobilite/mobilite.component';
 import { EvenementsComponent } from './components/evenements/evenements.component';
 import { ConfigurerGroupeComponent } from './components/configurer-groupe/configurer-groupe.component';
+import { AdversairesComponent } from './components/adversaires/adversaires.component';
+import { DetaileJoueurComponent } from './components/detaile-joueur/detaile-joueur.component';
+import { BlessuresComponent } from './components/blessures/blessures.component';
+import { SanctionsComponent } from './components/sanctions/sanctions.component';
+import { CalendrierComponent } from './components/calendrier/calendrier.component';
+import { StaffComponent } from './components/staff/staff.component';
+import { ImprimerFichePresenceComponent } from './components/imprimer-fiche-presence/imprimer-fiche-presence.component';
+import { ConvocationJoueurComponent } from './components/convocation-joueur/convocation-joueur.component';
+import { AfficherEventComponent } from './components/afficher-event/afficher-event.component';
 
 const routes: Routes = [
   { path: 'Parametrage', component: ParametrageComponent },
@@ -24,6 +33,15 @@ const routes: Routes = [
   { path: 'Biblio', component: BiblioComponent },
   { path: 'Mobilite', component: MobiliteComponent },
   { path: 'Evenement', component: EvenementsComponent },
+  { path: 'Adversaire', component: AdversairesComponent },
+  { path: 'Joueurs/DetaileJoueur', component: DetaileJoueurComponent },
+  { path: 'belssures', component: BlessuresComponent },
+  { path: 'sanctions', component: SanctionsComponent },
+  { path: 'calendrier', component: CalendrierComponent },
+  { path: 'Staff', component: StaffComponent },
+  { path: 'FichePresence', component: ImprimerFichePresenceComponent },
+  { path: 'Convocation', component: ConvocationJoueurComponent },
+  { path: 'AfficherEvent', component: AfficherEventComponent },
 ];
 
 @NgModule({
