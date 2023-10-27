@@ -185,6 +185,25 @@
       });
     </script>
     <script>
+      function displayImage(blockNumber) {
+        const input = document.querySelector(
+          `#image${blockNumber} + input[type="file"]`
+        );
+        const image = document.getElementById(`image${blockNumber}`);
+        const file = input.files[0];
+
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            image.src = e.target.result;
+          };
+          reader.readAsDataURL(file);
+        } else {
+          image.src = "";
+        }
+      }
+    </script>
+    <script>
       $(document).ready(function () {
         // Local script for demo purpose only
 

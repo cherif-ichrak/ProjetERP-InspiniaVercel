@@ -8,4 +8,5 @@ import { FormsModule } from "@angular/forms";
 })
 export class AfficherEventComponent {
   selectedOption: string = "option1"; // Option par défaut
+  
 }

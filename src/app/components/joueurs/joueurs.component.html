@@ -167,6 +167,64 @@
                       </label>
                     </div>
                   </div>
+                  <div class="form-row">
+                    <div class="col-md-3">
+                      <input
+                        type="file"
+                        id="fileInput"
+                        style="display: none"
+                        (change)="onFileChange($event)"
+                      />
+                      <label for="fileInput" id="customLabel"
+                        >Cliquez ici pour Télécharger Photo</label
+                      >
+                      <img
+                        *ngIf="selectedImage"
+                        [src]="selectedImage"
+                        alt="Selected Image"
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <input
+                        type="file"
+                        id="fileInput"
+                        style="display: none"
+                        (change)="onFilePass($event)"
+                      />
+                      <label for="fileInput" id="customLabel"
+                        >Cliquez ici pour Télécharger Passeport</label
+                      >
+                      <img
+                        *ngIf="selectedPass"
+                        [src]="selectedPass"
+                        alt="Selected Image"
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <input
+                        type="file"
+                        id="fileInput"
+                        style="display: none"
+                        (change)="onFileLicence($event)"
+                      />
+                      <label for="fileInput" id="customLabel"
+                        >Cliquez ici pour Télécharger Licence</label
+                      >
+                      <img
+                        *ngIf="selectedLicence"
+                        [src]="selectedLicence"
+                        alt="Selected Image"
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <input type="file" (change)="onFileContrat($event)" />
+                      <img
+                        *ngIf="selectedImage"
+                        [src]="selectedImage"
+                        alt="Selected Image"
+                      />
+                    </div>
+                  </div>
 
                   <div class="row" class="text-right">
                     <div class="modal-footer">
