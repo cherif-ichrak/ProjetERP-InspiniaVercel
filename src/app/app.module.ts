@@ -31,6 +31,23 @@ import { ImprimerFichePresenceComponent } from './components/imprimer-fiche-pres
 import { ConvocationJoueurComponent } from './components/convocation-joueur/convocation-joueur.component';
 import { AfficherEventComponent } from './components/afficher-event/afficher-event.component';
 import { NgModule } from '@angular/core';
+import { CaisseComponent } from './components/caisse/caisse.component';
+import { EncaissementComponent } from './components/encaissement/encaissement.component';
+import { DepenseComponent } from './components/depense/depense.component';
+import { AfficherCaisseComponent } from './components/afficher-caisse/afficher-caisse.component';
+import { ArbitreComponent } from './components/arbitre/arbitre.component';
+import { FicheMatchComponent } from './components/fiche-match/fiche-match.component';
+import { DetailleSanctionComponent } from './components/detaille-sanction/detaille-sanction.component';
+import { ImprimerConvocationMatchComponent } from './components/imprimer-convocation-match/imprimer-convocation-match.component';
+import { ImprimerContactsComponent } from './components/imprimer-contacts/imprimer-contacts.component';
+import { ImprimerContratsComponent } from './components/imprimer-contrats/imprimer-contrats.component';
+import { ImprimerRommingComponent } from './components/imprimer-romming/imprimer-romming.component';
+import { ImprimerListePassComponent } from './components/imprimer-liste-pass/imprimer-liste-pass.component';
+import { ImprimerCalendrierComponent } from './components/imprimer-calendrier/imprimer-calendrier.component';
+import { ImprimerDateComponent } from './components/imprimer-date/imprimer-date.component';
+import { ImprimerProgrammeMatchComponent } from './components/imprimer-programme-match/imprimer-programme-match.component';
+import { FuilleMatchComponent } from './components/fuille-match/fuille-match.component';
+import { EtatMatchComponent } from './components/etat-match/etat-match.component';
 
 @NgModule({
   declarations: [
@@ -60,8 +77,25 @@ import { NgModule } from '@angular/core';
     ImprimerFichePresenceComponent,
     ConvocationJoueurComponent,
     AfficherEventComponent,
+    CaisseComponent,
+    EncaissementComponent,
+    DepenseComponent,
+    AfficherCaisseComponent,
+    ArbitreComponent,
+    FicheMatchComponent,
+    DetailleSanctionComponent,
+    ImprimerConvocationMatchComponent,
+    ImprimerContactsComponent,
+    ImprimerContratsComponent,
+    ImprimerRommingComponent,
+    ImprimerListePassComponent,
+    ImprimerCalendrierComponent,
+    ImprimerDateComponent,
+    ImprimerProgrammeMatchComponent,
+    FuilleMatchComponent,
+    EtatMatchComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [BrowserModule,  FormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

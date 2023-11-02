@@ -39,7 +39,7 @@
         </li>
         <li>
           <a
-            ><i class="fa fa-diamond"></i>
+            ><i class="fa fa-envelope"></i>
             <span class="nav-label">Saison Sportive</span
             ><span class="fa arrow"></span
           ></a>
@@ -47,6 +47,7 @@
             <li><a routerLink="Competition">Compétitions</a></li>
             <li><a routerLink="Adversaire">Adversaires</a></li>
             <li><a routerLink="Matches">Matchs</a></li>
+            <li><a routerLink="Arbitre">Arbitres</a></li>
           </ul>
         </li>
 
@@ -58,12 +59,12 @@
           ></a>
           <ul class="nav nav-second-level collapse">
             <li><a routerLink="Joueurs">Joueurs</a></li>
-            <li><a routerLink="Staff">Staff</a></li>
+            <li><a routerLink="Staff">Staffs</a></li>
           </ul>
         </li>
 
         <li>
-          <a
+          <a routerLink="Caisse"
             ><i class="fa fa-edit"></i> <span class="nav-label">Caisse</span></a
           >
         </li>
@@ -75,16 +76,22 @@
           >
         </li>
         <li>
-          <a routerLink="sanctions"
-            ><i class="fa fa-globe"></i>
-            <span class="nav-label">Sanctions</span></a
-          >
+          <a
+            ><i class="fa fa-globe"></i> <span class="nav-label">Sanctions</span
+            ><span class="fa arrow"></span
+          ></a>
+          <ul class="nav nav-second-level collapse">
+            <li><a routerLink="sanctions">Nouvelle Sanction</a></li>
+
+            <li><a routerLink="DetailleSanction">Détails Sanctions</a></li>
+          </ul>
         </li>
 
         <li>
           <a
-            ><i class="fa fa-laptop"> Logistique</i>
-            <span class="nav-label"></span><span class="fa arrow"></span
+            ><i class="fa fa-laptop"> </i>
+            <span class="nav-label">Logistique</span
+            ><span class="fa arrow"></span
           ></a>
           <ul class="nav nav-second-level collapse">
             <li><a routerLink="Joueurs">Hébergements</a></li>
@@ -117,6 +124,22 @@
         </li>
         <li>
           <a
+            ><i class="fa fa-laptop"> </i> <span class="nav-label">Etats</span
+            ><span class="fa arrow"></span
+          ></a>
+          <ul class="nav nav-second-level collapse">
+            <li><a routerLink="EtatAbsence">Etat Présence</a></li>
+
+            <li><a routerLink="FicheContacts">Contacts Club</a></li>
+            <li><a routerLink="FicheContrats">Contrats Club</a></li>
+            <li><a routerLink="FicheRomming">Romming</a></li>
+
+            <li><a routerLink="FicheCalendrier">Calendrier</a></li>
+            <li><a routerLink="FicheProgrammeDate">Programme Par Date</a></li>
+          </ul>
+        </li>
+        <li>
+          <a
             ><i class="fa fa-magic"></i>
             <span class="nav-label">Déconnexion </span></a
           >
@@ -133,9 +156,7 @@
         style="margin-bottom: 0"
       >
         <div class="navbar-header">
-          <a
-            class="navbar-minimalize minimalize-styl-2 btn btn-primary"
-            href="#"
+          <a class="navbar-minimalize minimalize-styl-2 btn btn-primary"
             ><i class="fa fa-bars"></i>
           </a>
         </div>
@@ -278,12 +299,7 @@
           </li>
 
           <li>
-            <a href="login.html"> <i class="fa fa-sign-out"></i> Log out </a>
-          </li>
-          <li>
-            <a class="right-sidebar-toggle">
-              <i class="fa fa-tasks"></i>
-            </a>
+            <a> <i class="fa fa-sign-out"></i> Déconnexion</a>
           </li>
         </ul>
       </nav>

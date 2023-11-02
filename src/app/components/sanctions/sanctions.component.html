@@ -29,7 +29,7 @@
             role="dialog"
             aria-hidden="true"
           >
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-lg">
               <div class="modal-content animated bounceInRight">
                 <div class="modal-header">
                   <h6 class="modal-title">Ajouter Sanctions</h6>
@@ -41,81 +41,120 @@
                 <br /><br />
 
                 <div class="modal-body">
-                  <form>
-                    <div class="form-row">
-                      <div class="col-md-6 mb-3">
-                        <label>Catégorie </label>
-                        <select class="form-control">
-                          <option>Entorse légère cheville</option>
-                          <option selected>TEST</option>
-                          <option></option>
-                          <option></option>
-                          <option></option>
-                          <option></option>
-                        </select>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <label f>Joueur </label>
-                        <select class="form-control">
-                          <option value="" selected>Joueur 1</option>
-                          <option value="option1">Joueur 2</option>
-                          <option value="" selected>Joueur 3</option>
-                          <option value="option1">Joueur 4</option>
-                        </select>
+                  <div class="panel-body">
+                    <div class="wrapper wrapper-content animated fadeInDown">
+                      <div class="row">
+                        <div class="ibox">
+                          <div class="ibox-content">
+                            <form>
+                              <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                  <label>Compétitions </label>
+                                  <select class="form-control">
+                                    <option>CHAMPIONS LEAGUE</option>
+                                    <option selected>CHAMPIONNAT</option>
+                                    <option>COUPE</option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                  <label>Titre </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="validationDefault04"
+                                    placeholder=""
+                                    required
+                                  />
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label f>Source de la Suspension</label>
+                                  <select class="form-control">
+                                    <option value="" selected>
+                                      Feuille de Match
+                                    </option>
+                                    <option value="option1">PV Ligue</option>
+                                    <option value="" selected>
+                                      PV Arbitre
+                                    </option>
+                                    <option value="option1">
+                                      PV Fédération Locale
+                                    </option>
+                                    <option value="option1">PV Club</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                  <label f>Descipition </label>
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    id="validationDefault04"
+                                    placeholder=""
+                                    required
+                                  />
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label f>Jouer </label>
+                                  <select class="form-control">
+                                    <option value="" selected>Joueur 1</option>
+                                    <option value="option1">Joueur 2</option>
+                                    <option value="" selected>Joueur 3</option>
+                                    <option value="option1">Joueur 4</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                  <label>Date Début </label>
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    id="validationDefault04"
+                                    placeholder=""
+                                    required
+                                  />
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label>Date Fin </label>
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    id="validationDefault04"
+                                    placeholder=""
+                                    required
+                                  />
+                                </div>
+                              </div>
+                              <br />
+                              <div class="row" class="text-right">
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-white btn-xs dropdown-toggle"
+                                    data-dismiss="modal"
+                                  >
+                                    Annuler
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-primary btn-xs dropdown-toggle"
+                                  >
+                                    Ajouter
+                                  </button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="form-row">
-                      <div class="col-md-12 mb-3">
-                        <label f>Cause </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="validationDefault04"
-                          placeholder=""
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="col-md-6 mb-3">
-                        <label>Date Début </label>
-                        <input
-                          type="date"
-                          class="form-control"
-                          id="validationDefault04"
-                          placeholder=""
-                          required
-                        />
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <label>Date Fin </label>
-                        <input
-                          type="date"
-                          class="form-control"
-                          id="validationDefault04"
-                          placeholder=""
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div class="row" class="text-right">
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-white btn-xs dropdown-toggle"
-                          data-dismiss="modal"
-                        >
-                          Annuler
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-primary btn-xs dropdown-toggle"
-                        >
-                          Ajouter
-                        </button>
-                      </div>
-                    </div>
-                  </form>
+                  </div>
                 </div>
                 <br /><br />
               </div>

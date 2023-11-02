@@ -120,20 +120,6 @@
                               </select>
                             </div>
                           </div>
-                          <div class="form-row">
-                            <div class="col-md-6">
-                              <label>
-                                <input type="checkbox" class="i-checks" />
-                                &nbsp; &nbsp; active
-                              </label>
-                            </div>
-                            <div class="col-md-6">
-                              <label>
-                                <input type="checkbox" class="i-checks" />
-                                &nbsp; &nbsp;inactive
-                              </label>
-                            </div>
-                          </div>
 
                           <div class="row" class="text-right">
                             <div class="modal-footer">
@@ -236,6 +222,7 @@
                               <select class="form-control">
                                 <option selected>A Jouer</option>
                                 <option>Joué</option>
+                                <option>Reporter</option>
                               </select>
                             </div>
                           </div>
@@ -324,6 +311,9 @@
                         >Modifier</a
                       >
                     </li>
+                    <li>
+                      <a routerLink="FicheMatch">Details Match</a>
+                    </li>
                     <li><a href="#">Supprimer</a></li>
                   </ul>
                 </div>
@@ -358,6 +348,9 @@
                         >Modifier</a
                       >
                     </li>
+                    <li>
+                      <a routerLink="FicheMatch">Details Match</a>
+                    </li>
                     <li><a href="#">Supprimer</a></li>
                   </ul>
                 </div>
@@ -391,6 +384,9 @@
                       <a data-toggle="modal" data-target="#myModalModifier"
                         >Modifier</a
                       >
+                    </li>
+                    <li>
+                      <a routerLink="FicheMatch">Details Match</a>
                     </li>
                     <li><a href="#">Supprimer</a></li>
                   </ul>
@@ -447,26 +443,13 @@
                       <div class="col-md-6">
                         <label>Date et Heure de Match</label>
 
-                        <div class="input-group">
-                          <div class="col-md-6 mb-3">
-                            <input
-                              type="date"
-                              class="form-control"
-                              id="validationDefault04"
-                              placeholder=""
-                              required
-                            />
-                          </div>
-                          <div class="col-md-6 mb-3">
-                            <input
-                              type="time"
-                              class="form-control"
-                              id="validationDefault04"
-                              placeholder=""
-                              required
-                            />
-                          </div>
-                        </div>
+                        <input
+                          type="datetime"
+                          class="form-control"
+                          id="validationDefault04"
+                          placeholder=""
+                          required
+                        />
                       </div>
                     </div>
 
