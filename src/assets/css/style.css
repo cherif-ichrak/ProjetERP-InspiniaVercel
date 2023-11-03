@@ -3784,6 +3784,7 @@ body.body-small .footer.fixed {
 /* PANELS */
 .page-heading {
   border-top: 0;
+
   padding: 0 10px 20px 10px;
 }
 .panel-heading h1,
@@ -5630,6 +5631,16 @@ table.shoping-cart-table tr td:last-child {
   position: absolute;
   top: 12px;
   right: 6;
+}
+.product-NumberInfo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #656d6e;
+  padding: 12px 12px;
+  position: absolute;
+  top: 5%;
+  right: 9%;
 }
 .product-ONOFF {
   color: #ffffff;

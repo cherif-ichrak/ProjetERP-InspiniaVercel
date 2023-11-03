@@ -48,6 +48,7 @@ import { ImprimerDateComponent } from './components/imprimer-date/imprimer-date.
 import { ImprimerProgrammeMatchComponent } from './components/imprimer-programme-match/imprimer-programme-match.component';
 import { FuilleMatchComponent } from './components/fuille-match/fuille-match.component';
 import { EtatMatchComponent } from './components/etat-match/etat-match.component';
+import { TdbComponent } from './components/tdb/tdb.component';
 
 @NgModule({
   declarations: [
@@ -94,6 +95,7 @@ import { EtatMatchComponent } from './components/etat-match/etat-match.component
     ImprimerProgrammeMatchComponent,
     FuilleMatchComponent,
     EtatMatchComponent,
+    TdbComponent,
   ],
   imports: [BrowserModule,  FormsModule, AppRoutingModule],
   providers: [],

@@ -32,6 +32,7 @@ import { ImprimerCalendrierComponent } from './components/imprimer-calendrier/im
 import { ImprimerDateComponent } from './components/imprimer-date/imprimer-date.component';
 import { FuilleMatchComponent } from './components/fuille-match/fuille-match.component';
 import { EtatMatchComponent } from './components/etat-match/etat-match.component';
+import { TdbComponent } from './components/tdb/tdb.component';
 
 const routes: Routes = [
   { path: 'Parametrage', component: ParametrageComponent },
@@ -93,6 +94,8 @@ const routes: Routes = [
   { path: 'Arbitre', component: ArbitreComponent },
   { path: 'Matches/FicheMatch', component: FicheMatchComponent },
   { path: 'DetailleSanction', component: DetailleSanctionComponent },
+  { path: 'tdb', component: TdbComponent },
+
   { path: 'Matches/FicheMatch/FuilleMatch', component: FuilleMatchComponent },
 ];
 

@@ -1,8 +1,82 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-sm-4">
+    <h2>Details de Joueur</h2>
+  </div>
+</div>
 <div class="row">
-  <div class="col-lg-12">
+  <div class="col-lg-9">
     <div class="wrapper wrapper-content animated fadeInUp">
       <div class="ibox">
         <div class="ibox-content">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="contact-box center-version">
+                <a href="profile.html">
+                  <img
+                    alt="image"
+                    class="img-circle"
+                    src="assets/img/hassen.jpeg"
+                  />
+
+                  <h3 class="m-b-xs">
+                    <strong>Moez Hassen</strong
+                    ><span class="product-NumberInfo">30 </span>
+                  </h3>
+
+                  <div class="font-bold">Milieu Droit</div>
+                  <table style="width: 100%">
+                    <tr>
+                      <td class="text-left" style="width: 80%">
+                        <strong>Date d'expiration Passeport:</strong>
+                      </td>
+                      <td style="width: 20%">12/02/2023</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left" style="width: 80%">
+                        <strong>Date d'expiration Contrat:</strong>
+                      </td>
+                      <td style="width: 20%">12/04/2024</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left" style="width: 80%">
+                        <strong>N° Licence:</strong>
+                      </td>
+                      <td style="width: 20%">232 343 453</td>
+                    </tr>
+                  </table>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <br /><br />
+              <table style="width: 100%">
+                <tr>
+                  <td style="width: 60%"><strong>Match Joué:</strong></td>
+                  <td style="width: 40%">10</td>
+                </tr>
+                <tr>
+                  <td style="width: 60%"><strong>But Marqué :</strong></td>
+                  <td style="width: 40%">04</td>
+                </tr>
+                <tr>
+                  <td style="width: 60%"><strong>Cartons Jaunes :</strong></td>
+                  <td style="width: 40%">02</td>
+                </tr>
+                <tr>
+                  <td style="width: 60%">
+                    <strong><strong>Cartons Rouge :</strong></strong>
+                  </td>
+                  <td style="width: 40%">01</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-lg-2">
+              <small> 24h</small>
+              <h2 class="no-margins">206 480</h2>
+              <div id="sparkline1"></div>
+            </div>
+          </div>
+
           <div class="row m-t-sm">
             <div class="col-lg-12">
               <div class="panel blank-panel">
@@ -10,16 +84,19 @@
                   <div class="panel-options">
                     <ul class="nav nav-tabs">
                       <li class="active">
-                        <a href="#tab-1" data-toggle="tab">Info Joueur</a>
+                        <a href="#tab-2" data-toggle="tab">Info</a>
                       </li>
                       <li class="">
-                        <a href="#tab-2" data-toggle="tab">Médical</a>
+                        <a href="#Medical" data-toggle="tab">Médical</a>
                       </li>
                       <li class="">
-                        <a href="#tab-3" data-toggle="tab">Sanctions</a>
+                        <a href="#Sanctions" data-toggle="tab">Sanctions</a>
                       </li>
                       <li class="">
-                        <a href="#tab-4" data-toggle="tab">Belssures</a>
+                        <a href="#Blessures" data-toggle="tab">Blessures</a>
+                      </li>
+                      <li class="">
+                        <a href="#Statstiques" data-toggle="tab">Statstiques</a>
                       </li>
                     </ul>
                   </div>
@@ -27,227 +104,440 @@
 
                 <div class="panel-body">
                   <div class="tab-content">
-                    <div class="tab-pane active" id="tab-1">
-                      <app-info-joueur></app-info-joueur>
-                    </div>
-                    <div class="tab-pane" id="tab-2">
-                      <form class="form-horizontal">
-                        <div class="form-row">
-                          <div class="col-md-6">
-                            <label>Taille</label>
-
-                            <input
-                              type="text"
-                              placeholder="Taille"
-                              class="form-control"
-                            />
-                          </div>
-                          <div class="col-md-6">
-                            <label>Poids</label>
-
-                            <input
-                              type="text"
-                              placeholder="Poids"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="form-row">
-                          <div class="col-md-6">
-                            <label>Masse Grasse</label>
-
-                            <input
-                              type="text"
-                              placeholder="Masse Grasse"
-                              class="form-control"
-                            />
-                          </div>
-                          <div class="col-md-6">
-                            <label>Masse Maigre</label>
-
-                            <input
-                              type="text"
-                              placeholder="Masse Maigre"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="form-row">
-                          <div class="col-md-6">
-                            <label>BPM Max</label>
-
-                            <input
-                              type="text"
-                              placeholder="BPM Max"
-                              class="form-control"
-                            />
-                          </div>
-
-                          <div class="col-md-6">
-                            <label>VO2 Max </label>
-
-                            <input
-                              type="text"
-                              placeholder="VO2 Max
-"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-                        <div class="form-row">
-                          <div class="col-md-6">
-                            <label>Vitesse Moy</label>
-
-                            <input
-                              type="text"
-                              placeholder="Vitesse Moy"
-                              class="form-control"
-                            />
-                          </div>
-                          <div class="col-md-6">
-                            <label>Vitesse Max</label>
-
-                            <input
-                              type="text"
-                              placeholder="Vitesse Max"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="row" class="text-right">
-                          <div class="modal-footer">
-                            <button
-                              type="button"
-                              class="btn btn-white"
-                              data-dismiss="modal"
-                            >
-                              Annuler
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ajouter
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="tab-pane active" id="tab-3">
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th style="width: 10%">Catégorie</th>
-                            <th style="width: 10%">Cause</th>
-                            <th style="width: 10%">Date Début</th>
-                            <th style="width: 10%">Date Fin</th>
-                          </tr>
-                        </thead>
+                    <div class="tab-pane active" id="tab-2">
+                      <table class="table m-b-xs">
                         <tbody>
                           <tr>
-                            <td>PV League</td>
-                            <td></td>
-                            <td>10/10/2023</td>
-                            <td>10/11/2023</td>
+                            <td><strong>Sexe :</strong></td>
+                            <td>Homme</td>
                           </tr>
                           <tr>
-                            <td>PV League</td>
-                            <td></td>
-                            <td>10/10/2023</td>
-                            <td>10/11/2023</td>
-                          </tr>
-                          <tr>
-                            <td>PV League</td>
-                            <td></td>
-                            <td>10/10/2023</td>
-                            <td>10/11/2023</td>
-                          </tr>
-                          <tr>
-                            <td>PV League</td>
-                            <td></td>
-                            <td>10/10/2023</td>
-                            <td>10/11/2023</td>
-                          </tr>
-                          <tr>
-                            <td>PV League</td>
-                            <td></td>
-                            <td>10/10/2023</td>
-                            <td>10/11/2023</td>
+                            <td><strong>Nationalité :</strong></td>
+                            <td>Tunisienne</td>
                           </tr>
                           <tr>
                             <td>
-                              <tr>
-                                <td>PV League</td>
-                                <td></td>
-                                <td>10/10/2023</td>
-                                <td>10/11/2023</td>
-                              </tr>
+                              <strong>Date de Naissance :</strong>
                             </td>
-                            <td></td>
-                            <td>10/10/2023</td>
-                            <td>10/11/2023</td>
+                            <td>12/03/1999</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Lieu de Naissance :</strong></td>
+                            <td>Tunis</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Téléphone 1 :</strong></td>
+                            <td>22 343 543</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Téléphone 2 :</strong></td>
+                            <td>29 897 435</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Email :</strong></td>
+                            <td>Moez@gmail.com</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Adresse :</strong></td>
+                            <td>Tunis</td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
-                    <div class="tab-pane active" id="tab-4">
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th style="width: 10%">Catégorie</th>
-                            <th style="width: 10%">Note</th>
-                            <th style="width: 10%">Date Début</th>
-                            <th style="width: 10%">Date Fin</th>
-                          </tr>
-                        </thead>
+                    <div class="tab-pane" id="Statstiques">
+                      <div class="row">
+                        <div class="col-sm-3 pull-right">
+                          <div class="input-group">
+                            <input
+                              type="text"
+                              placeholder="Rechercher"
+                              class="input-sm form-control"
+                            />
+                            <span class="input-group-btn">
+                              <button
+                                type="button"
+                                class="btn btn-sm btn-primary"
+                              >
+                                <i class="fa fa-search"></i>
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th style="width: 10%">Matchs</th>
+                              <th style="width: 10%">Compétitions</th>
+
+                              <th style="width: 10%">Statut</th>
+                              <th style="width: 10%">Minute d'entrée</th>
+                              <th style="width: 10%">Minute de Sortie</th>
+                              <th style="width: 10%">Echanger Par</th>
+                              <th style="width: 10%">1ére Carton Jaune</th>
+                              <th style="width: 10%">2éme Carton Jaune</th>
+                              <th style="width: 10%">Carton Rouge</th>
+                              <th style="width: 10%">But</th>
+                              <th style="width: 10%">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Match 1</td>
+                              <td>Compétition 1</td>
+
+                              <td>Titulaire</td>
+                              <td>1</td>
+                              <td>90</td>
+                              <td>-</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#ModifierSanction"
+                                        >Modifier</a
+                                      >
+                                    </li>
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Match 2</td>
+                              <td>Compétition 2</td>
+
+                              <td>Titulaire</td>
+                              <td>1</td>
+                              <td>90</td>
+                              <td>-</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#ModifierSanction"
+                                        >Modifier</a
+                                      >
+                                    </li>
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Match 3</td>
+                              <td>Compétition 4</td>
+
+                              <td>Remplaçant</td>
+                              <td>56</td>
+                              <td>90</td>
+                              <td>Oussema Cheti</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#ModifierSanction"
+                                        >Modifier</a
+                                      >
+                                    </li>
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div
+                          class="modal inmodal"
+                          id="ModifierSanction"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content animated bounceInRight">
+                              <div class="modal-header">
+                                <h6 class="modal-title">
+                                  Modifier Detaile Joueurs Convoqués
+                                </h6>
+                                <button
+                                  type="button"
+                                  class="close"
+                                  data-dismiss="modal"
+                                >
+                                  <span aria-hidden="true">&times;</span
+                                  ><span class="sr-only">Fermer</span>
+                                </button>
+                              </div>
+                              <br /><br />
+
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                      <label>Joueurs </label>
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder=""
+                                        required
+                                      />
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                      <label>Statut </label>
+                                      <select class="form-control">
+                                        <option>Titulaire</option>
+                                        <option>Remplaçant</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                      <label>Echanger Par </label>
+                                      <select class="form-control">
+                                        <option>Joueur 1</option>
+                                        <option>Joueur 2</option>
+                                        <option>Joueur 3</option>
+                                        <option>Joueur 4</option>
+                                        <option>Joueur 5</option>
+                                        <option>Joueur 6</option>
+                                        <option>Joueur 7</option>
+                                        <option>Joueur 8</option>
+                                        <option>Joueur 9</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                      <label>Minute d'entrée </label>
+                                      <input
+                                        type="time"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder=""
+                                      />
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                      <label>Minute de Sortie </label>
+                                      <input
+                                        type="time"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder=""
+                                      />
+                                    </div>
+                                  </div>
+
+                                  <div class="row" class="text-right">
+                                    <div class="modal-footer">
+                                      <button
+                                        type="button"
+                                        class="btn btn-white btn-xs dropdown-toggle"
+                                        data-dismiss="modal"
+                                      >
+                                        Annuler
+                                      </button>
+                                      <button
+                                        type="button"
+                                        class="btn btn-primary btn-xs dropdown-toggle"
+                                      >
+                                        Ajouter
+                                      </button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                              <br /><br />
+                            </div>
+                          </div>
+                          <br /><br />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="Blessures"></div>
+                    <div class="tab-pane" id="Sanctions"></div>
+                    <div class="tab-pane" id="Medical">
+                      <table class="table m-b-xs">
                         <tbody>
                           <tr>
-                            <td>PV League</td>
-                            <td></td>
-                            <td>10/10/2023</td>
-                            <td>10/11/2023</td>
-                          </tr>
-                          <tr>
-                            <td>PV League</td>
-                            <td></td>
-                            <td>10/10/2023</td>
-                            <td>10/11/2023</td>
-                          </tr>
-                          <tr>
-                            <td>PV League</td>
-                            <td></td>
-                            <td>10/10/2023</td>
-                            <td>10/11/2023</td>
-                          </tr>
-                          <tr>
-                            <td>PV League</td>
-                            <td></td>
-                            <td>10/10/2023</td>
-                            <td>10/11/2023</td>
-                          </tr>
-                          <tr>
-                            <td>PV League</td>
-                            <td></td>
-                            <td>10/10/2023</td>
-                            <td>10/11/2023</td>
+                            <td>
+                              <strong>Taille (cm) :</strong>
+                            </td>
+                            <td>174</td>
+                            <td>17/05/2018</td>
                           </tr>
                           <tr>
                             <td>
-                              <tr>
-                                <td>PV League</td>
-                                <td></td>
-                                <td>10/10/2023</td>
-                                <td>10/11/2023</td>
-                              </tr>
+                              <strong>Poids (kg) :</strong>
                             </td>
+                            <td>72(Min=71.0,Max=73.0)</td>
+                            <td>12/03/2018</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <strong>Masse Grasse (%) :</strong>
+                            </td>
+                            <td>11,9</td>
+                            <td>17/05/2018</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <strong>Latéralité (Main) :</strong>
+                            </td>
+                            <td>Gaucher</td>
                             <td></td>
-                            <td>10/10/2023</td>
-                            <td>10/11/2023</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <strong>Latéralité (Pied) :</strong>
+                            </td>
+                            <td>Gaucher</td>
+                            <td></td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
+                    <div class="tab-pane" id="Medical"></div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="wrapper wrapper-content project-manager">
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <div class="overflow-hidden">
+            <div container="body">
+              <input
+                data-toggle="modal"
+                data-target="#myModalResultat"
+                class="btn btn-primary btn-sm"
+                value="Modifier"
+              />
+            </div>
+            <div
+              class="modal inmodal"
+              id="myModalResultat"
+              tabindex="-1"
+              role="dialog"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content animated bounceInRight">
+                  <div class="modal-header">
+                    <h6 class="modal-title">Ajouter Resultat</h6>
+                    <button type="button" class="close" data-dismiss="modal">
+                      <span aria-hidden="true">&times;</span
+                      ><span class="sr-only">Fermer</span>
+                    </button>
+                  </div>
+                  <br /><br />
+
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                          <dl class="dl-horizontal">
+                            <dt>Score :</dt>
+                            <dd class="project-people">
+                              <a href=""
+                                ><img
+                                  alt="image"
+                                  class="img-circle"
+                                  src="assets/img/EST.png"
+                              /></a>
+                              &nbsp; &nbsp; 03 &nbsp;- &nbsp; &nbsp;00 &nbsp;
+                              &nbsp;
+                              <a href=""
+                                ><img
+                                  alt="image"
+                                  class="img-circle"
+                                  src="assets/img/logostade.png"
+                              /></a>
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                          <dl class="dl-horizontal">
+                            <dt>Statut:</dt>
+                            <dd>
+                              <select class="form-control">
+                                <option>Joué</option>
+                                <option>A Jouer</option>
+
+                                <option>Reporter</option>
+                              </select>
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+
+                      <div class="row" class="text-right">
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-white btn-xs dropdown-toggle"
+                            data-dismiss="modal"
+                          >
+                            Annuler
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-xs dropdown-toggle"
+                          >
+                            Ajouter
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <br /><br />
                 </div>
               </div>
             </div>

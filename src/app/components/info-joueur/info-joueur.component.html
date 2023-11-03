@@ -1,472 +1,1346 @@
-<div class="wrapper wrapper-content animated fadeInRight">
-  <div class="row m-b-lg m-t-lg">
-    <div class="col-md-6">
-      <div class="profile-image">
-        <img
-          src="assets/img/EST.png"
-          class="img-circle circle-border m-b-md"
-          alt="profile"
-        />
-      </div>
-      <div class="profile-info">
-        <div class="">
-          <div>
-            <h2 class="no-margins">Alex Smith</h2>
-            <h4>Founder of Groupeq</h4>
-            <small>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form Ipsum
-              available.
-            </small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <table class="table small m-b-xs">
-        <tbody>
-          <tr>
-            <td><strong>142</strong> Projects</td>
-            <td><strong>22</strong> Followers</td>
-          </tr>
-          <tr>
-            <td><strong>61</strong> Comments</td>
-            <td><strong>54</strong> Articles</td>
-          </tr>
-          <tr>
-            <td><strong>154</strong> Tags</td>
-            <td><strong>32</strong> Friends</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="col-md-3">
-      <small>Sales in last 24h</small>
-      <h2 class="no-margins">206 480</h2>
-      <div id="sparkline1"></div>
-    </div>
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-sm-4">
+    <h2>Details Joueur</h2>
   </div>
-  <div class="row">
+</div>
+<div class="row">
+  <div class="col-lg-9">
+    <div class="wrapper wrapper-content animated fadeInUp">
+      <div class="ibox">
+        <div class="ibox-content">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="col-lg-12">
+                <div class="contact-box center-version">
+                  <a href="profile.html">
+                    <img
+                      alt="image"
+                      class="img-circle"
+                      src="assets/img/hassen.jpeg"
+                    />
+
+                    <h3 class="m-b-xs">
+                      <strong>John Smith</strong
+                      ><span class="product-Number">30 </span>
+                    </h3>
+
+                    <div class="font-bold">Milieu Droit</div>
+                    <address class="m-t-md">
+                      Passeport: 01/01/2026
+
+                      <br />
+                      Contrat: 01/01/2026<br />
+                    </address>
+                  </a>
+                  <div class="contact-box-footer">
+                    <div class="m-t-xs btn-group">
+                      <a routerLink="DetaileJoueur" class="btn btn-xs btn-white"
+                        ><i class="fa fa-phone"></i> Voir Détails
+                      </a>
+                      <a class="btn btn-xs btn-white"
+                        ><i class="fa fa-envelope"></i> Supprimer</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row m-t-sm">
+              <div class="col-lg-12">
+                <div class="panel blank-panel">
+                  <div class="panel-heading">
+                    <div class="panel-options">
+                      <ul class="nav nav-tabs">
+                        <li class="active">
+                          <a href="#tab-2" data-toggle="tab">Convocation</a>
+                        </li>
+                        <li class="">
+                          <a href="#Arbitre" data-toggle="tab">Arbitre</a>
+                        </li>
+                        <li class="">
+                          <a href="#Recap" data-toggle="tab">Historique</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="panel-body">
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="tab-2">
+                        <div class="row">
+                          <div class="col-sm-3 pull-right">
+                            <div class="input-group">
+                              <input
+                                type="text"
+                                placeholder="Rechercher"
+                                class="input-sm form-control"
+                              />
+                              <span class="input-group-btn">
+                                <button
+                                  type="button"
+                                  class="btn btn-sm btn-primary"
+                                >
+                                  <i class="fa fa-search"></i>
+                                </button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="table-responsive">
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th style="width: 10%">Joueurs</th>
+                                <th style="width: 10%">Statut</th>
+                                <th style="width: 10%">Minute d'entrée</th>
+                                <th style="width: 10%">Minute de Sortie</th>
+                                <th style="width: 10%">Echanger Par</th>
+                                <th style="width: 10%">1ére Carton Jaune</th>
+                                <th style="width: 10%">2éme Carton Jaune</th>
+                                <th style="width: 10%">Carton Rouge</th>
+                                <th style="width: 10%">But</th>
+                                <th style="width: 10%">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Aymen dridi</td>
+                                <td>Titulaire</td>
+                                <td>1</td>
+                                <td>90</td>
+                                <td>-</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#ModifierSanction"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Aymen dridi</td>
+                                <td>Titulaire</td>
+                                <td>1</td>
+                                <td>90</td>
+                                <td>-</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#ModifierSanction"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Aymen dridi</td>
+                                <td>Remplaçant</td>
+                                <td>56</td>
+                                <td>90</td>
+                                <td>Oussema Cheti</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#ModifierSanction"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div
+                            class="modal inmodal"
+                            id="ModifierSanction"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content animated bounceInRight">
+                                <div class="modal-header">
+                                  <h6 class="modal-title">
+                                    Modifier Detaile Joueurs Convoqués
+                                  </h6>
+                                  <button
+                                    type="button"
+                                    class="close"
+                                    data-dismiss="modal"
+                                  >
+                                    <span aria-hidden="true">&times;</span
+                                    ><span class="sr-only">Fermer</span>
+                                  </button>
+                                </div>
+                                <br /><br />
+
+                                <div class="modal-body">
+                                  <form>
+                                    <div class="form-row">
+                                      <div class="col-md-4 mb-3">
+                                        <label>Joueurs </label>
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="validationDefault04"
+                                          placeholder=""
+                                          required
+                                        />
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                        <label>Statut </label>
+                                        <select class="form-control">
+                                          <option>Titulaire</option>
+                                          <option>Remplaçant</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                        <label>Echanger Par </label>
+                                        <select class="form-control">
+                                          <option>Joueur 1</option>
+                                          <option>Joueur 2</option>
+                                          <option>Joueur 3</option>
+                                          <option>Joueur 4</option>
+                                          <option>Joueur 5</option>
+                                          <option>Joueur 6</option>
+                                          <option>Joueur 7</option>
+                                          <option>Joueur 8</option>
+                                          <option>Joueur 9</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="form-row">
+                                      <div class="col-md-6 mb-3">
+                                        <label>Minute d'entrée </label>
+                                        <input
+                                          type="time"
+                                          class="form-control"
+                                          id="validationDefault04"
+                                          placeholder=""
+                                        />
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                        <label>Minute de Sortie </label>
+                                        <input
+                                          type="time"
+                                          class="form-control"
+                                          id="validationDefault04"
+                                          placeholder=""
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="row" class="text-right">
+                                      <div class="modal-footer">
+                                        <button
+                                          type="button"
+                                          class="btn btn-white btn-xs dropdown-toggle"
+                                          data-dismiss="modal"
+                                        >
+                                          Annuler
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-primary btn-xs dropdown-toggle"
+                                        >
+                                          Ajouter
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                                <br /><br />
+                              </div>
+                            </div>
+                            <br /><br />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="Arbitre">
+                        <div class="row">
+                          <div class="col-sm-3 pull-right">
+                            <div class="input-group">
+                              <input
+                                type="text"
+                                placeholder="Rechercher"
+                                class="input-sm form-control"
+                              />
+                              <span class="input-group-btn">
+                                <button
+                                  type="button"
+                                  class="btn btn-sm btn-primary"
+                                >
+                                  <i class="fa fa-search"></i>
+                                </button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="table-responsive">
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th style="width: 10%">Nom & Prénom</th>
+                                <th style="width: 10%">Contact</th>
+
+                                <th style="width: 10%">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Aymen dridi</td>
+                                <td>98 987 453</td>
+
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#ModifierArbitre"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Aymen dridi</td>
+                                <td>98 987 453</td>
+
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#ModifierArbitre"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Aymen dridi</td>
+                                <td>98 987 453</td>
+
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#ModifierArbitre"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Aymen dridi</td>
+                                <td>98 987 453</td>
+
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#ModifierArbitre"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Aymen dridi</td>
+                                <td>98 987 453</td>
+
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#ModifierArbitre"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Aymen dridi</td>
+                                <td>98 987 453</td>
+
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#ModifierArbitre"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div
+                            class="modal inmodal"
+                            id="ModifierArbitre"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content animated bounceInRight">
+                                <div class="modal-header">
+                                  <h6 class="modal-title">Modifier Arbitre</h6>
+                                  <button
+                                    type="button"
+                                    class="close"
+                                    data-dismiss="modal"
+                                  >
+                                    <span aria-hidden="true">&times;</span
+                                    ><span class="sr-only">Fermer</span>
+                                  </button>
+                                </div>
+                                <br /><br />
+
+                                <div class="modal-body">
+                                  <form>
+                                    <div class="form-row">
+                                      <div class="col-md-6 mb-3">
+                                        <label>Nom </label>
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="validationDefault04"
+                                          placeholder=""
+                                          required
+                                        />
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                        <label>Prénom</label>
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="validationDefault04"
+                                          placeholder=""
+                                          required
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="form-row">
+                                      <div class="col-md-12 mb-3">
+                                        <label f> Contact</label>
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="validationDefault04"
+                                          placeholder=""
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="row" class="text-right">
+                                      <div class="modal-footer">
+                                        <button
+                                          type="button"
+                                          class="btn btn-white btn-xs dropdown-toggle"
+                                          data-dismiss="modal"
+                                        >
+                                          Annuler
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-primary btn-xs dropdown-toggle"
+                                        >
+                                          Ajouter
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                                <br /><br />
+                              </div>
+                            </div>
+                            <br /><br />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="Recap">
+                        <div class="row">
+                          <div class="col-sm-3 pull-right">
+                            <div class="input-group">
+                              <input
+                                type="text"
+                                placeholder="Rechercher"
+                                class="input-sm form-control"
+                              />
+                              <span class="input-group-btn">
+                                <button
+                                  type="button"
+                                  class="btn btn-sm btn-primary"
+                                >
+                                  <i class="fa fa-search"></i>
+                                </button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="table-responsive">
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th style="width: 10%">Date</th>
+                                <th style="width: 10%">Complexe</th>
+                                <th style="width: 10%">Score</th>
+                                <th style="width: 40%">Statut</th>
+
+                                <th style="width: 10%">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="text-right">12/03/2022</td>
+                                <td>Stade Radess</td>
+                                <td>02 - 00</td>
+                                <td>Joué</td>
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#MofifierDetaile"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-right">12/03/2022</td>
+                                <td>Stade Radess</td>
+                                <td>02 - 00</td>
+                                <td>Joué</td>
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#MofifierDetaile"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-right">12/03/2022</td>
+                                <td>Stade Radess</td>
+                                <td>02 - 00</td>
+                                <td>Joué</td>
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#MofifierDetaile"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-right">12/03/2022</td>
+                                <td>Stade Radess</td>
+                                <td>02 - 00</td>
+                                <td>Joué</td>
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#MofifierDetaile"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-right">12/03/2022</td>
+                                <td>Stade Radess</td>
+                                <td>02 - 00</td>
+                                <td>Joué</td>
+                                <td class="overflow-hidden">
+                                  <div class="btn-group">
+                                    <button
+                                      data-toggle="dropdown"
+                                      class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                    >
+                                      Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          data-toggle="modal"
+                                          data-target="#MofifierDetaile"
+                                          >Modifier</a
+                                        >
+                                      </li>
+                                      <li><a href="#">Supprimer</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div
+                            class="modal inmodal"
+                            id="MofifierDetaile"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content animated bounceInRight">
+                                <div class="modal-header">
+                                  <h6 class="modal-title">Modifier Detaile</h6>
+                                  <button
+                                    type="button"
+                                    class="close"
+                                    data-dismiss="modal"
+                                  >
+                                    <span aria-hidden="true">&times;</span
+                                    ><span class="sr-only">Fermer</span>
+                                  </button>
+                                </div>
+
+                                <div class="modal-body">
+                                  <form>
+                                    <div class="form-row">
+                                      <div class="col-md-4 mb-3">
+                                        <label>Date </label>
+                                        <input
+                                          type="date"
+                                          class="form-control"
+                                          id="validationDefault04"
+                                          placeholder=""
+                                          required
+                                        />
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                        <label>Complexe </label>
+                                        <input
+                                          type="date"
+                                          class="form-control"
+                                          id="validationDefault04"
+                                          placeholder=""
+                                          required
+                                        />
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                        <label>Score</label>
+                                        <div class="input-group">
+                                          <div class="col-md-2">
+                                            <input
+                                              type="number"
+                                              class="form-control"
+                                              id="validationDefault04"
+                                              placeholder=""
+                                              required
+                                            />
+                                          </div>
+                                          <div class="col-md-2">
+                                            <input
+                                              type="number"
+                                              class="form-control"
+                                              id="validationDefault04"
+                                              placeholder=""
+                                              required
+                                            />
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="form-row">
+                                      <div class="col-md-12 mb-3">
+                                        <label>Statut </label>
+                                        <select class="form-control">
+                                          <option>Joué</option>
+                                          <option>à Jouer</option>
+                                          <option>Reporter</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="row" class="text-right">
+                                      <div class="modal-footer">
+                                        <button
+                                          type="button"
+                                          class="btn btn-white btn-xs dropdown-toggle"
+                                          data-dismiss="modal"
+                                        >
+                                          Annuler
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-primary btn-xs dropdown-toggle"
+                                        >
+                                          Ajouter
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                            <br /><br />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="col-lg-3">
-      <div class="ibox">
-        <div class="ibox-content">
-          <h3>About Alex Smith</h3>
-
-          <p class="small">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't.
-            <br />
-            <br />
-            If you are going to use a passage of Lorem Ipsum, you need to be
-            sure there isn't anything embarrassing
-          </p>
-
-          <p class="small font-bold">
-            <span><i class="fa fa-circle text-navy"></i> Online status</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="ibox">
-        <div class="ibox-content">
-          <h3>Followers and friends</h3>
-          <p class="small">
-            If you are going to use a passage of Lorem Ipsum, you need to be
-            sure there isn't anything embarrassing
-          </p>
-          <div class="user-friends">
-            <a href=""
-              ><img alt="image" class="img-circle" src="assets/img/hassen.jpeg"
-            /></a>
-            <a href=""
-              ><img alt="image" class="img-circle" src="assets/img/a1.jpg"
-            /></a>
-            <a href=""
-              ><img alt="image" class="img-circle" src="assets/img/a2.jpg"
-            /></a>
-            <a href=""
-              ><img alt="image" class="img-circle" src="assets/img/a4.jpg"
-            /></a>
-            <a href=""
-              ><img alt="image" class="img-circle" src="assets/img/a5.jpg"
-            /></a>
-            <a href=""
-              ><img alt="image" class="img-circle" src="assets/img/a6.jpg"
-            /></a>
-            <a href=""
-              ><img alt="image" class="img-circle" src="assets/img/a7.jpg"
-            /></a>
-            <a href=""
-              ><img alt="image" class="img-circle" src="assets/img/a8.jpg"
-            /></a>
-            <a href=""
-              ><img alt="image" class="img-circle" src="assets/img/a2.jpg"
-            /></a>
-            <a href=""
-              ><img alt="image" class="img-circle" src="assets/img/a1.jpg"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="ibox">
-        <div class="ibox-content">
-          <h3>Personal friends</h3>
-          <ul class="list-unstyled file-list">
-            <li>
-              <a href=""><i class="fa fa-file"></i> Project_document.docx</a>
-            </li>
-            <li>
-              <a href=""
-                ><i class="fa fa-file-picture-o"></i> Logo_zender_company.jpg</a
+      <div class="wrapper wrapper-content project-manager">
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <div class="overflow-hidden">
+              <div container="body">
+                <input
+                  data-toggle="modal"
+                  data-target="#myModalResultat"
+                  class="btn btn-primary btn-sm"
+                  value="Résultat"
+                />
+              </div>
+              <div
+                class="modal inmodal"
+                id="myModalResultat"
+                tabindex="-1"
+                role="dialog"
+                aria-hidden="true"
               >
-            </li>
-            <li>
-              <a href=""
-                ><i class="fa fa-stack-exchange"></i> Email_from_Alex.mln</a
-              >
-            </li>
-            <li>
-              <a href=""><i class="fa fa-file"></i> Contract_20_11_2014.docx</a>
-            </li>
-            <li>
-              <a href=""
-                ><i class="fa fa-file-powerpoint-o"></i> Presentation.pptx</a
-              >
-            </li>
-            <li>
-              <a href=""><i class="fa fa-file"></i> 10_08_2015.docx</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+                <div class="modal-dialog">
+                  <div class="modal-content animated bounceInRight">
+                    <div class="modal-header">
+                      <h6 class="modal-title">Ajouter Resultat</h6>
+                      <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span
+                        ><span class="sr-only">Fermer</span>
+                      </button>
+                    </div>
+                    <br /><br />
 
-      <div class="ibox">
-        <div class="ibox-content">
-          <h3>Private message</h3>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-row">
+                          <div class="col-md-12 mb-3">
+                            <dl class="dl-horizontal">
+                              <dt>Score :</dt>
+                              <dd class="project-people">
+                                <a href=""
+                                  ><img
+                                    alt="image"
+                                    class="img-circle"
+                                    src="assets/img/EST.png"
+                                /></a>
+                                &nbsp; &nbsp; 03 &nbsp;- &nbsp; &nbsp;00 &nbsp;
+                                &nbsp;
+                                <a href=""
+                                  ><img
+                                    alt="image"
+                                    class="img-circle"
+                                    src="assets/img/logostade.png"
+                                /></a>
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-12 mb-3">
+                            <dl class="dl-horizontal">
+                              <dt>Statut:</dt>
+                              <dd>
+                                <select class="form-control">
+                                  <option>Joué</option>
+                                  <option>A Jouer</option>
 
-          <p class="small">Send private message to Alex Smith</p>
+                                  <option>Reporter</option>
+                                </select>
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
 
-          <div class="form-group">
-            <label>Subject</label>
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Message subject"
-            />
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea
-              class="form-control"
-              placeholder="Your message"
-              rows="3"
-            ></textarea>
-          </div>
-          <button class="btn btn-primary btn-block">Send</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-5">
-      <div class="social-feed-box">
-        <div class="pull-right social-action dropdown">
-          <button data-toggle="dropdown" class="dropdown-toggle btn-white">
-            <i class="fa fa-angle-down"></i>
-          </button>
-          <ul class="dropdown-menu m-t-xs">
-            <li><a href="#">Config</a></li>
-          </ul>
-        </div>
-        <div class="social-avatar">
-          <a href="" class="pull-left">
-            <img alt="image" src="assets/img/a1.jpg" />
-          </a>
-          <div class="media-body">
-            <a href="#"> Andrew Williams </a>
-            <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
-          </div>
-        </div>
-        <div class="social-body">
-          <p>
-            Many desktop publishing packages and web page editors now use Lorem
-            Ipsum as their default model text, and a search for 'lorem ipsum'
-            will uncover many web sites still in their infancy. Packages and web
-            page editors now use Lorem Ipsum as their default model text.
-          </p>
-
-          <div class="btn-group">
-            <button class="btn btn-white btn-xs">
-              <i class="fa fa-thumbs-up"></i> Like this!
-            </button>
-            <button class="btn btn-white btn-xs">
-              <i class="fa fa-comments"></i> Comment
-            </button>
-            <button class="btn btn-white btn-xs">
-              <i class="fa fa-share"></i> Share
-            </button>
-          </div>
-        </div>
-        <div class="social-footer">
-          <div class="social-comment">
-            <a href="" class="pull-left">
-              <img alt="image" src="assets/img/a1.jpg" />
-            </a>
-            <div class="media-body">
-              <a href="#"> Andrew Williams </a>
-              Internet tend to repeat predefined chunks as necessary, making
-              this the first true generator on the Internet. It uses a
-              dictionary of over 200 Latin words.
-              <br />
-              <a href="#" class="small"
-                ><i class="fa fa-thumbs-up"></i> 26 Like this!</a
-              >
-              -
-              <small class="text-muted">12.06.2014</small>
-            </div>
-          </div>
-
-          <div class="social-comment">
-            <a href="" class="pull-left">
-              <img alt="image" src="assets/img/a2.jpg" />
-            </a>
-            <div class="media-body">
-              <a href="#"> Andrew Williams </a>
-              Making this the first true generator on the Internet. It uses a
-              dictionary of.
-              <br />
-              <a href="#" class="small"
-                ><i class="fa fa-thumbs-up"></i> 11 Like this!</a
-              >
-              -
-              <small class="text-muted">10.07.2014</small>
-            </div>
-          </div>
-
-          <div class="social-comment">
-            <a href="" class="pull-left">
-              <img alt="image" src="assets/img/hassen.jpeg" />
-            </a>
-            <div class="media-body">
-              <textarea
-                class="form-control"
-                placeholder="Write comment..."
-              ></textarea>
+                        <div class="row" class="text-right">
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-white btn-xs dropdown-toggle"
+                              data-dismiss="modal"
+                            >
+                              Annuler
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-primary btn-xs dropdown-toggle"
+                            >
+                              Ajouter
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <br /><br />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="social-feed-box">
-        <div class="pull-right social-action dropdown">
-          <button data-toggle="dropdown" class="dropdown-toggle btn-white">
-            <i class="fa fa-angle-down"></i>
-          </button>
-          <ul class="dropdown-menu m-t-xs">
-            <li><a href="#">Config</a></li>
-          </ul>
-        </div>
-        <div class="social-avatar">
-          <a href="" class="pull-left">
-            <img alt="image" src="assets/img/a6.jpg" />
-          </a>
-          <div class="media-body">
-            <a href="#"> Andrew Williams </a>
-            <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
-          </div>
-        </div>
-        <div class="social-body">
-          <p>
-            Many desktop publishing packages and web page editors now use Lorem
-            Ipsum as their default model text, and a search for 'lorem ipsum'
-            will uncover many web sites still in their infancy. Packages and web
-            page editors now use Lorem Ipsum as their default model text.
-          </p>
-          <p>
-            Lorem Ipsum as their default model text, and a search for 'lorem
-            ipsum' will uncover many web sites still in their infancy. Packages
-            and web page editors now use Lorem Ipsum as their default model
-            text.
-          </p>
-          <img src="assets/img/gallery/3.jpg" class="img-responsive" />
-          <div class="btn-group">
-            <button class="btn btn-white btn-xs">
-              <i class="fa fa-thumbs-up"></i> Like this!
-            </button>
-            <button class="btn btn-white btn-xs">
-              <i class="fa fa-comments"></i> Comment
-            </button>
-            <button class="btn btn-white btn-xs">
-              <i class="fa fa-share"></i> Share
-            </button>
-          </div>
-        </div>
-        <div class="social-footer">
-          <div class="social-comment">
-            <a href="" class="pull-left">
-              <img alt="image" src="assets/img/a1.jpg" />
-            </a>
-            <div class="media-body">
-              <a href="#"> Andrew Williams </a>
-              Internet tend to repeat predefined chunks as necessary, making
-              this the first true generator on the Internet. It uses a
-              dictionary of over 200 Latin words.
-              <br />
-              <a href="#" class="small"
-                ><i class="fa fa-thumbs-up"></i> 26 Like this!</a
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <div class="overflow-hidden">
+              <div container="body">
+                <input
+                  data-toggle="modal"
+                  data-target="#myModalConvocation"
+                  class="btn btn-primary btn-sm"
+                  value="Convocation"
+                />
+              </div>
+              <div
+                class="modal inmodal"
+                id="myModalConvocation"
+                tabindex="-1"
+                role="dialog"
+                aria-hidden="true"
               >
-              -
-              <small class="text-muted">12.06.2014</small>
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content animated bounceInRight">
+                    <div class="modal-header">
+                      <h6 class="modal-title">Ajouter Convocation</h6>
+                      <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span
+                        ><span class="sr-only">Fermer</span>
+                      </button>
+                    </div>
+
+                    <div class="modal-body">
+                      <div class="row">
+                        <h4>Joueurs</h4>
+
+                        <div class="col-sm-4 pull-right">
+                          <div class="input-group">
+                            <input
+                              type="text"
+                              placeholder="Rechercher"
+                              class="input-sm form-control"
+                            />
+                            <span class="input-group-btn">
+                              <button
+                                type="button"
+                                class="btn btn-sm btn-primary"
+                              >
+                                <i class="fa fa-search"></i>
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th>Nom & Prénom</th>
+                              <th>N° Maillot</th>
+                              <th>Position</th>
+                              <th>Disponibilité</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Moez Hassen</td>
+                              <td>01</td>
+                              <td>Gardien</td>
+                              <td style="color: rgb(81, 172, 158)">Oui</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Tayeb Meziani</td>
+                              <td>04</td>
+                              <td>Attaquant</td>
+                              <td style="color: rgb(81, 172, 158)">Oui</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Adem Grabb</td>
+                              <td>22</td>
+                              <td>Milieux</td>
+                              <td style="color: rgb(81, 172, 158)">Oui</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Tayeb Meziani</td>
+                              <td>04</td>
+                              <td>Attaquant</td>
+                              <td style="color: rgb(210, 102, 44)">Non</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Tayeb Meziani</td>
+                              <td>04</td>
+                              <td>Attaquant</td>
+                              <td style="color: rgb(81, 172, 158)">Oui</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Tayeb Meziani</td>
+                              <td>04</td>
+                              <td>Attaquant</td>
+                              <td style="color: rgb(81, 172, 158)">Oui</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Tayeb Meziani</td>
+                              <td>04</td>
+                              <td>Attaquant</td>
+                              <td style="color: rgb(81, 172, 158)">Oui</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Tayeb Meziani</td>
+                              <td>04</td>
+                              <td>Attaquant</td>
+                              <td style="color: rgb(81, 172, 158)">Oui</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td colspan="4">
+                                <b>Nombres Joueurs </b>
+                              </td>
+                              <td><b>20</b></td>
+                            </tr>
+                          </tfoot>
+                        </table>
+
+                        <br />
+
+                        <h4>Staff</h4>
+
+                        <div class="col-sm-4 pull-right">
+                          <div class="input-group">
+                            <input
+                              type="text"
+                              placeholder="Rechercher"
+                              class="input-sm form-control"
+                            />
+                            <span class="input-group-btn">
+                              <button
+                                type="button"
+                                class="btn btn-sm btn-primary"
+                              >
+                                <i class="fa fa-search"></i>
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th>Nom & Prénom</th>
+                              <th>Catégorier</th>
+                              <th>Fonction</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Moez Hassen</td>
+                              <td>Staff Technique</td>
+                              <td>Kinesitherapeute</td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Moez Hassen</td>
+                              <td>Staff Médical</td>
+                              <td>Kinesitherapeute</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Moez Hassen</td>
+                              <td>Staff Technique</td>
+                              <td>Kinesitherapeute</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Moez Hassen</td>
+                              <td>Staff Technique</td>
+                              <td>Kinesitherapeute</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Moez Hassen</td>
+                              <td>Staff Médical</td>
+                              <td>Kinesitherapeute</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Moez Hassen</td>
+                              <td>Staff Médical</td>
+                              <td>Kinesitherapeute</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Moez Hassen</td>
+                              <td>Staff Médical</td>
+                              <td>Kinesitherapeute</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Moez Hassen</td>
+                              <td>Staff Médical</td>
+                              <td>Kinesitherapeute</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  checked
+                                  class="i-checks"
+                                  name="input[]"
+                                />
+                              </td>
+                              <td>Moez Hassen</td>
+                              <td>Staff Médical</td>
+                              <td>Kinesitherapeute</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td colspan="3"><b>Nombres Staff </b></td>
+                              <td><b>7</b></td>
+                            </tr>
+                          </tfoot>
+                        </table>
+
+                        <div class="row" class="text-right">
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-primary btn-xs dropdown-toggle"
+                            >
+                              Imprimer
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-primary btn-xs dropdown-toggle"
+                            >
+                              Envoyer
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-primary btn-xs dropdown-toggle"
+                            >
+                              Valider
+                            </button>
+                            &nbsp; &nbsp;
+                            <button
+                              type="button"
+                              class="btn btn-white btn-xs dropdown-toggle"
+                              data-dismiss="modal"
+                            >
+                              Annuler
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="social-comment">
-            <a href="" class="pull-left">
-              <img alt="image" src="assets/img/a2.jpg" />
-            </a>
-            <div class="media-body">
-              <a href="#"> Andrew Williams </a>
-              Making this the first true generator on the Internet. It uses a
-              dictionary of.
-              <br />
-              <a href="#" class="small"
-                ><i class="fa fa-thumbs-up"></i> 11 Like this!</a
-              >
-              -
-              <small class="text-muted">10.07.2014</small>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <div class="overflow-hidden">
+              <div container="body">
+                <input
+                  routerLink="FuilleMatch"
+                  class="btn btn-primary btn-sm"
+                  value="Fuille de Match"
+                />
+              </div>
             </div>
-          </div>
-
-          <div class="social-comment">
-            <a href="" class="pull-left">
-              <img alt="image" src="assets/img/a8.jpg" />
-            </a>
-            <div class="media-body">
-              <a href="#"> Andrew Williams </a>
-              Making this the first true generator on the Internet. It uses a
-              dictionary of.
-              <br />
-              <a href="#" class="small"
-                ><i class="fa fa-thumbs-up"></i> 11 Like this!</a
-              >
-              -
-              <small class="text-muted">10.07.2014</small>
-            </div>
-          </div>
-
-          <div class="social-comment">
-            <a href="" class="pull-left">
-              <img alt="image" src="assets/img/hassen.jpeg" />
-            </a>
-            <div class="media-body">
-              <textarea
-                class="form-control"
-                placeholder="Write comment..."
-              ></textarea>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 m-b-lg">
-      <div
-        id="vertical-timeline"
-        class="vertical-container light-timeline no-margins"
-      >
-        <div class="vertical-timeline-block">
-          <div class="vertical-timeline-icon navy-bg">
-            <i class="fa fa-briefcase"></i>
-          </div>
-
-          <div class="vertical-timeline-content">
-            <h2>Meeting</h2>
-            <p>
-              Conference on the sales results for the previous year. Monica
-              please examine sales trends in marketing and products. Below
-              please find the current status of the sale.
-            </p>
-            <a href="#" class="btn btn-sm btn-primary"> More info</a>
-            <span class="vertical-date">
-              Today <br />
-              <small>Dec 24</small>
-            </span>
-          </div>
-        </div>
-
-        <div class="vertical-timeline-block">
-          <div class="vertical-timeline-icon blue-bg">
-            <i class="fa fa-file-text"></i>
-          </div>
-
-          <div class="vertical-timeline-content">
-            <h2>Send documents to Mike</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since.
-            </p>
-            <a href="#" class="btn btn-sm btn-success"> Download document </a>
-            <span class="vertical-date">
-              Today <br />
-              <small>Dec 24</small>
-            </span>
-          </div>
-        </div>
-
-        <div class="vertical-timeline-block">
-          <div class="vertical-timeline-icon lazur-bg">
-            <i class="fa fa-coffee"></i>
-          </div>
-
-          <div class="vertical-timeline-content">
-            <h2>Coffee Break</h2>
-            <p>
-              Go to shop and find some products. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry. Lorem Ipsum has
-              been the industry's.
-            </p>
-            <a href="#" class="btn btn-sm btn-info">Read more</a>
-            <span class="vertical-date">
-              Yesterday <br /><small>Dec 23</small></span
-            >
-          </div>
-        </div>
-
-        <div class="vertical-timeline-block">
-          <div class="vertical-timeline-icon yellow-bg">
-            <i class="fa fa-phone"></i>
-          </div>
-
-          <div class="vertical-timeline-content">
-            <h2>Phone with Jeronimo</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
-              optio, dolorum provident rerum aut hic quasi placeat iure tempora
-              laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis
-              qui ut.
-            </p>
-            <span class="vertical-date"
-              >Yesterday <br /><small>Dec 23</small></span
-            >
-          </div>
-        </div>
-
-        <div class="vertical-timeline-block">
-          <div class="vertical-timeline-icon navy-bg">
-            <i class="fa fa-comments"></i>
-          </div>
-
-          <div class="vertical-timeline-content">
-            <h2>Chat with Monica and Sandra</h2>
-            <p>
-              Web sites still in their infancy. Various versions have evolved
-              over the years, sometimes by accident, sometimes on purpose
-              (injected humour and the like).
-            </p>
-            <span class="vertical-date"
-              >Yesterday <br /><small>Dec 23</small></span
-            >
           </div>
         </div>
       </div>
