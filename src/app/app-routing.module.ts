@@ -71,7 +71,7 @@ const routes: Routes = [
     component: ImprimerContratsComponent,
   },
   {
-    path: 'FicheRomming',
+    path: 'Evenement/AfficherEvent/FicheRomming',
     component: ImprimerRommingComponent,
   },
   {

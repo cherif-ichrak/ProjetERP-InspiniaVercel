@@ -8,9 +8,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>Murex Club Africain</title>
     <base href="/" />
@@ -23,7 +22,6 @@
       rel="stylesheet"
     />
 
-    <link href="assets/css/animate.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
@@ -170,34 +168,47 @@
         new Chart(ctx, { type: "line", data: lineData, options: lineOptions });
       });
     </script>
-    <script>
-      // PDF.js script to render PDF
-      var pdfContainer = document.getElementById("pdf-container");
+    <div id="pdf-container"></div>
 
-      // URL of the PDF file
+    <script>
+      var pdfContainer = document.getElementById("pdf-container");
       var pdfUrl = "assets/2021.pdf";
 
-      // Asynchronous download PDF
-      pdfjsLib.getDocument(pdfUrl).then(function (pdf) {
-        pdf.getPage(1).then(function (page) {
-          var scale = 1.5;
-          var viewport = page.getViewport({ scale: scale });
+      pdfjsLib
+        .getDocument(pdfUrl)
+        .then(function (pdf) {
+          pdf
+            .getPage(1)
+            .then(function (page) {
+              var scale = 1.5;
+              var viewport = page.getViewport({ scale: scale });
 
-          var canvas = document.createElement("canvas");
-          var context = canvas.getContext("2d");
-          canvas.height = viewport.height;
-          canvas.width = viewport.width;
+              var canvas = document.createElement("canvas");
+              var context = canvas.getContext("2d");
+              canvas.height = viewport.height;
+              canvas.width = viewport.width;
 
-          var renderContext = {
-            canvasContext: context,
-            viewport: viewport,
-          };
+              var renderContext = {
+                canvasContext: context,
+                viewport: viewport,
+              };
 
-          page.render(renderContext).then(function () {
-            pdfContainer.appendChild(canvas);
-          });
+              page
+                .render(renderContext)
+                .then(function () {
+                  pdfContainer.appendChild(canvas);
+                })
+                .catch(function (error) {
+                  console.error("Error rendering PDF page:", error);
+                });
+            })
+            .catch(function (error) {
+              console.error("Error getting PDF page:", error);
+            });
+        })
+        .catch(function (error) {
+          console.error("Error loading PDF:", error);
         });
-      });
     </script>
     <script>
       $(document).ready(function () {

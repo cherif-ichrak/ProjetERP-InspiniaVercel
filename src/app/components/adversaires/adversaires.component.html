@@ -87,13 +87,11 @@
 
                       <div class="col-md-4 mb-3">
                         <label>President du club </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="validationDefault04"
-                          placeholder="President du club"
-                          required
-                        />
+                        <select class="form-control">
+                          <option>President du club 1</option>
+                          <option>President du club 2</option>
+                          <option>President du club 3</option>
+                        </select>
                       </div>
                       <div class="col-md-4 mb-3">
                         <label>Complexe </label>
@@ -395,7 +393,7 @@
                 <form>
                   <div class="form-row">
                     <div class="col-md-4 mb-3">
-                      <label>Nom Complete </label>
+                      <label>Club</label>
                       <input
                         type="text"
                         class="form-control"
@@ -438,33 +436,35 @@
 
                     <div class="col-md-4 mb-3">
                       <label>President du club </label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="validationDefault04"
-                        placeholder="President du club"
-                        required
-                      />
+                      <select class="form-control">
+                        <option>President du club 1</option>
+                        <option>President du club 2</option>
+                        <option>President du club 3</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label>Complexe </label>
+                      <div class="input-group">
+                        <select class="form-control">
+                          <option>Complexe 1</option>
+                          <option>Complexe 2</option>
+                          <option selected>Complexe X</option>
+                        </select>
+                        <span class="input-group-btn">
+                          <button
+                            data-toggle="modal"
+                            data-target="#myModalComplexe"
+                            type="button"
+                            class="btn btn-xl btn-primary"
+                          >
+                            <i class="fa fa-plus"></i>
+                          </button>
+                        </span>
+                      </div>
                     </div>
                   </div>
                   <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                      <label>Complexe </label>
-                      <input
-                        type="file"
-                        class="form-control"
-                        id="validationDefault04"
-                        placeholder=""
-                        required
-                      />
-                      <div>
-                        <img
-                          id="imageAffiche"
-                          style="max-width: 300px; max-height: 300px"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-12 mb-3">
                       <label>Logo </label>
                       <input
                         type="file"

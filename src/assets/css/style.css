@@ -647,8 +647,11 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 .btn-primary.btn-outline {
   color: #000907;
 }
+.btn-yellow.btn-outline {
+  color: #ffff00;
+}
 .btn-success.btn-outline {
-  color: #d7ec19;
+  color: #1c84c6;
 }
 .btn-info.btn-outline {
   color: #656d6e;
@@ -660,6 +663,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
   color: #ed5565;
 }
 .btn-primary.btn-outline:hover,
+.btn-yellow.btn-outline:hover,
 .btn-success.btn-outline:hover,
 .btn-info.btn-outline:hover,
 .btn-warning.btn-outline:hover,
@@ -707,9 +711,50 @@ fieldset[disabled] .btn-primary.active {
   background-color: #656d6e;
   border-color: #656d6e;
 }
+.btn-yellow {
+  background-color: #ffff00;
+  border-color: #ffff00;
+  color: #ffffff;
+}
+.btn-yellow:hover,
+.btn-yellow:focus,
+.btn-yellow:active,
+.btn-yellow.active,
+.open .dropdown-toggle.btn-yellow,
+.btn-yellow:active:focus,
+.btn-yellow:active:hover,
+.btn-yellow.active:hover,
+.btn-yellow.active:focus {
+  background-color: #ffff00;
+  border-color: #ffff00;
+  color: #ffffff;
+}
+.btn-yellow:active,
+.btn-yellow.active,
+.open .dropdown-toggle.btn-yellow {
+  background-image: none;
+}
+.btn-yellow.disabled,
+.btn-yellow.disabled:hover,
+.btn-yellow.disabled:focus,
+.btn-yellow.disabled:active,
+.btn-yellow.disabled.active,
+.btn-yellow[disabled],
+.btn-yellow[disabled]:hover,
+.btn-yellow[disabled]:focus,
+.btn-yellow[disabled]:active,
+.btn-yellow.active[disabled],
+fieldset[disabled] .btn-yellow,
+fieldset[disabled] .btn-yellow:hover,
+fieldset[disabled] .btn-yellow:focus,
+fieldset[disabled] .btn-yellow:active,
+fieldset[disabled] .btn-yellow.active {
+  background-color: #ffff00;
+  border-color: #ffff00;
+}
 .btn-success {
-  background-color: #d7ec19;
-  border-color: #d7ec19;
+  background-color: #1c84c6;
+  border-color: #1c84c6;
   color: #ffffff;
 }
 .btn-success:hover,
@@ -721,8 +766,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success:active:hover,
 .btn-success.active:hover,
 .btn-success.active:focus {
-  background-color: #d7ec19;
-  border-color: #d7ec19;
+  background-color: #1a7bb9;
+  border-color: #1a7bb9;
   color: #ffffff;
 }
 .btn-success:active,
@@ -745,8 +790,8 @@ fieldset[disabled] .btn-success:hover,
 fieldset[disabled] .btn-success:focus,
 fieldset[disabled] .btn-success:active,
 fieldset[disabled] .btn-success.active {
-  background-color: #d7ec19;
-  border-color: #d7ec19;
+  background-color: #1f90d8;
+  border-color: #1f90d8;
 }
 .btn-info {
   background-color: #656d6e;
@@ -990,6 +1035,7 @@ fieldset[disabled] .btn-white.active {
 .form-control:focus,
 .has-error .form-control:focus,
 .has-success .form-control:focus,
+.has-yellow .form-control:focus,
 .has-warning .form-control:focus,
 .navbar-collapse,
 .navbar-form,
@@ -1055,17 +1101,23 @@ button.btn-info.dim {
 button.btn-info.dim:active {
   box-shadow: inset 0 0 0 #656d6e, 0 2px 0 0 #656d6e, 0 5px 3px #999999;
 }
-button.btn-success.dim {
-  box-shadow: inset 0 0 0 #d7ec19, 0 5px 0 0 #d7ec19, 0 10px 5px #999999;
+button.btn-yellow.dim {
+  box-shadow: inset 0 0 0 #ffff00, 0 5px 0 0 #ffff00, 0 10px 5px #999999;
 }
-button.btn-success.dim:active {
-  box-shadow: inset 0 0 0 #d7ec19, 0 2px 0 0 #d7ec19, 0 5px 3px #999999;
+button.btn-yellow.dim:active {
+  box-shadow: inset 0 0 0 #ffff00, 0 2px 0 0 #ffff00, 0 5px 3px #999999;
 }
 button.btn-danger.dim {
   box-shadow: inset 0 0 0 #ea394c, 0 5px 0 0 #ea394c, 0 10px 5px #999999;
 }
 button.btn-danger.dim:active {
   box-shadow: inset 0 0 0 #ea394c, 0 2px 0 0 #ea394c, 0 5px 3px #999999;
+}
+button.btn-success.dim {
+  box-shadow: inset 0 0 0 #1872ab, 0 5px 0 0 #1872ab, 0 10px 5px #999999;
+}
+button.btn-success.dim:active {
+  box-shadow: inset 0 0 0 #1872ab, 0 2px 0 0 #1872ab, 0 5px 3px #999999;
 }
 button.dim:before {
   font-size: 50px;
@@ -1110,6 +1162,11 @@ button.dim:active:before {
 .label-success,
 .badge-success {
   background-color: #1c84c6;
+  color: #ffffff;
+}
+.label-yellow,
+.badge-yellow {
+  background-color: #ffff00;
   color: #ffffff;
 }
 .label-warning,
@@ -1913,8 +1970,8 @@ div.dt-button-info {
 .single-line:focus {
   border-color: #656d6e;
 }
-.has-success .form-control,
-.has-success .form-control:focus {
+.has-yellow .form-control,
+.has-yellow .form-control:focus {
   border-color: #656d6e;
 }
 .has-warning .form-control,
@@ -1925,7 +1982,7 @@ div.dt-button-info {
 .has-error .form-control:focus {
   border-color: #ed5565;
 }
-.has-success .control-label {
+.has-yellow .control-label {
   color: #656d6e;
 }
 .has-warning .control-label {
@@ -2523,7 +2580,7 @@ label.error {
 #toast-container > .toast-info:before {
   content: "\f005";
 }
-#toast-container > .toast-success:before {
+#toast-container > .toast-yellow:before {
   content: "\f00C";
 }
 #toast-container > div {
@@ -2546,7 +2603,7 @@ label.error {
 .toast {
   background-color: #656d6e;
 }
-.toast-success {
+.toast-yellow {
   background-color: #656d6e;
 }
 .toast-error {
@@ -2578,7 +2635,7 @@ label.error {
 .inspinia-notify.alert-warning {
   border-left: 6px solid #f8ac59;
 }
-.inspinia-notify.alert-success {
+.inspinia-notify.alert-yellow {
   border-left: 6px solid #1c84c6;
 }
 .inspinia-notify.alert-danger {
@@ -3336,7 +3393,7 @@ body.tour-open .animated {
 .stream .stream-badge i.fa-circle {
   color: #ced0d1;
 }
-.stream .stream-badge i.bg-success {
+.stream .stream-badge i.bg-yellow {
   color: #ffffff;
   background-color: #1c84c6;
   border-color: #1c84c6;
@@ -4097,7 +4154,7 @@ table.table-mail tr td {
   background-color: #ffffff;
 }
 .blue-bg,
-.bg-success {
+.bg-yellow {
   background-color: #1c84c6;
   color: #ffffff;
 }
@@ -4131,10 +4188,10 @@ table.table-mail tr td {
   background-color: #656d6e;
   border-color: #656d6e;
 }
-.panel-success {
+.panel-yellow {
   border-color: #1c84c6;
 }
-.panel-success > .panel-heading {
+.panel-yellow > .panel-heading {
   background-color: #1c84c6;
   border-color: #1c84c6;
   color: #ffffff;
@@ -4182,7 +4239,7 @@ table.table-mail tr td {
 .progress-bar-navy-light {
   background-color: #3dc7ab;
 }
-.progress-bar-success {
+.progress-bar-yellow {
   background-color: #1c84c6;
 }
 .progress-bar-info {
@@ -4211,7 +4268,7 @@ table.table-mail tr td {
 .text-primary {
   color: inherit;
 }
-.text-success {
+.text-yellow {
   color: #1c84c6;
 }
 .text-info {
@@ -5527,7 +5584,7 @@ table.issue-tracker tbody tr td {
 .agile-list li.info-element {
   border-left: 3px solid #1c84c6;
 }
-.agile-list li.success-element {
+.agile-list li.yellow-element {
   border-left: 3px solid #656d6e;
 }
 .agile-detail {
@@ -7359,7 +7416,7 @@ body.landing-page {
   left: 30px;
 }
 .landing-page .btn-primary.btn-outline:hover,
-.landing-page .btn-success.btn-outline:hover,
+.landing-page .btn-yellow.btn-outline:hover,
 .landing-page .btn-info.btn-outline:hover,
 .landing-page .btn-warning.btn-outline:hover,
 .landing-page .btn-danger.btn-outline:hover {

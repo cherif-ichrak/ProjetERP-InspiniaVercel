@@ -97,7 +97,7 @@ import { TdbComponent } from './components/tdb/tdb.component';
     EtatMatchComponent,
     TdbComponent,
   ],
-  imports: [BrowserModule,  FormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
