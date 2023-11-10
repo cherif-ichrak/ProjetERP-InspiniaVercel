@@ -34,6 +34,8 @@ import { FuilleMatchComponent } from './components/fuille-match/fuille-match.com
 import { EtatMatchComponent } from './components/etat-match/etat-match.component';
 import { TdbComponent } from './components/tdb/tdb.component';
 import { DetailsStaffComponent } from './components/details-staff/details-staff.component';
+import { AllMessagesComponent } from './components/all-messages/all-messages.component';
+import { AllNotiffComponent } from './components/all-notiff/all-notiff.component';
 
 const routes: Routes = [
   { path: 'Parametrage', component: ParametrageComponent },
@@ -104,6 +106,8 @@ const routes: Routes = [
   { path: 'tdb', component: TdbComponent },
 
   { path: 'Matches/FicheMatch/FuilleMatch', component: FuilleMatchComponent },
+  { path: 'AllMessages', component: AllMessagesComponent },
+  { path: 'AllNotif', component: AllNotiffComponent },
 ];
 
 @NgModule({
