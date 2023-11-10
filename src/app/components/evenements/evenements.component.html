@@ -471,14 +471,227 @@
                 <div class="modal-dialog">
                   <div class="modal-content animated bounceInRight">
                     <div class="modal-header">
-                      <h6 class="modal-title">Modifier Evenement</h6>
+                      <h6 class="modal-title">Modifier Évènement</h6>
                       <button type="button" class="close" data-dismiss="modal">
                         <span aria-hidden="true">&times;</span
                         ><span class="sr-only">Fermer</span>
                       </button>
                     </div>
 
-                    <div class="modal-body"></div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div>
+                            <label for="options"> Type Évènement </label>
+                            <select
+                              class="form-control"
+                              id="options"
+                              [(ngModel)]="selectedOption"
+                            >
+                              <option selected value="option1">
+                                Entrainement
+                              </option>
+                              <option value="option2">Stage Match</option>
+                              <option value="option3">Stage Préparation</option>
+                            </select>
+                          </div>
+                          <div
+                            class="wrapper wrapper-content animated fadeInDown"
+                          >
+                            <div class="row">
+                              <div *ngIf="selectedOption === 'option1'">
+                                <form>
+                                  <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                      <label>Complexe </label>
+                                      <select class="form-control">
+                                        <option>Complexe 1</option>
+                                        <option selected>Complexe 2</option>
+                                        <option>Complexe3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                      <label>Date </label>
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder=""
+                                        required
+                                      />
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                      <label>Heure </label>
+                                      <input
+                                        type="time"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder=""
+                                        required
+                                      />
+                                    </div>
+                                  </div>
+                                </form>
+                                <!-- Mettez ici les champs du formulaire pour l'Option 1 -->
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="wrapper wrapper-content animated fadeInDown"
+                          >
+                            <div class="row">
+                              <div *ngIf="selectedOption === 'option2'">
+                                <form>
+                                  <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                      <label>Compétition </label>
+                                      <select class="form-control">
+                                        <option>Compétition 1</option>
+                                        <option selected>Compétition 2</option>
+                                        <option>Compétition 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                      <label>Match </label>
+                                      <select class="form-control">
+                                        <option>Match 1</option>
+                                        <option selected>Match 2</option>
+                                        <option>Match 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                      <label>Complexe </label>
+                                      <select class="form-control">
+                                        <option>Complexe 1</option>
+                                        <option selected>Complexe 2</option>
+                                        <option>Complexe3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                      <label>Date Début </label>
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder=""
+                                        required
+                                      />
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                      <label>Date Fin </label>
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder=""
+                                        required
+                                      />
+                                    </div>
+                                  </div>
+                                </form>
+                                <!-- Mettez ici les champs du formulaire pour l'Option 2 -->
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="wrapper wrapper-content animated fadeInDown"
+                          >
+                            <div class="row">
+                              <div *ngIf="selectedOption === 'option3'">
+                                <form>
+                                  <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                      <label>Lieu </label>
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder=""
+                                        required
+                                      />
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                      <label>Pays</label>
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder=""
+                                        required
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                      <label>Date Début </label>
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder=""
+                                        required
+                                      />
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                      <label>Date Fin </label>
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder=""
+                                        required
+                                      />
+                                    </div>
+                                  </div>
+                                </form>
+                                <!-- Mettez ici les champs du formulaire pour l'Option 3 -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                              <label>
+                                <input type="checkbox" class="i-checks" />
+                                &nbsp; &nbsp; Avec Mobilité
+                              </label>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <label>
+                                <input type="checkbox" class="i-checks" />
+                                &nbsp; &nbsp; Avec Hébergement
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" class="text-right">
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-white btn-xs dropdown-toggle"
+                            data-dismiss="modal"
+                          >
+                            Annuler
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-xs dropdown-toggle"
+                          >
+                            Modifier
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -857,11 +1070,14 @@
                             Imprimer
                           </button>
                           <button
+                            data-toggle="modal"
+                            data-target="#EnvoyerParEmail"
                             type="button"
                             class="btn btn-primary btn-xs dropdown-toggle"
                           >
                             Envoyer
                           </button>
+
                           <button
                             type="button"
                             class="btn btn-primary btn-xs dropdown-toggle"
@@ -1354,270 +1570,8 @@
                           class="btn btn-primary btn-xs dropdown-toggle"
                           value="Envoyer"
                           data-toggle="modal"
-                          data-target="#myModalEnvoyer"
+                          data-target="#EnvoyerParEmail"
                         />
-                        <div
-                          class="modal inmodal"
-                          id="myModalEnvoyer"
-                          tabindex="-1"
-                          role="dialog"
-                          aria-hidden="true"
-                        >
-                          <div class="modal-dialog">
-                            <div class="modal-content animated bounceInRight">
-                              <div class="modal-header">
-                                <h6 class="modal-title">
-                                  Envoyer Fiche Présence
-                                </h6>
-                                <button
-                                  type="button"
-                                  class="close"
-                                  data-dismiss="modal"
-                                >
-                                  <span aria-hidden="true">&times;</span
-                                  ><span class="sr-only">Fermer</span>
-                                </button>
-                              </div>
-
-                              <div class="modal-body">
-                                <h4>Joueurs</h4>
-                                <div class="col-sm-4 pull-right">
-                                  <div class="input-group">
-                                    <input
-                                      type="text"
-                                      placeholder="Rechercher"
-                                      class="input-sm form-control"
-                                    />
-                                    <span class="input-group-btn">
-                                      <button
-                                        type="button"
-                                        class="btn btn-sm btn-primary"
-                                      >
-                                        <i class="fa fa-search"></i>
-                                      </button>
-                                    </span>
-                                  </div>
-                                </div>
-                                <table class="table table-striped">
-                                  <thead>
-                                    <tr>
-                                      <th style="width: 10%"></th>
-                                      <th style="width: 90%">Email</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td class="text-center">
-                                        <input
-                                          type="checkbox"
-                                          checked
-                                          class="i-checks"
-                                          name="input[]"
-                                        />
-                                      </td>
-                                      <td class="text-center">
-                                        admin@gmail.com
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center">
-                                        <input
-                                          type="checkbox"
-                                          checked
-                                          class="i-checks"
-                                          name="input[]"
-                                        />
-                                      </td>
-                                      <td class="text-center">
-                                        admin@gmail.com
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center">
-                                        <input
-                                          type="checkbox"
-                                          checked
-                                          class="i-checks"
-                                          name="input[]"
-                                        />
-                                      </td>
-                                      <td class="text-center">
-                                        admin@gmail.com
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center">
-                                        <input
-                                          type="checkbox"
-                                          checked
-                                          class="i-checks"
-                                          name="input[]"
-                                        />
-                                      </td>
-                                      <td class="text-center">
-                                        admin@gmail.com
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center">
-                                        <input
-                                          type="checkbox"
-                                          checked
-                                          class="i-checks"
-                                          name="input[]"
-                                        />
-                                      </td>
-                                      <td class="text-center">
-                                        admin@gmail.com
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center">
-                                        <input
-                                          type="checkbox"
-                                          checked
-                                          class="i-checks"
-                                          name="input[]"
-                                        />
-                                      </td>
-                                      <td class="text-center">
-                                        admin@gmail.com
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                                <br />
-                                <h4>Staff</h4>
-                                <div class="col-sm-4 pull-right">
-                                  <div class="input-group">
-                                    <input
-                                      type="text"
-                                      placeholder="Rechercher"
-                                      class="input-sm form-control"
-                                    />
-                                    <span class="input-group-btn">
-                                      <button
-                                        type="button"
-                                        class="btn btn-sm btn-primary"
-                                      >
-                                        <i class="fa fa-search"></i>
-                                      </button>
-                                    </span>
-                                  </div>
-                                </div>
-
-                                <table class="table table-striped">
-                                  <thead>
-                                    <tr>
-                                      <th style="width: 10%"></th>
-                                      <th
-                                        style="width: 90%"
-                                        class="text-center"
-                                      >
-                                        Email
-                                      </th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td class="text-center">
-                                        <input
-                                          type="checkbox"
-                                          checked
-                                          class="i-checks"
-                                          name="input[]"
-                                        />
-                                      </td>
-                                      <td class="text-center">
-                                        admin@gmail.com
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center">
-                                        <input
-                                          type="checkbox"
-                                          checked
-                                          class="i-checks"
-                                          name="input[]"
-                                        />
-                                      </td>
-                                      <td class="text-center">
-                                        admin@gmail.com
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center">
-                                        <input
-                                          type="checkbox"
-                                          checked
-                                          class="i-checks"
-                                          name="input[]"
-                                        />
-                                      </td>
-                                      <td class="text-center">
-                                        admin@gmail.com
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center">
-                                        <input
-                                          type="checkbox"
-                                          checked
-                                          class="i-checks"
-                                          name="input[]"
-                                        />
-                                      </td>
-                                      <td class="text-center">
-                                        admin@gmail.com
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center">
-                                        <input
-                                          type="checkbox"
-                                          checked
-                                          class="i-checks"
-                                          name="input[]"
-                                        />
-                                      </td>
-                                      <td class="text-center">
-                                        admin@gmail.com
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center">
-                                        <input
-                                          type="checkbox"
-                                          checked
-                                          class="i-checks"
-                                          name="input[]"
-                                        />
-                                      </td>
-                                      <td class="text-center">
-                                        admin@gmail.com
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                                <div class="row">
-                                  <div class="modal-footer">
-                                    <input
-                                      type="submit"
-                                      class="btn btn-primary btn-xs dropdown-toggle"
-                                      value="Valider"
-                                    />
-
-                                    <input
-                                      type="submit"
-                                      class="btn btn-white btn-xs dropdown-toggle"
-                                      value="Annuler"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
 
                         <input
                           type="submit"
@@ -1690,7 +1644,7 @@
                                     name="input[]"
                                   />
                                 </td>
-                                <td class="text-center">admin@gmail.com</td>
+                                <td class="text-center">adminGmail.com</td>
                               </tr>
                               <tr>
                                 <td class="text-center">
@@ -1701,7 +1655,7 @@
                                     name="input[]"
                                   />
                                 </td>
-                                <td class="text-center">admin@gmail.com</td>
+                                <td class="text-center">adminGmail.com</td>
                               </tr>
                               <tr>
                                 <td class="text-center">
@@ -1712,7 +1666,7 @@
                                     name="input[]"
                                   />
                                 </td>
-                                <td class="text-center">admin@gmail.com</td>
+                                <td class="text-center">adminGmail.com</td>
                               </tr>
                               <tr>
                                 <td class="text-center">
@@ -1723,7 +1677,7 @@
                                     name="input[]"
                                   />
                                 </td>
-                                <td class="text-center">admin@gmail.com</td>
+                                <td class="text-center">adminGmail.com</td>
                               </tr>
                               <tr>
                                 <td class="text-center">
@@ -1734,7 +1688,7 @@
                                     name="input[]"
                                   />
                                 </td>
-                                <td class="text-center">admin@gmail.com</td>
+                                <td class="text-center">adminGmail.com</td>
                               </tr>
                               <tr>
                                 <td class="text-center">
@@ -1745,7 +1699,7 @@
                                     name="input[]"
                                   />
                                 </td>
-                                <td class="text-center">admin@gmail.com</td>
+                                <td class="text-center">adminGmail.com</td>
                               </tr>
                             </tbody>
                           </table>
@@ -1788,7 +1742,7 @@
                                     name="input[]"
                                   />
                                 </td>
-                                <td class="text-center">admin@gmail.com</td>
+                                <td class="text-center">adminGmail.com</td>
                               </tr>
                               <tr>
                                 <td class="text-center">
@@ -1799,7 +1753,7 @@
                                     name="input[]"
                                   />
                                 </td>
-                                <td class="text-center">admin@gmail.com</td>
+                                <td class="text-center">adminGmail.com</td>
                               </tr>
                               <tr>
                                 <td class="text-center">
@@ -1810,7 +1764,7 @@
                                     name="input[]"
                                   />
                                 </td>
-                                <td class="text-center">admin@gmail.com</td>
+                                <td class="text-center">adminGmail.com</td>
                               </tr>
                               <tr>
                                 <td class="text-center">
@@ -1821,7 +1775,7 @@
                                     name="input[]"
                                   />
                                 </td>
-                                <td class="text-center">admin@gmail.com</td>
+                                <td class="text-center">adminGmail.com</td>
                               </tr>
                               <tr>
                                 <td class="text-center">
@@ -1832,7 +1786,7 @@
                                     name="input[]"
                                   />
                                 </td>
-                                <td class="text-center">admin@gmail.com</td>
+                                <td class="text-center">adminGmail.com</td>
                               </tr>
                               <tr>
                                 <td class="text-center">
@@ -1843,7 +1797,7 @@
                                     name="input[]"
                                   />
                                 </td>
-                                <td class="text-center">admin@gmail.com</td>
+                                <td class="text-center">adminGmail.com</td>
                               </tr>
                             </tbody>
                           </table>
@@ -1952,6 +1906,100 @@
                 Convocation</a
               >
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="modal inmodal"
+  id="EnvoyerParEmail"
+  tabindex="-1"
+  role="dialog"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content animated bounceInRight">
+      <div class="modal-header">
+        <h6 class="modal-title">Envoyer Par Email</h6>
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span
+          ><span class="sr-only">Fermer</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th style="width: 10%"></th>
+              <th style="width: 90%">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">
+                <input
+                  type="checkbox"
+                  checked
+                  class="i-checks"
+                  name="input[]"
+                />
+              </td>
+              <td class="text-center">adminGmail.com</td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                <input
+                  type="checkbox"
+                  checked
+                  class="i-checks"
+                  name="input[]"
+                />
+              </td>
+              <td class="text-center">adminGmail.com</td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                <input
+                  type="checkbox"
+                  checked
+                  class="i-checks"
+                  name="input[]"
+                />
+              </td>
+              <td class="text-center">adminGmail.com</td>
+            </tr>
+          
+            
+            <tr>
+              <td class="text-center">
+                <input
+                  type="checkbox"
+                  checked
+                  class="i-checks"
+                  name="input[]"
+                />
+              </td>
+              <td class="text-center">adminGmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="row">
+          <div class="modal-footer">
+            <input
+              type="submit"
+              class="btn btn-primary btn-xs dropdown-toggle"
+              value="Envoyer"
+            />
+
+            <input
+              type="submit"
+              class="btn btn-white btn-xs dropdown-toggle"
+              value="Annuler"
+            />
           </div>
         </div>
       </div>

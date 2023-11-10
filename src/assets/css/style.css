@@ -648,7 +648,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
   color: #000907;
 }
 .btn-yellow.btn-outline {
-  color: #ffff00;
+  color: rgb(254, 254, 111);
 }
 .btn-success.btn-outline {
   color: #1c84c6;
@@ -660,7 +660,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
   color: #f8ac59;
 }
 .btn-danger.btn-outline {
-  color: #ed5565;
+  color: #e53d4e;
 }
 .btn-primary.btn-outline:hover,
 .btn-yellow.btn-outline:hover,
@@ -712,8 +712,8 @@ fieldset[disabled] .btn-primary.active {
   border-color: #656d6e;
 }
 .btn-yellow {
-  background-color: #ffff00;
-  border-color: #ffff00;
+  background-color: rgb(254, 254, 111);
+  border-color: rgb(254, 254, 111);
   color: #ffffff;
 }
 .btn-yellow:hover,
@@ -725,8 +725,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-yellow:active:hover,
 .btn-yellow.active:hover,
 .btn-yellow.active:focus {
-  background-color: #ffff00;
-  border-color: #ffff00;
+  background-color: rgb(254, 254, 111);
+  border-color: rgb(254, 254, 111);
   color: #ffffff;
 }
 .btn-yellow:active,
@@ -749,8 +749,8 @@ fieldset[disabled] .btn-yellow:hover,
 fieldset[disabled] .btn-yellow:focus,
 fieldset[disabled] .btn-yellow:active,
 fieldset[disabled] .btn-yellow.active {
-  background-color: #ffff00;
-  border-color: #ffff00;
+  background-color: rgb(254, 254, 111);
+  border-color: rgb(254, 254, 111);
 }
 .btn-success {
   background-color: #1c84c6;
@@ -1102,10 +1102,12 @@ button.btn-info.dim:active {
   box-shadow: inset 0 0 0 #656d6e, 0 2px 0 0 #656d6e, 0 5px 3px #999999;
 }
 button.btn-yellow.dim {
-  box-shadow: inset 0 0 0 #ffff00, 0 5px 0 0 #ffff00, 0 10px 5px #999999;
+  box-shadow: inset 0 0 0 rgb(254, 254, 111), 0 5px 0 0 rgb(254, 254, 111),
+    0 10px 5px #999999;
 }
 button.btn-yellow.dim:active {
-  box-shadow: inset 0 0 0 #ffff00, 0 2px 0 0 #ffff00, 0 5px 3px #999999;
+  box-shadow: inset 0 0 0 rgb(254, 254, 111), 0 2px 0 0 rgb(254, 254, 111),
+    0 5px 3px #999999;
 }
 button.btn-danger.dim {
   box-shadow: inset 0 0 0 #ea394c, 0 5px 0 0 #ea394c, 0 10px 5px #999999;
@@ -1166,7 +1168,7 @@ button.dim:active:before {
 }
 .label-yellow,
 .badge-yellow {
-  background-color: #ffff00;
+  background-color: rgb(254, 254, 111);
   color: #ffffff;
 }
 .label-warning,

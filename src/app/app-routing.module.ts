@@ -33,6 +33,7 @@ import { ImprimerDateComponent } from './components/imprimer-date/imprimer-date.
 import { FuilleMatchComponent } from './components/fuille-match/fuille-match.component';
 import { EtatMatchComponent } from './components/etat-match/etat-match.component';
 import { TdbComponent } from './components/tdb/tdb.component';
+import { DetailsStaffComponent } from './components/details-staff/details-staff.component';
 
 const routes: Routes = [
   { path: 'Parametrage', component: ParametrageComponent },
@@ -54,12 +55,18 @@ const routes: Routes = [
   { path: 'sanctions', component: SanctionsComponent },
   { path: 'calendrier', component: CalendrierComponent },
   { path: 'Staff', component: StaffComponent },
+  { path: 'Staff/detailStaff', component: DetailsStaffComponent },
+
   {
     path: 'Evenement/FichePresence',
     component: ImprimerFichePresenceComponent,
   },
   {
     path: 'Evenement/FicheConvocationMatch',
+    component: ImprimerConvocationMatchComponent,
+  },
+  {
+    path: 'Matches/FicheMatch/FicheConvocationMatch',
     component: ImprimerConvocationMatchComponent,
   },
   {

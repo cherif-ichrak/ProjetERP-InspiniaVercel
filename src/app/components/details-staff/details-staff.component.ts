@@ -1,11 +1,11 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: "app-detaile-joueur",
-  templateUrl: "./detaile-joueur.component.html",
-  styleUrls: ["./detaile-joueur.component.css"],
+  selector: "app-details-staff",
+  templateUrl: "./details-staff.component.html",
+  styleUrls: ["./details-staff.component.css"],
 })
-export class DetaileJoueurComponent {
+export class DetailsStaffComponent {
   selectedImage: string | ArrayBuffer | null = null;
   selectedLicence: string | ArrayBuffer | null = null;
   selectedPass: string | ArrayBuffer | null = null;

@@ -123,7 +123,64 @@
                       <input type="date" placeholder="" class="form-control" />
                     </div>
                   </div>
-
+                  <div class="form-row">
+                    <div class="col-md-3">
+                      <input
+                        type="file"
+                        id="fileInput"
+                        style="display: none"
+                        (change)="onFileChange($event)"
+                      />
+                      <label for="fileInput" id="customLabel">
+                        Télécharger Photo</label
+                      >
+                      <img
+                        *ngIf="selectedImage"
+                        [src]="selectedImage"
+                        alt="Selected Image"
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <input
+                        type="file"
+                        id="fileInput"
+                        style="display: none"
+                        (change)="onFilePass($event)"
+                      />
+                      <label for="fileInput" id="customLabel"
+                        >Télécharger Passeport</label
+                      >
+                      <img
+                        *ngIf="selectedPass"
+                        [src]="selectedPass"
+                        alt="Selected Image"
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <input
+                        type="file"
+                        id="fileInput"
+                        style="display: none"
+                        (change)="onFileLicence($event)"
+                      />
+                      <label for="fileInput" id="customLabel"
+                        >Télécharger Licence</label
+                      >
+                      <img
+                        *ngIf="selectedLicence"
+                        [src]="selectedLicence"
+                        alt="Selected Image"
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <input type="file" (change)="onFileContrat($event)" />
+                      <img
+                        *ngIf="selectedImage"
+                        [src]="selectedImage"
+                        alt="Selected Image"
+                      />
+                    </div>
+                  </div>
                   <div class="row" class="text-right">
                     <div class="modal-footer">
                       <button
@@ -165,7 +222,7 @@
       <div class="row">
         <div class="col-lg-3">
           <div class="contact-box center-version">
-            <a >
+            <a>
               <img
                 alt="image"
                 class="img-circle"
@@ -199,8 +256,8 @@
             </a>
             <div class="contact-box-footer">
               <div class="m-t-xs btn-group">
-                <a routerLink="DetaileJoueur" class="btn btn-xs btn-white"
-                  ><i class="fa fa-phone"></i> Voir Détails
+                <a routerLink="detailStaff" class="btn btn-xs btn-white">
+                  Voir Détails
                 </a>
                 <a class="btn btn-xs btn-white"
                   ><i class="fa fa-envelope"></i> Supprimer</a
@@ -211,7 +268,7 @@
         </div>
         <div class="col-lg-3">
           <div class="contact-box center-version">
-            <a >
+            <a>
               <img
                 alt="image"
                 class="img-circle"
@@ -244,7 +301,7 @@
             </a>
             <div class="contact-box-footer">
               <div class="m-t-xs btn-group">
-                <a routerLink="DetaileJoueur" class="btn btn-xs btn-white"
+                <a routerLink="detailStaff" class="btn btn-xs btn-white"
                   ><i class="fa fa-phone"></i> Voir Détails
                 </a>
                 <a class="btn btn-xs btn-white"
@@ -256,7 +313,7 @@
         </div>
         <div class="col-lg-3">
           <div class="contact-box center-version">
-            <a >
+            <a>
               <img
                 alt="image"
                 class="img-circle"
@@ -289,7 +346,7 @@
             </a>
             <div class="contact-box-footer">
               <div class="m-t-xs btn-group">
-                <a routerLink="DetaileJoueur" class="btn btn-xs btn-white"
+                <a routerLink="detailStaff" class="btn btn-xs btn-white"
                   ><i class="fa fa-phone"></i> Voir Détails
                 </a>
                 <a class="btn btn-xs btn-white"
@@ -301,7 +358,7 @@
         </div>
         <div class="col-lg-3">
           <div class="contact-box center-version">
-            <a >
+            <a>
               <img alt="image" class="img-circle" src="assets/img/j6.jpeg" />
 
               <h3 class="m-b-xs">
@@ -330,7 +387,7 @@
             </a>
             <div class="contact-box-footer">
               <div class="m-t-xs btn-group">
-                <a routerLink="DetaileJoueur" class="btn btn-xs btn-white"
+                <a routerLink="detailStaff" class="btn btn-xs btn-white"
                   ><i class="fa fa-phone"></i> Voir Détails
                 </a>
                 <a class="btn btn-xs btn-white"
@@ -342,7 +399,7 @@
         </div>
         <div class="col-lg-3">
           <div class="contact-box center-version">
-            <a >
+            <a>
               <img
                 alt="image"
                 class="img-circle"
@@ -375,7 +432,7 @@
             </a>
             <div class="contact-box-footer">
               <div class="m-t-xs btn-group">
-                <a routerLink="DetaileJoueur" class="btn btn-xs btn-white"
+                <a routerLink="detailStaff" class="btn btn-xs btn-white"
                   ><i class="fa fa-phone"></i> Voir Détails
                 </a>
                 <a class="btn btn-xs btn-white"
@@ -388,7 +445,7 @@
 
         <div class="col-lg-3">
           <div class="contact-box center-version">
-            <a >
+            <a>
               <img
                 alt="image"
                 class="img-circle"
@@ -421,7 +478,7 @@
             </a>
             <div class="contact-box-footer">
               <div class="m-t-xs btn-group">
-                <a routerLink="DetaileJoueur" class="btn btn-xs btn-white"
+                <a routerLink="detailStaff" class="btn btn-xs btn-white"
                   ><i class="fa fa-phone"></i> Voir Détails
                 </a>
                 <a class="btn btn-xs btn-white"
@@ -434,7 +491,7 @@
 
         <div class="col-lg-3">
           <div class="contact-box center-version">
-            <a >
+            <a>
               <img
                 alt="image"
                 class="img-circle"
@@ -467,7 +524,7 @@
             </a>
             <div class="contact-box-footer">
               <div class="m-t-xs btn-group">
-                <a routerLink="DetaileJoueur" class="btn btn-xs btn-white"
+                <a routerLink="detailStaff" class="btn btn-xs btn-white"
                   ><i class="fa fa-phone"></i> Voir Détails
                 </a>
                 <a class="btn btn-xs btn-white"
@@ -480,7 +537,7 @@
 
         <div class="col-lg-3">
           <div class="contact-box center-version">
-            <a >
+            <a>
               <img
                 alt="image"
                 class="img-circle"
@@ -513,7 +570,7 @@
             </a>
             <div class="contact-box-footer">
               <div class="m-t-xs btn-group">
-                <a routerLink="DetaileJoueur" class="btn btn-xs btn-white"
+                <a routerLink="detailStaff" class="btn btn-xs btn-white"
                   ><i class="fa fa-phone"></i> Voir Détails
                 </a>
                 <a class="btn btn-xs btn-white"

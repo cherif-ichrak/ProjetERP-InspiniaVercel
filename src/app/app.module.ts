@@ -49,6 +49,7 @@ import { ImprimerProgrammeMatchComponent } from './components/imprimer-programme
 import { FuilleMatchComponent } from './components/fuille-match/fuille-match.component';
 import { EtatMatchComponent } from './components/etat-match/etat-match.component';
 import { TdbComponent } from './components/tdb/tdb.component';
+import { DetailsStaffComponent } from './components/details-staff/details-staff.component';
 
 @NgModule({
   declarations: [
@@ -96,6 +97,7 @@ import { TdbComponent } from './components/tdb/tdb.component';
     FuilleMatchComponent,
     EtatMatchComponent,
     TdbComponent,
+    DetailsStaffComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [],

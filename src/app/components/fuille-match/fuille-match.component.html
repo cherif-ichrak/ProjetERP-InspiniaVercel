@@ -186,8 +186,8 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a data-toggle="modal" data-target="#ModifierSanction"
-                        >Modifier</a
+                      <a data-toggle="modal" data-target="#Remplacer"
+                        >Remplacer</a
                       >
                     </li>
                     <li><a href="#">Supprimer</a></li>
@@ -212,8 +212,8 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a data-toggle="modal" data-target="#ModifierSanction"
-                        >Modifier</a
+                      <a data-toggle="modal" data-target="#Remplacer"
+                        >Remplacer</a
                       >
                     </li>
                     <li><a href="#">Supprimer</a></li>
@@ -238,8 +238,8 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a data-toggle="modal" data-target="#ModifierSanction"
-                        >Modifier</a
+                      <a data-toggle="modal" data-target="#Remplacer"
+                        >Remplacer</a
                       >
                     </li>
                     <li><a href="#">Supprimer</a></li>
@@ -249,6 +249,82 @@
             </tr>
           </tbody>
         </table>
+        <div
+          class="modal inmodal"
+          id="Remplacer"
+          tabindex="-1"
+          role="dialog"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content animated bounceInRight">
+              <div class="modal-header">
+                <h6 class="modal-title">Remplacer Joueur</h6>
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">&times;</span
+                  ><span class="sr-only">Fermer</span>
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <div class="row">
+                  <form>
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label>Joueur Titulaire </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="validationDefault04"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label f>Joueur Remplacant</label>
+                        <select class="form-control">
+                          <option>Joueur 1</option>
+                          <option selected>Joueur 2</option>
+                          <option>Joueur 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12 mb-3">
+                        <label f>Minute </label>
+                        <input
+                          type="time"
+                          class="form-control"
+                          id="validationDefault04"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row" class="text-right">
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-white btn-xs dropdown-toggle"
+                          data-dismiss="modal"
+                        >
+                          Annuler
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-xs dropdown-toggle"
+                        >
+                          Valider
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="row">
         <div class="modal-footer">

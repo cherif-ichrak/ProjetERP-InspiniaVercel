@@ -1,6 +1,6 @@
 <div class="row wrapper border-bottom white-bg page-heading">
   <div class="col-sm-4">
-    <h2>Programme Détaillé</h2>
+    <h2>Caisse</h2>
   </div>
 </div>
 <div class="row">
@@ -11,12 +11,6 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="m-b-md">
-                <div class="row text-right">
-                  <a href="#" class="btn btn-white btn-xs">Récap Match</a><br />
-                  <br />
-                  <a href="#" class="btn btn-white btn-xs">Edit project</a>
-                </div>
-
                 <h2>Folio CS-1</h2>
               </div>
               <dl class="dl-horizontal">
@@ -30,8 +24,6 @@
               <dl class="dl-horizontal">
                 <dt>Date Ouverture :</dt>
                 <dd>12/03/2023</dd>
-                <dt>Date Fin:</dt>
-                <dd>22/02/2023</dd>
               </dl>
             </div>
             <div class="col-lg-7">
@@ -87,7 +79,7 @@
                               <th style="width: 10%">Montant</th>
                               <th style="width: 10%">Reçu de</th>
                               <th style="width: 10%">Date</th>
-                              <th style="width: 40%">Note</th>
+                              <th style="width: 30%">Note</th>
 
                               <th style="width: 10%">Action</th>
                             </tr>
@@ -97,7 +89,9 @@
                               <td class="text-right">50 000.000</td>
                               <td>Président de Club</td>
                               <td>12/03/2022</td>
-                              <td>.........................................</td>
+                              <td>
+                                ..................................................................................
+                              </td>
                               <td class="overflow-hidden">
                                 <div class="btn-group">
                                   <button
@@ -123,7 +117,9 @@
                               <td class="text-right">50 000.000</td>
                               <td>Président de Club</td>
                               <td>12/03/2022</td>
-                              <td>.........................................</td>
+                              <td>
+                                ..................................................................................
+                              </td>
                               <td class="overflow-hidden">
                                 <div class="btn-group">
                                   <button
@@ -149,7 +145,9 @@
                               <td class="text-right">50 000.000</td>
                               <td>Président de Club</td>
                               <td>12/03/2022</td>
-                              <td>.........................................</td>
+                              <td>
+                                ..................................................................................
+                              </td>
                               <td class="overflow-hidden">
                                 <div class="btn-group">
                                   <button
@@ -175,7 +173,9 @@
                               <td class="text-right">50 000.000</td>
                               <td>Président de Club</td>
                               <td>12/03/2022</td>
-                              <td>.........................................</td>
+                              <td>
+                                ..................................................................................
+                              </td>
                               <td class="overflow-hidden">
                                 <div class="btn-group">
                                   <button
@@ -201,7 +201,9 @@
                               <td class="text-right">50 000.000</td>
                               <td>Président de Club</td>
                               <td>12/03/2022</td>
-                              <td>.........................................</td>
+                              <td>
+                                ..................................................................................
+                              </td>
                               <td class="overflow-hidden">
                                 <div class="btn-group">
                                   <button
@@ -227,7 +229,9 @@
                               <td class="text-right">50 000.000</td>
                               <td>Président de Club</td>
                               <td>12/03/2022</td>
-                              <td>.........................................</td>
+                              <td>
+                                ..................................................................................
+                              </td>
                               <td class="overflow-hidden">
                                 <div class="btn-group">
                                   <button
@@ -253,7 +257,9 @@
                               <td class="text-right">50 000.000</td>
                               <td>Président de Club</td>
                               <td>12/03/2022</td>
-                              <td>.........................................</td>
+                              <td>
+                                ..................................................................................
+                              </td>
                               <td class="overflow-hidden">
                                 <div class="btn-group">
                                   <button
@@ -362,7 +368,7 @@
                                         type="button"
                                         class="btn btn-primary btn-xs dropdown-toggle"
                                       >
-                                        Ajouter
+                                        Modifier
                                       </button>
                                     </div>
                                   </div>
@@ -440,6 +446,7 @@
                                         >Modifier</a
                                       >
                                     </li>
+
                                     <li><a href="#">Supprimer</a></li>
                                   </ul>
                                 </div>
@@ -585,12 +592,21 @@
                                   <div class="form-row text-center">
                                     <div class="col-md-12 mb-3">
                                       <input
-                                        data-toggle="modal"
-                                        data-target="#myModalConvocation"
                                         class="btn btn-primary btn-sm"
-                                        value="Montant : 20 000.000"
+                                        value="Montant Disponible : 20 000.000"
                                         required
                                       />
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                      <label>Evenement </label>
+                                      <select class="form-control">
+                                        <option>Stage Préparation</option>
+                                        <option>Stage de Match</option>
+
+                                        <option>Entrainements</option>
+                                      </select>
                                     </div>
                                   </div>
                                   <div class="form-row">
@@ -615,15 +631,27 @@
                                       />
                                     </div>
                                   </div>
+
                                   <div class="form-row">
                                     <div class="col-md-12 mb-3">
-                                      <label f>Note </label>
+                                      <label f>Notes </label>
                                       <textarea
                                         type="text"
                                         class="form-control"
                                         id="validationDefault04"
                                         placeholder=""
                                       ></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                      <label f>PJ </label>
+                                      <input
+                                        type="file"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder=""
+                                      />
                                     </div>
                                   </div>
 
@@ -636,17 +664,31 @@
                                       >
                                         Annuler
                                       </button>
+
                                       <button
                                         type="button"
                                         class="btn btn-primary btn-xs dropdown-toggle"
                                       >
-                                        Ajouter
+                                        Modifier
+                                      </button>
+                                      <button
+                                        type="button"
+                                        class="btn btn-primary btn-xs dropdown-toggle"
+                                        data-dismiss="modal"
+                                      >
+                                        Envoyer
+                                      </button>
+                                      <button
+                                        type="button"
+                                        class="btn btn-primary btn-xs dropdown-toggle"
+                                        data-dismiss="modal"
+                                      >
+                                        Imprimer
                                       </button>
                                     </div>
                                   </div>
                                 </form>
                               </div>
-                              <br /><br />
                             </div>
                           </div>
                           <br /><br />
@@ -914,6 +956,15 @@
                   <br /><br />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <div class="overflow-hidden">
+            <div container="body">
+              <input class="btn btn-primary btn-sm" value="Clôturée" />
             </div>
           </div>
         </div>

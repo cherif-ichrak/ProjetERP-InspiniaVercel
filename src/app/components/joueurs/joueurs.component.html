@@ -154,16 +154,10 @@
                     </div>
                   </div>
                   <div class="form-row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                       <label>
                         <input type="checkbox" class="i-checks" />
-                        &nbsp; &nbsp; actife
-                      </label>
-                    </div>
-                    <div class="col-md-6">
-                      <label>
-                        <input type="checkbox" class="i-checks" />
-                        &nbsp; &nbsp;inactife
+                        &nbsp; &nbsp;Inactif
                       </label>
                     </div>
                   </div>
@@ -175,8 +169,8 @@
                         style="display: none"
                         (change)="onFileChange($event)"
                       />
-                      <label for="fileInput" id="customLabel"
-                        >Cliquez ici pour Télécharger Photo</label
+                      <label for="fileInput" id="customLabel">
+                        Télécharger Photo</label
                       >
                       <img
                         *ngIf="selectedImage"
@@ -192,7 +186,7 @@
                         (change)="onFilePass($event)"
                       />
                       <label for="fileInput" id="customLabel"
-                        >Cliquez ici pour Télécharger Passeport</label
+                        >Télécharger Passeport</label
                       >
                       <img
                         *ngIf="selectedPass"
@@ -208,7 +202,7 @@
                         (change)="onFileLicence($event)"
                       />
                       <label for="fileInput" id="customLabel"
-                        >Cliquez ici pour Télécharger Licence</label
+                        >Télécharger Licence</label
                       >
                       <img
                         *ngIf="selectedLicence"
