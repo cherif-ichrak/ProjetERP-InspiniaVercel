@@ -36,6 +36,11 @@ import { TdbComponent } from './components/tdb/tdb.component';
 import { DetailsStaffComponent } from './components/details-staff/details-staff.component';
 import { AllMessagesComponent } from './components/all-messages/all-messages.component';
 import { AllNotiffComponent } from './components/all-notiff/all-notiff.component';
+import { ComplexeComponent } from './components/complexe/complexe.component';
+import { HebergementsComponent } from './components/hebergements/hebergements.component';
+import { ArchiveComponent } from './components/archive/archive.component';
+import { ImprimerEtatAbsenceComponent } from './components/imprimer-etat-absence/imprimer-etat-absence.component';
+import { ImprimerCaissComponent } from './components/imprimer-caiss/imprimer-caiss.component';
 
 const routes: Routes = [
   { path: 'Parametrage', component: ParametrageComponent },
@@ -108,6 +113,14 @@ const routes: Routes = [
   { path: 'Matches/FicheMatch/FuilleMatch', component: FuilleMatchComponent },
   { path: 'AllMessages', component: AllMessagesComponent },
   { path: 'AllNotif', component: AllNotiffComponent },
+  { path: 'Complexe', component: ComplexeComponent },
+  { path: 'hebergement', component: HebergementsComponent },
+  { path: 'Archive', component: ArchiveComponent },
+  { path: 'EtatAbsence/Absence', component: ImprimerEtatAbsenceComponent },
+  {
+    path: 'Caisse/AfficherCaisee/ImprimerCaisse',
+    component: ImprimerCaissComponent,
+  },
 ];
 
 @NgModule({

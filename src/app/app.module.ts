@@ -52,6 +52,11 @@ import { TdbComponent } from './components/tdb/tdb.component';
 import { DetailsStaffComponent } from './components/details-staff/details-staff.component';
 import { AllMessagesComponent } from './components/all-messages/all-messages.component';
 import { AllNotiffComponent } from './components/all-notiff/all-notiff.component';
+import { ComplexeComponent } from './components/complexe/complexe.component';
+import { HebergementsComponent } from './components/hebergements/hebergements.component';
+import { ArchiveComponent } from './components/archive/archive.component';
+import { ImprimerEtatAbsenceComponent } from './components/imprimer-etat-absence/imprimer-etat-absence.component';
+import { ImprimerCaissComponent } from './components/imprimer-caiss/imprimer-caiss.component';
 
 @NgModule({
   declarations: [
@@ -102,6 +107,11 @@ import { AllNotiffComponent } from './components/all-notiff/all-notiff.component
     DetailsStaffComponent,
     AllMessagesComponent,
     AllNotiffComponent,
+    ComplexeComponent,
+    HebergementsComponent,
+    ArchiveComponent,
+    ImprimerEtatAbsenceComponent,
+    ImprimerCaissComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [],

@@ -383,7 +383,7 @@
                             <tr>
                               <th>Mobilité</th>
                               <th>Matricule</th>
-                              <th>N° Avion</th>
+                              <th>N° Vol</th>
                               <th>Compagne</th>
                               <th>Actions</th>
                             </tr>
@@ -712,12 +712,12 @@
                                       <form class="form-horizontal">
                                         <div class="form-row">
                                           <div class="col-md-3">
-                                            <label>N° Avion</label>
+                                            <label>N° Vol</label>
                                             <input
                                               type="text"
                                               class="form-control"
                                               id="validationDefault04"
-                                              placeholder="N° Avion"
+                                              placeholder="N° Vol"
                                             />
                                           </div>
                                           <div class="col-md-3">
@@ -1214,80 +1214,132 @@
                               <div class="modal-body">
                                 <form>
                                   <div class="form-row">
-                                    <div class="col-md-3 mb-3">
-                                      <label>Date </label>
-                                      <input class="form-control" type="date" />
-                                    </div>
-                                    <div class="col-md-7 mb-3">
-                                      <label f>Petit Dej</label>
-                                      <textarea
+                                    <div class="col-md-12 mb-3">
+                                      <label>Date</label>
+                                      <input
+                                        type="date"
                                         class="form-control"
-                                        type="text"
-                                      ></textarea>
-                                    </div>
-                                    <div class="col-md-2 mb-3">
-                                      <label f>Heure</label>
-                                      <input class="form-control" type="time" />
+                                        id="validationDefault04"
+                                        placeholder=""
+                                        required
+                                      />
                                     </div>
                                   </div>
                                   <div class="form-row">
                                     <div class="col-md-10 mb-3">
-                                      <label f>Collation</label>
+                                      <label>Petit Déjeuner</label>
                                       <textarea
-                                        class="form-control"
                                         type="text"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder="  Jus pomme, orange et cannelle Barres de céréales
+                              aux graines et chocolat Faisselle aux noisettes et
+                              miel"
+                                        required
                                       ></textarea>
                                     </div>
+
                                     <div class="col-md-2 mb-3">
-                                      <label f>Heure</label>
-                                      <input class="form-control" type="time" />
-                                    </div>
-                                  </div>
-                                  <div class="form-row">
-                                    <div class="col-md-10 mb-3">
-                                      <label f>Déjeuner</label>
-                                      <textarea
-                                        class="form-control"
-                                        type="text"
-                                      ></textarea>
-                                    </div>
-                                    <div class="col-md-2 mb-3">
-                                      <label f>Heure</label>
-                                      <input class="form-control" type="time" />
-                                    </div>
-                                  </div>
-                                  <div class="form-row">
-                                    <div class="col-md-10 mb-3">
-                                      <label f>Collation</label>
-                                      <textarea
-                                        class="form-control"
-                                        type="text"
-                                      ></textarea>
-                                    </div>
-                                    <div class="col-md-2 mb-3">
-                                      <label f>Heure</label>
-                                      <input class="form-control" type="time" />
-                                    </div>
-                                  </div>
-                                  <div class="form-row">
-                                    <div class="col-md-10 mb-3">
-                                      <label f> Diner</label>
-                                      <textarea
-                                        class="form-control"
-                                        type="text"
-                                      ></textarea>
-                                    </div>
-                                    <div class="col-md-2 mb-3">
-                                      <label f>Heure</label>
-                                      <textarea
-                                        class="form-control"
+                                      <label>Heure </label>
+                                      <input
                                         type="time"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        required
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="col-md-10 mb-3">
+                                      <label>Collation</label>
+                                      <textarea
+                                        type="text"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder="yogourt nature avec des petits fruits"
+                                        required
                                       ></textarea>
+                                    </div>
+
+                                    <div class="col-md-2 mb-3">
+                                      <label>Heure </label>
+                                      <input
+                                        type="time"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        required
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="col-md-10 mb-3">
+                                      <label> Déjeuner</label>
+                                      <textarea
+                                        type="text"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder="Omelette aux légumes ,Salade aux pommes"
+                                        required
+                                      ></textarea>
+                                    </div>
+
+                                    <div class="col-md-2 mb-3">
+                                      <label>Heure </label>
+                                      <input
+                                        type="time"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        required
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="col-md-10 mb-3">
+                                      <label>Collation</label>
+                                      <textarea
+                                        type="text"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder="yogourt nature avec des petits fruits"
+                                        required
+                                      ></textarea>
+                                    </div>
+
+                                    <div class="col-md-2 mb-3">
+                                      <label>Heure </label>
+                                      <input
+                                        type="time"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        required
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="col-md-10 mb-3">
+                                      <label>Diner</label>
+                                      <textarea
+                                        type="text"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        placeholder="   soupe de poisson , Salade Verte"
+                                        required
+                                      ></textarea>
+                                    </div>
+
+                                    <div class="col-md-2 mb-3">
+                                      <label>Heure </label>
+                                      <input
+                                        type="time"
+                                        class="form-control"
+                                        id="validationDefault04"
+                                        required
+                                      />
                                     </div>
                                   </div>
 
                                   <div class="text-right">
-                                    <div>
+                                    <div class="modal-footer">
                                       <button
                                         type="button"
                                         class="btn btn-white btn-xs dropdown-toggle"
@@ -2621,7 +2673,7 @@
                                   type="text"
                                   class="form-control"
                                   id="validationDefault04"
-                                  placeholder="N° Avion"
+                                  placeholder="N° Vol"
                                 />
                               </div>
                               <div class="col-md-2">
@@ -2669,7 +2721,7 @@
                         <tr>
                           <th>Mobilité</th>
                           <th>Matricule</th>
-                          <th>N° Avion</th>
+                          <th>N° Vol</th>
                           <th>Compagne</th>
                         </tr>
                       </thead>
@@ -2876,103 +2928,130 @@
                   </div>
                   <div class="modal-body">
                     <form>
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th>Date</th>
-                          </tr>
-                          <tr>
-                            <th></th>
-                            <th>Repas</th>
-                            <th>Heure</th>
-                            <th>Description</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <input
-                                type="checkbox"
-                                checked
-                                class="i-checks"
-                                name="input[]"
-                              />
-                            </td>
-
-                            <td>Petit Déjeuner</td>
-                            <td>
-                              <b style="color: #0d8992"><i>Heure 09:00 </i></b>
-                            </td>
-                            <td id="messageCell" contenteditable="true">
-                              Jus pomme, orange et cannelle Barres de céréales
+                      <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                          <label>Date</label>
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="validationDefault04"
+                            placeholder=""
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-10 mb-3">
+                          <label>Petit Déjeuner</label>
+                          <textarea
+                            type="text"
+                            class="form-control"
+                            id="validationDefault04"
+                            placeholder="  Jus pomme, orange et cannelle Barres de céréales
                               aux graines et chocolat Faisselle aux noisettes et
-                              miel
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <input
-                                type="checkbox"
-                                checked
-                                class="i-checks"
-                                name="input[]"
-                              />
-                            </td>
-                            <td>Collation</td>
-                            <td>
-                              <b style="color: #0d8992"><i>Heure 11:00 </i></b>
-                            </td>
+                              miel"
+                            required
+                          ></textarea>
+                        </div>
 
-                            <td>Un yogourt nature avec des petits fruits</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <input
-                                type="checkbox"
-                                checked
-                                class="i-checks"
-                                name="input[]"
-                              />
-                            </td>
-                            <td>Déjeuner</td>
-                            <td><i>Heure 13:00 </i></td>
+                        <div class="col-md-2 mb-3">
+                          <label>Heure </label>
+                          <input
+                            type="time"
+                            class="form-control"
+                            id="validationDefault04"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-10 mb-3">
+                          <label>Collation</label>
+                          <textarea
+                            type="text"
+                            class="form-control"
+                            id="validationDefault04"
+                            placeholder="yogourt nature avec des petits fruits"
+                            required
+                          ></textarea>
+                        </div>
 
-                            <td>Omelette aux légumes ,Salade aux pommes</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <input
-                                type="checkbox"
-                                checked
-                                class="i-checks"
-                                name="input[]"
-                              />
-                            </td>
-                            <td>Collation</td>
-                            <td>
-                              <b style="color: #0d8992"><i>Heure 16:00 </i></b>
-                            </td>
+                        <div class="col-md-2 mb-3">
+                          <label>Heure </label>
+                          <input
+                            type="time"
+                            class="form-control"
+                            id="validationDefault04"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-10 mb-3">
+                          <label> Déjeuner</label>
+                          <textarea
+                            type="text"
+                            class="form-control"
+                            id="validationDefault04"
+                            placeholder="Omelette aux légumes ,Salade aux pommes"
+                            required
+                          ></textarea>
+                        </div>
 
-                            <td>Un yogourt nature avec des petits fruits</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <input
-                                type="checkbox"
-                                checked
-                                class="i-checks"
-                                name="input[]"
-                              />
-                            </td>
+                        <div class="col-md-2 mb-3">
+                          <label>Heure </label>
+                          <input
+                            type="time"
+                            class="form-control"
+                            id="validationDefault04"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-10 mb-3">
+                          <label>Collation</label>
+                          <textarea
+                            type="text"
+                            class="form-control"
+                            id="validationDefault04"
+                            placeholder="yogourt nature avec des petits fruits"
+                            required
+                          ></textarea>
+                        </div>
 
-                            <td>Dîner</td>
-                            <td>
-                              <b style="color: #0d8992"><i>Heure 109:00 </i></b>
-                            </td>
-                            <td>soupe de poisson , Salade Verte</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                        <div class="col-md-2 mb-3">
+                          <label>Heure </label>
+                          <input
+                            type="time"
+                            class="form-control"
+                            id="validationDefault04"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-10 mb-3">
+                          <label>Diner</label>
+                          <textarea
+                            type="text"
+                            class="form-control"
+                            id="validationDefault04"
+                            placeholder="   soupe de poisson , Salade Verte"
+                            required
+                          ></textarea>
+                        </div>
+
+                        <div class="col-md-2 mb-3">
+                          <label>Heure </label>
+                          <input
+                            type="time"
+                            class="form-control"
+                            id="validationDefault04"
+                            required
+                          />
+                        </div>
+                      </div>
                       <div class="form-row">
                         <div class="col-md-12">
                           <button
@@ -2997,7 +3076,7 @@
 
                               <th data-hide="all">Déjeuner</th>
 
-                              <th data-hide="all">Déjeuner</th>
+                              <th data-hide="all">Collation</th>
 
                               <th data-hide="all">Diner</th>
                             </tr>

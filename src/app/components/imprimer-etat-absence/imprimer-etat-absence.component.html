@@ -5,24 +5,6 @@
         <div class="tab-content">
           <div role="tabpanel" id="" class="tab-pane active">
             <div class="panel-body">
-              <div class="row mb-3">
-                <div
-                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-right"
-                >
-                  <button
-                    routerLink="Absence"
-                    id="upload"
-                    type="button"
-                    class="btn btn-outline btn-info dim"
-                    data-toggle="modal"
-                    data-target="#modal_clients_upload"
-                    data-whatever="5"
-                    title="PDF"
-                  >
-                    <i class="fa fa-file-pdf-o"></i>
-                  </button>
-                </div>
-              </div>
               <div class="table-responsive">
                 <div
                   id="table_clients_wrapper"
@@ -31,34 +13,12 @@
                   <div class="row">
                     <div class="col-sm-12 col-md-2">
                       <div class="dataTables_length" id="table_clients_length">
-                        <label>
-                          <select class="form-control">
-                            <option selected>Années</option>
-                            <option value="ClientX">1999</option>
-                            <option value="ClientX">1998</option>
-                            <option value="ClientX">1997</option></select
-                          ><br />
-                        </label>
+                        <label> Années : 2023 </label>
                       </div>
                     </div>
                     <div class="col-sm-12 col-md-2">
                       <div id="table_clients_filter" class="dataTables_filter">
-                        <select class="form-control">
-                          <option selected>Mois</option>
-                          <option value="ClientX">Janviér</option>
-                          <option value="ClientX">Février</option>
-                          <option value="ClientX">Mars</option>
-                          <option value="ClientX">Avril</option>
-                          <option value="ClientX">Mai</option>
-                          <option value="ClientX">Juin</option>
-                          <option value="ClientX">Juillet</option>
-                          <option value="ClientX">Aout</option>
-                          <option value="ClientX">Septembre</option>
-                          <option value="ClientX">Octobre</option>
-                          <option value="ClientX">Novembre</option>
-
-                          <option value="ClientX">Décembre</option></select
-                        ><br />
+                        <label> Mois : Janvier </label>
                       </div>
                     </div>
                   </div>
@@ -822,6 +782,21 @@
           >&nbsp;&nbsp;
         </div>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="modal-footer">
+      <input
+        type="submit"
+        class="btn btn-primary btn-xs dropdown-toggle"
+        value="Imprimer"
+      />
+
+      <input
+        type="submit"
+        class="btn btn-white btn-xs dropdown-toggle"
+        value="Annuler"
+      />
     </div>
   </div>
 </div>
