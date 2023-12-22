@@ -1,0 +1,769 @@
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="tab-content">
+    <div role="tabpanel" id="" class="tab-pane active">
+      <h3>Avec Actions en Justice</h3>
+      <form>
+        <div class="row">
+          <div class="col-lg-3">
+            <input
+              class="form-control input-sm input-sm"
+              type="text"
+              placeholder=" Code "
+            />
+          </div>
+          <div class="col-lg-3">
+            <input
+              class="form-control input-sm"
+              type="text"
+              placeholder="Intitulé"
+            />
+          </div>
+          <div class="col-lg-3">
+            <input
+              class="form-control input-sm"
+              type="text"
+              placeholder="Montant Créance"
+            />
+          </div>
+          <div class="col-lg-3">
+            <input class="form-control input-sm" placeholder=" Provision N-1" />
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-3">
+            <input
+              class="form-control input-sm"
+              type="text"
+              placeholder=" Provision N "
+            />
+          </div>
+          <div class="col-lg-2">
+            <input
+              class="form-control input-sm"
+              type="text"
+              placeholder="Reprise"
+            />
+          </div>
+          <div class="col-lg-3">
+            <input
+              class="form-control input-sm"
+              type="text"
+              placeholder="Créance Nette"
+            />
+          </div>
+          <div class="col-lg-3">
+            <input
+              type="file"
+              class="form-control input-sm"
+              placeholder=" PJ"
+            />
+          </div>
+          <div class="col-lg-1">
+            <input
+              class="btn btn-xs btn-primary"
+              value="Ajouter"
+              type="submit"
+            />
+          </div>
+        </div>
+      </form>
+      <br /><br />
+      <div class="table-responsive">
+        <div
+          id="table_provisions_clients_wrapper"
+          class="dataTables_wrapper dt-bootstrap4 no-footer"
+        >
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div
+                class="dataTables_length"
+                id="table_provisions_clients_length"
+              >
+                <label
+                  >Afficher
+                  <select
+                    name="table_provisions_clients_length"
+                    aria-controls="table_provisions_clients"
+                    class="custom-select custom-select-sm form-control input-sm form-control input-sm-sm"
+                  >
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                  entrées</label
+                >
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div
+                id="table_provisions_clients_filter"
+                class="dataTables_filter"
+              >
+                <label
+                  >Rechercher :<input
+                    type="search"
+                    class="form-control input-sm form-control input-sm-sm"
+                    placeholder=""
+                    aria-controls="table_provisions_clients"
+                /></label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <table
+                id="table_provisions_clients"
+                class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                role="grid"
+                aria-describedby="table_provisions_clients_info"
+                style="width: 100%"
+              >
+                <thead>
+                  <tr role="row">
+                    <th
+                      class="sorting_asc"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-sort="ascending"
+                      aria-label="Code : activer pour trier la colonne par ordre décroissant"
+                      style="width: 10%"
+                    >
+                      Code
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Intitulé
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Montant Créance : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Montant Créance
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Provision : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Provision N-1
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Provision : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Provision N
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Provision : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Reprise
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Provision : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Créance Nette
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="VCN : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      PJ
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Actions : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Actions
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr role="row" class="odd">
+                    <td class="sorting_1">CL0007</td>
+                    <td>ABC</td>
+                    <td>5.000</td>
+                    <td>4.900</td>
+                    <td>0.100</td>
+                    <td>5.000</td>
+                    <td>4.900</td>
+                    <td class="text-centre">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </td>
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Provisioner</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr role="row" class="even">
+                    <td class="sorting_1">CL0001</td>
+                    <td>AAA</td>
+                    <td>5 000.000</td>
+                    <td>1 000.000</td>
+                    <td>4 000.000</td>
+                    <td>5.000</td>
+                    <td>4.900</td>
+                    <td class="text-centre">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </td>
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Provisioner</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr role="row" class="odd">
+                    <td class="sorting_1">20221948464</td>
+                    <td>abc</td>
+                    <td>2 000.000</td>
+                    <td>100.000</td>
+                    <td>1 900.000</td>
+                    <td>5.000</td>
+                    <td>4.900</td>
+                    <td class="text-centre">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </td>
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Provisioner</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div
+                id="table_provisions_clients_processing"
+                class="dataTables_processing card"
+                style="display: none"
+              >
+                Traitement...
+              </div>
+            </div>
+          </div>
+              <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                      <div
+                        class="dataTables_info"
+                        id="table_clients_info"
+                        role="status"
+                        aria-live="polite"
+                      >
+                        Affichage de 1 à 10 sur 18 entrées
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                      <div
+                        class="text-right"
+                        class="dataTables_paginate paging_simple_numbers"
+                        id="table_clients_paginate"
+                      >
+                        <ul class="pagination">
+                          <li
+                            class="paginate_button page-item previous disabled"
+                            id="table_clients_previous"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="0"
+                              tabindex="0"
+                              class="page-link"
+                              >Précédent</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item active">
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="1"
+                              tabindex="0"
+                              class="page-link"
+                              >1</a
+                            >
+                          </li>
+
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="2"
+                              tabindex="0"
+                              class="page-link"
+                              >2</a
+                            >
+                          </li>
+                          <li
+                            class="paginate_button page-item next"
+                            id="table_clients_next"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="3"
+                              tabindex="0"
+                              class="page-link"
+                              >Suivant</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+          <br />
+          <table>
+            <td style="width: 10%" colspan="3">
+              <b>Total Montant Créance :</b>
+            </td>
+            <td style="width: 10%"><span id="tot_creance"> 0.000</span></td>
+            <td style="width: 10%" colspan="3"><b> Total Provisions :</b></td>
+            <td style="width: 10%"><span id="tot_creance">0.000</span></td>
+            <td style="width: 10%" colspan="3"><b> Total VCN : </b></td>
+            <td style="width: 10%"><span id="tot_creance">0.000</span></td>
+          </table>
+        </div>
+      </div>
+
+      <br />
+      <h3>Sans Actions en Justice</h3>
+      <br />
+      <form>
+        <div class="row">
+          <div class="col-lg-10">
+            <input
+              class="form-control input-sm"
+              type="text"
+              placeholder=" Antériorité : Par Jour "
+            />
+          </div>
+          <div class="col-lg-2">
+            <input
+              class="btn btn-xs btn-primary"
+              value="Rechercher"
+              type="submit"
+            />
+          </div>
+        </div>
+      </form>
+      <br /><br />
+
+      <div class="table-responsive">
+        <div
+          id="table_provisions_clients_wrapper"
+          class="dataTables_wrapper dt-bootstrap4 no-footer"
+        >
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div
+                class="dataTables_length"
+                id="table_provisions_clients_length"
+              >
+                <label
+                  >Afficher
+                  <select
+                    name="table_provisions_clients_length"
+                    aria-controls="table_provisions_clients"
+                    class="custom-select custom-select-sm form-control input-sm form-control input-sm-sm"
+                  >
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                  entrées</label
+                >
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div
+                id="table_provisions_clients_filter"
+                class="dataTables_filter"
+              >
+                <label
+                  >Rechercher :<input
+                    type="search"
+                    class="form-control input-sm form-control input-sm-sm"
+                    placeholder=""
+                    aria-controls="table_provisions_clients"
+                /></label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <table
+                id="table_provisions_clients"
+                class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                role="grid"
+                aria-describedby="table_provisions_clients_info"
+                style="width: 100%"
+              >
+                <thead>
+                  <tr role="row">
+                    <th
+                      class="sorting_asc"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-sort="ascending"
+                      aria-label="Code : activer pour trier la colonne par ordre décroissant"
+                      style="width: 10%"
+                    >
+                      Code
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Intitulé
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Montant Créance : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Montant Créance
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Provision : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Provision N-1
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Provision : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Provision N
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Provision : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Reprise
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Provision : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Créance Nette
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="VCN : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      PJ
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_provisions_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Actions : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Actions
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr role="row" class="odd">
+                    <td class="sorting_1">CL0007</td>
+                    <td>ABC</td>
+                    <td>5.000</td>
+                    <td>4.900</td>
+                    <td>0.100</td>
+                    <td>5.000</td>
+                    <td>4.900</td>
+                    <td class="text-centre">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </td>
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Provisioner</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr role="row" class="even">
+                    <td class="sorting_1">CL0001</td>
+                    <td>AAA</td>
+                    <td>5 000.000</td>
+                    <td>1 000.000</td>
+                    <td>4 000.000</td>
+                    <td>5.000</td>
+                    <td>4.900</td>
+                    <td class="text-centre">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </td>
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Provisioner</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr role="row" class="odd">
+                    <td class="sorting_1">20221948464</td>
+                    <td>abc</td>
+                    <td>2 000.000</td>
+                    <td>100.000</td>
+                    <td>1 900.000</td>
+                    <td>5.000</td>
+                    <td>4.900</td>
+                    <td class="text-centre">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </td>
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Provisioner</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div
+                id="table_provisions_clients_processing"
+                class="dataTables_processing card"
+                style="display: none"
+              >
+                Traitement...
+              </div>
+            </div>
+          </div>
+              <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                      <div
+                        class="dataTables_info"
+                        id="table_clients_info"
+                        role="status"
+                        aria-live="polite"
+                      >
+                        Affichage de 1 à 10 sur 18 entrées
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                      <div
+                        class="text-right"
+                        class="dataTables_paginate paging_simple_numbers"
+                        id="table_clients_paginate"
+                      >
+                        <ul class="pagination">
+                          <li
+                            class="paginate_button page-item previous disabled"
+                            id="table_clients_previous"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="0"
+                              tabindex="0"
+                              class="page-link"
+                              >Précédent</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item active">
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="1"
+                              tabindex="0"
+                              class="page-link"
+                              >1</a
+                            >
+                          </li>
+
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="2"
+                              tabindex="0"
+                              class="page-link"
+                              >2</a
+                            >
+                          </li>
+                          <li
+                            class="paginate_button page-item next"
+                            id="table_clients_next"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="3"
+                              tabindex="0"
+                              class="page-link"
+                              >Suivant</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

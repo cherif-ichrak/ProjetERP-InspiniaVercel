@@ -1,0 +1,78 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-sm-4">
+    <h2>Exploitations</h2>
+    <ol class="breadcrumb">
+      <li>
+        <a>Structure</a>
+      </li>
+      <li class="active">
+        <strong>Ajouter Client</strong>
+      </li>
+    </ol>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="wrapper wrapper-content animated fadeInUp">
+      <div class="ibox">
+        <div class="ibox-content">
+          <div class="row"></div>
+
+          <div class="row m-t-sm">
+            <div class="col-lg-12">
+              <div class="panel blank-panel">
+                <div class="panel-heading">
+                  <div class="panel-options">
+                    <ul class="nav nav-tabs">
+                      <li class="active">
+                        <a href="#tab-2" data-toggle="tab">Identification </a>
+                      </li>
+                      <li class="">
+                        <a data-toggle="tab" href="#ComplementClient"
+                          >Complement
+                        </a>
+                      </li>
+                      <li class="">
+                        <a
+                          id="ContactClient-tab"
+                          data-toggle="tab"
+                          href="#ContactClient"
+                          >Contact
+                        </a>
+                      </li>
+                      <li class="">
+                        <a
+                          id="ContactClient-tab"
+                          data-toggle="tab"
+                          href="#AlerteNotif"
+                          >Alerte et Notification
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="tab-2">
+                      <app-identification-client></app-identification-client>
+                    </div>
+                    <div class="tab-pane" id="ComplementClient">
+                      <app-complements-clients></app-complements-clients>
+                    </div>
+                    <div class="tab-pane" id="ContactClient">
+                      <app-contacts-client></app-contacts-client>
+                    </div>
+                    <div class="tab-pane" id="AlerteNotif">
+                      <app-alertes-clients></app-alertes-clients>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

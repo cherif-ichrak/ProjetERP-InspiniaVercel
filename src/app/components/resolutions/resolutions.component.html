@@ -1,0 +1,444 @@
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="row">
+    <div class="col-xl-12">
+      <div>
+        <div class="tab-content">
+          <div role="tabpanel" id="" class="tab-pane active">
+            <div class="panel-body">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-right"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModalAjouter"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Ajouter"
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                  <div
+                    class="modal inmodal"
+                    id="myModalAjouter"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content animated bounceInRight">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                          >
+                            <span aria-hidden="true">&times;</span
+                            ><span class="sr-only">Fermer</span>
+                          </button>
+
+                          <h4 class="modal-title">Ajouter Resolutions</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <form role="form">
+                                <div class="form-row text-left">
+                                  <label>Libellé</label>
+                                  <textarea
+                                    class="form-control"
+                                    placeholder="Affectation ............"
+                                  ></textarea>
+                                </div>
+                                <div class="form-row text-left">
+                                  <label for="validationDefault05"
+                                    >Ordre du Jour</label
+                                  >
+                                  <select class="form-control">
+                                    <option selected></option>
+                                    <option>XXX</option>
+                                  </select>
+                                </div>
+                              </form>
+                              <br />
+                              <br />
+                              <br />
+                              <br />
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="row" class="text-right">
+                                <br />
+                                <br />
+                                <br />
+                                <div class="modal-footer">
+                                  <input
+                                    type="submit"
+                                    class="btn btn-xs btn-default"
+                                    data-dismiss="modal"
+                                    value="Annuler"
+                                  />
+                                  <input
+                                    type="submit"
+                                    data-dismiss="modal"
+                                    class="btn btn-xs btn-primary"
+                                    value="Ajouter"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <div
+                  id="table_contactsclients_wrapper"
+                  class="dataTables_wrapper dt-bootstrap4 no-footer"
+                >
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <div
+                        class="dataTables_length"
+                        id="table_contactsclients_length"
+                      >
+                        <label
+                          >Afficher
+                          <select
+                            name="table_contactsclients_length"
+                            aria-controls="table_contactsclients"
+                            class="custom-select custom-select-sm form-control form-control-sm"
+                          >
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select>
+                          entrées
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <div
+                        id="table_contactsclients_filter"
+                        class="dataTables_filter"
+                      >
+                        <label
+                          >Rechercher :
+                          <input
+                            type="search"
+                            class="form-control form-control-sm"
+                            placeholder=""
+                            aria-controls="table_contactsclients"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="col-lg-12">
+                      <table
+                        id="table_contactsclients"
+                        class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                        role="grid"
+                        aria-describedby="table_contactsclients_info"
+                        style="width: 910px"
+                      >
+                        <thead>
+                          <tr>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_contactsclients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 800px"
+                            >
+                              Libellé
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_contactsclients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 800px"
+                            >
+                              Ordre du Jour
+                            </th>
+
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_contactsclients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 110px"
+                            >
+                              Action
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Affectation du résultat de l'exercice 2021</td>
+                            <td>Affectation du résultat de l'exercice 2021</td>
+
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifierResolutions"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Affectation du résultat de l'exercice 2021</td>
+                            <td>Affectation du résultat de l'exercice 2021</td>
+
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifierResolutions"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Affectation du résultat de l'exercice 2021</td>
+                            <td>Affectation du résultat de l'exercice 2021</td>
+
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifierResolutions"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Affectation du résultat de l'exercice 2021</td>
+                            <td>Affectation du résultat de l'exercice 2021</td>
+
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifierResolutions"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div
+                        class="modal inmodal"
+                        id="myModalModifierResolutions"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content animated bounceInRight">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                              >
+                                <span aria-hidden="true">&times;</span
+                                ><span class="sr-only">Fermer</span>
+                              </button>
+
+                              <h4 class="modal-title">Modifier Resolutions</h4>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <form role="form">
+                                    <div class="form-row text-left">
+                                      <label>Libellé</label>
+                                      <textarea
+                                        class="form-control"
+                                        placeholder="Affectation ............"
+                                      ></textarea>
+                                    </div>
+                                    <div class="form-row text-left">
+                                      <label for="validationDefault05"
+                                        >Ordre du Jour</label
+                                      >
+                                      <select class="form-control">
+                                        <option selected></option>
+                                        <option>XXX</option>
+                                      </select>
+                                    </div>
+                                  </form>
+                                  <br />
+                                  <br />
+                                  <br />
+                                  <br />
+                                </div>
+                                <div class="col-lg-12">
+                                  <div class="row" class="text-right">
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <div class="modal-footer">
+                                      <input
+                                        type="submit"
+                                        class="btn btn-xs btn-default"
+                                        data-dismiss="modal"
+                                        value="Annuler"
+                                      />
+                                      <input
+                                        type="submit"
+                                        data-dismiss="modal"
+                                        class="btn btn-xs btn-primary"
+                                        value="Modifier"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        id="table_contactsclients_processing"
+                        class="dataTables_processing card"
+                        style="display: none"
+                      >
+                        Traitement...
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                      <div
+                        class="dataTables_info"
+                        id="table_contactsclients_info"
+                        role="status"
+                        aria-live="polite"
+                      >
+                        Affichage de 1 à 10 sur 18 entrées
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                      <div
+                        class="dataTables_paginate paging_simple_numbers"
+                        id="table_contactsclients_paginate"
+                      >
+                        <ul class="pagination">
+                          <li
+                            class="paginate_button page-item previous disabled"
+                            id="table_contactsclients_previous"
+                          >
+                            <a
+                              aria-controls="table_contactsclients"
+                              data-dt-idx="0"
+                              tabindex="0"
+                              class="page-link"
+                              >Précédente</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item active">
+                            <a
+                              aria-controls="table_contactsclients"
+                              data-dt-idx="1"
+                              tabindex="0"
+                              class="page-link"
+                              >1</a
+                            >
+                          </li>
+
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_contactsclients"
+                              data-dt-idx="2"
+                              tabindex="0"
+                              class="page-link"
+                              >2</a
+                            >
+                          </li>
+                          <li
+                            class="paginate_button page-item next"
+                            id="table_contactsclients_next"
+                          >
+                            <a
+                              aria-controls="table_contactsclients"
+                              data-dt-idx="3"
+                              tabindex="0"
+                              class="page-link"
+                              >Suivante</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

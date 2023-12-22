@@ -1,0 +1,85 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Contrat Cession</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a>Juridique</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a>Traitement</a>
+      </li>
+      <li class="breadcrumb-item active">
+        <strong>Cession des Parts</strong>
+      </li>
+    </ol>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="tabs-container">
+        <div class="tab-content">
+          <div class="panel-body">
+            <form>
+              <div class="form-row">
+                <div class="col-md-5 mb-3">
+                  <label>Sélectionnez Client</label>
+                  <select class="form-control">
+                    <option selected>Sélectionnez Client</option>
+                    <option value="flotte2">Client x</option>
+                    <option value="flotte3">Client z</option>
+                    <option value="flotte3">Client a</option>
+                    <option value="flotte3">Client e</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationDefault03">Nombre de parts</label>
+                  <input class="form-control" type="text" />
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationDefault03">Date Cession</label>
+                  <input class="form-control" type="date" />
+                </div>
+                <div class="col-md-1 mb-3 nav nav-tabs">
+                  <br />
+                  <br />
+                  <input
+                    data-toggle="tab"
+                    href="#General"
+                    type="submit"
+                    class="btn btn-xs btn-primary"
+                    value="Valider"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="tab-pane" id="General">
+                  <app-contrat-cession> </app-contrat-cession>
+                </div>
+              </div>
+
+              <div class="row" class="text-right">
+                <div class="modal-footer">
+                  <input
+                    type="submit"
+                    class="btn btn-xs btn-default"
+                    data-dismiss="modal"
+                    value="Annuler"
+                  />
+                  <input
+                    type="submit"
+                    data-dismiss="modal"
+                    class="btn btn-xs btn-primary"
+                    value="Ajouter"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

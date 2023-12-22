@@ -1,0 +1,1881 @@
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="tab-content">
+    <div role="tabpanel" id="" class="tab-pane active">
+      <div class="panel-body">
+        <div class="row mb-3">
+          <div class="col-12 col-sm-8 align-self-center">
+            <div class="row"></div>
+          </div>
+
+          <div
+            class="col-12 col-sm-4 align-self-center pt-1 pt-sm-0 text-right"
+          >
+            <button
+              type="button"
+              class="btn btn-outline btn-info dim save"
+              title="Enregistrer balance"
+            >
+              <i class="fa fa-save"></i>
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-outline btn-info dim"
+              data-toggle="modal"
+              data-target="#modal_balance_upload"
+              data-whatever="5"
+              title="Importer"
+            >
+              <i class="fa fa-upload"></i>
+            </button>
+
+            <button
+              class="btn btn-outline btn-info dim export_modele"
+              data-whatever="5"
+              title="Modèle"
+            >
+              <i class="fa fa-file"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <div
+            id="table_clients_wrapper"
+            class="dataTables_wrapper dt-bootstrap4 no-footer"
+          >
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="dataTables_length" id="table_clients_length">
+                  <label
+                    >Afficher
+                    <select
+                      name="table_clients_length"
+                      aria-controls="table_clients"
+                      class="custom-select custom-select-sm form-control form-control-sm"
+                    >
+                      <option value="10">10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                    </select>
+                    entrées
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div id="table_clients_filter" class="dataTables_filter">
+                  <label
+                    >Rechercher :
+                    <input
+                      type="search"
+                      class="form-control form-control-sm"
+                      placeholder=""
+                      aria-controls="table_clients"
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <table
+                  class="table table-striped table-bordered table-hover dataTables-example"
+                >
+                  <thead>
+                    <tr>
+                      <th>Compte général</th>
+                      <th>Code Tiers</th>
+                      <th>Intitulé</th>
+                      <th>Mvt Débit</th>
+                      <th>Mvt Crédit</th>
+                      <th>Solde Débiteur</th>
+                      <th>Solde Créditeur</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0001</td>
+                      <td>Assurance COMAR</td>
+                      <td class="text-right">20 872.663</td>
+                      <td class="text-right">20 872.663</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0002</td>
+                      <td>Transporteur Saïd Yacia</td>
+                      <td class="text-right">1 764 089.551</td>
+                      <td class="text-right">1 764 089.551</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0003</td>
+                      <td>I T S T</td>
+                      <td class="text-right">60 918.350</td>
+                      <td class="text-right">60 918.350</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0004</td>
+                      <td>I T S T (avances de fonds)</td>
+                      <td class="text-right">3 190.782</td>
+                      <td class="text-right">3 190.782</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0008</td>
+                      <td>TUNISIE TELECOM</td>
+                      <td class="text-right">257.678</td>
+                      <td class="text-right">257.678</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0009</td>
+                      <td>TUNISIANET</td>
+                      <td class="text-right">495.600</td>
+                      <td class="text-right">495.600</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0011</td>
+                      <td>LE MOTEUR</td>
+                      <td class="text-right">20 538.201</td>
+                      <td class="text-right">20 538.201</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0012</td>
+                      <td>TTN</td>
+                      <td class="text-right">25 576.320</td>
+                      <td class="text-right">25 576.320</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0013</td>
+                      <td>FNAC</td>
+                      <td class="text-right">699.600</td>
+                      <td class="text-right">699.600</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0014</td>
+                      <td>PHOENIX LOGISTIQUE</td>
+                      <td class="text-right">424 887.350</td>
+                      <td class="text-right">584 661.900</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">159 774.550</td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0015</td>
+                      <td>SOCIETE MAHDI</td>
+                      <td class="text-right">10 877.036</td>
+                      <td class="text-right">10 877.036</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0017</td>
+                      <td>SMS</td>
+                      <td class="text-right">26 579.280</td>
+                      <td class="text-right">26 579.280</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0018</td>
+                      <td>BRANDT</td>
+                      <td class="text-right">2 420.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">2 420.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0019</td>
+                      <td>GENERAL ASSISTANCE</td>
+                      <td class="text-right">1 138.594</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">1 138.594</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0020</td>
+                      <td>MY NET</td>
+                      <td class="text-right">10 082.800</td>
+                      <td class="text-right">19 778.840</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">9 696.040</td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0021</td>
+                      <td>EOM</td>
+                      <td class="text-right">171 376.900</td>
+                      <td class="text-right">171 376.900</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0022</td>
+                      <td>HIBA DISTRIBUTION</td>
+                      <td class="text-right">552.628</td>
+                      <td class="text-right">552.628</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0023</td>
+                      <td>SOCIETE EL BARAKA METAL</td>
+                      <td class="text-right">11 345.341</td>
+                      <td class="text-right">11 345.341</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0024</td>
+                      <td>GTL</td>
+                      <td class="text-right">6 206.606</td>
+                      <td class="text-right">6 206.606</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0025</td>
+                      <td>TOTAL TUNISIE</td>
+                      <td class="text-right">1 035.700</td>
+                      <td class="text-right">772.200</td>
+                      <td class="text-right">263.500</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0026</td>
+                      <td>FARES LAKHOUA</td>
+                      <td class="text-right">16 139.570</td>
+                      <td class="text-right">7 741.900</td>
+                      <td class="text-right">8 397.670</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0027</td>
+                      <td>YASSER BEN BRAHIM</td>
+                      <td class="text-right">14 874.200</td>
+                      <td class="text-right">14 874.200</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0028</td>
+                      <td>STE ETQ</td>
+                      <td class="text-right">208.400</td>
+                      <td class="text-right">208.400</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0029</td>
+                      <td>OCEAN SHIPPING</td>
+                      <td class="text-right">9 367.261</td>
+                      <td class="text-right">9 261.469</td>
+                      <td class="text-right">105.792</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0030</td>
+                      <td>OTOSURE</td>
+                      <td class="text-right">1 129.202</td>
+                      <td class="text-right">1 129.202</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0031</td>
+                      <td>FOURNISSUEUR DIVERS</td>
+                      <td class="text-right">1 636.192</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">1 636.192</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>FR0032</td>
+                      <td>SIRINA LOGISTIQUE</td>
+                      <td class="text-right">25 467.200</td>
+                      <td class="text-right">25 467.200</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <th colspan="3">Total</th>
+                      <th>2 631 963.005</th>
+                      <th>2 787 471.847</th>
+                      <th>13 961.748</th>
+                      <th>169 470.590</th>
+                    </tr>
+
+                    <tr>
+                      <td>407000</td>
+                      <td>FR0008</td>
+                      <td>TUNISIE TELECOM</td>
+                      <td class="text-right">125.540</td>
+                      <td class="text-right">125.540</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>407000</td>
+                      <td>FR0010</td>
+                      <td>MAGIC HOTELS THABARCA</td>
+                      <td class="text-right">1 430.400</td>
+                      <td class="text-right">1 430.400</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>407000</td>
+                      <td>FR0011</td>
+                      <td>LE MOTEUR</td>
+                      <td class="text-right">287.703</td>
+                      <td class="text-right">287.703</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <th colspan="3">Total</th>
+                      <th>1 843.643</th>
+                      <th>1 843.643</th>
+                      <th>0.000</th>
+                      <th>0.000</th>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0001</td>
+                      <td>Client passager</td>
+                      <td class="text-right">53 244.769</td>
+                      <td class="text-right">67 328.056</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">14 083.287</td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0002</td>
+                      <td>TRANSATLAS TIR</td>
+                      <td class="text-right">138 089.150</td>
+                      <td class="text-right">137 332.050</td>
+                      <td class="text-right">757.100</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0003</td>
+                      <td>KNAUF TUNISIE SYSTEM</td>
+                      <td class="text-right">4 226 907.922</td>
+                      <td class="text-right">4 226 644.173</td>
+                      <td class="text-right">263.749</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0004</td>
+                      <td>Glamiver</td>
+                      <td class="text-right">113 041.676</td>
+                      <td class="text-right">112 597.127</td>
+                      <td class="text-right">444.549</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0005</td>
+                      <td>Nouri Export</td>
+                      <td class="text-right">5 165.100</td>
+                      <td class="text-right">4 654.000</td>
+                      <td class="text-right">511.100</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0006</td>
+                      <td>C.S.V.M.</td>
+                      <td class="text-right">416 077.369</td>
+                      <td class="text-right">415 708.048</td>
+                      <td class="text-right">369.321</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0007</td>
+                      <td>T.F.G.</td>
+                      <td class="text-right">240 114.109</td>
+                      <td class="text-right">263 439.419</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">23 325.310</td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0008</td>
+                      <td>G.D.I.</td>
+                      <td class="text-right">62 766.985</td>
+                      <td class="text-right">62 961.117</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">194.132</td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0009</td>
+                      <td>I.T.S.T.</td>
+                      <td class="text-right">48 170.456</td>
+                      <td class="text-right">32 673.859</td>
+                      <td class="text-right">15 496.597</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0010</td>
+                      <td>T.A.S.</td>
+                      <td class="text-right">31 315.800</td>
+                      <td class="text-right">10 135.800</td>
+                      <td class="text-right">21 180.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0011</td>
+                      <td>S.C.A.S.</td>
+                      <td class="text-right">15 268.750</td>
+                      <td class="text-right">12 046.700</td>
+                      <td class="text-right">3 222.050</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0012</td>
+                      <td>S.C.A.</td>
+                      <td class="text-right">14 021.800</td>
+                      <td class="text-right">8 887.800</td>
+                      <td class="text-right">5 134.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0013</td>
+                      <td>T.G.V.</td>
+                      <td class="text-right">761 619.250</td>
+                      <td class="text-right">760 906.233</td>
+                      <td class="text-right">713.017</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0014</td>
+                      <td>S.N.D.P.</td>
+                      <td class="text-right">75 980.600</td>
+                      <td class="text-right">60 315.072</td>
+                      <td class="text-right">15 665.528</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0015</td>
+                      <td>SAVEMI</td>
+                      <td class="text-right">24 367.800</td>
+                      <td class="text-right">23 945.102</td>
+                      <td class="text-right">422.698</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0016</td>
+                      <td>S.C.I. Carthage traiding</td>
+                      <td class="text-right">1 719.500</td>
+                      <td class="text-right">1 719.500</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0017</td>
+                      <td>Société Arab Export</td>
+                      <td class="text-right">752.000</td>
+                      <td class="text-right">752.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0019</td>
+                      <td>Société United Food</td>
+                      <td class="text-right">27 800.609</td>
+                      <td class="text-right">27 800.609</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0020</td>
+                      <td>J.M.S. flexibles</td>
+                      <td class="text-right">1 754.600</td>
+                      <td class="text-right">1 754.600</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0021</td>
+                      <td>S.B.V.M.</td>
+                      <td class="text-right">1 080 149.714</td>
+                      <td class="text-right">1 028 309.760</td>
+                      <td class="text-right">51 839.954</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0022</td>
+                      <td>S.V.A. verrerie Agili</td>
+                      <td class="text-right">72 736.831</td>
+                      <td class="text-right">69 751.148</td>
+                      <td class="text-right">2 985.683</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0023</td>
+                      <td>T.M.E.</td>
+                      <td class="text-right">1 666.100</td>
+                      <td class="text-right">1 379.500</td>
+                      <td class="text-right">286.600</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0024</td>
+                      <td>S.T.V.</td>
+                      <td class="text-right">585.769</td>
+                      <td class="text-right">585.769</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0025</td>
+                      <td>Paliser</td>
+                      <td class="text-right">1 669.000</td>
+                      <td class="text-right">1 669.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0026</td>
+                      <td>SOMOVERRE</td>
+                      <td class="text-right">302 427.419</td>
+                      <td class="text-right">317 282.008</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">14 854.589</td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0027</td>
+                      <td>BIOPLAST</td>
+                      <td class="text-right">2 199.800</td>
+                      <td class="text-right">2 370.004</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">170.204</td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0028</td>
+                      <td>Chaima Glass</td>
+                      <td class="text-right">489.350</td>
+                      <td class="text-right">489.350</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0029</td>
+                      <td>Cadre Décor</td>
+                      <td class="text-right">33 939.589</td>
+                      <td class="text-right">30 892.310</td>
+                      <td class="text-right">3 047.279</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0030</td>
+                      <td>R I G A N A</td>
+                      <td class="text-right">10 831.687</td>
+                      <td class="text-right">10 500.000</td>
+                      <td class="text-right">331.687</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0031</td>
+                      <td>Silex composites</td>
+                      <td class="text-right">475.700</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">475.700</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0032</td>
+                      <td>D. P. I.</td>
+                      <td class="text-right">400.700</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">400.700</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0033</td>
+                      <td>Chahed Réfirigération</td>
+                      <td class="text-right">5 291.267</td>
+                      <td class="text-right">4 500.000</td>
+                      <td class="text-right">791.267</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0034</td>
+                      <td>Knauf Plâtres</td>
+                      <td class="text-right">58 545.066</td>
+                      <td class="text-right">46 112.904</td>
+                      <td class="text-right">12 432.162</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0035</td>
+                      <td>S I M E X</td>
+                      <td class="text-right">15 070.356</td>
+                      <td class="text-right">15 489.356</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">419.000</td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0036</td>
+                      <td>S.B.I.</td>
+                      <td class="text-right">17 790.639</td>
+                      <td class="text-right">16 588.771</td>
+                      <td class="text-right">1 201.868</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0037</td>
+                      <td>Vital International</td>
+                      <td class="text-right">3 128.400</td>
+                      <td class="text-right">2 272.000</td>
+                      <td class="text-right">856.400</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0038</td>
+                      <td>NOVAOUATE</td>
+                      <td class="text-right">971 456.692</td>
+                      <td class="text-right">970 592.292</td>
+                      <td class="text-right">864.400</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0039</td>
+                      <td>LINDA OUATE</td>
+                      <td class="text-right">960 837.017</td>
+                      <td class="text-right">957 948.841</td>
+                      <td class="text-right">2 888.176</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0040</td>
+                      <td>Sud Verre</td>
+                      <td class="text-right">135 386.393</td>
+                      <td class="text-right">135 386.393</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0041</td>
+                      <td>M K T D</td>
+                      <td class="text-right">21 163.493</td>
+                      <td class="text-right">21 163.493</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0042</td>
+                      <td>Casa Linge</td>
+                      <td class="text-right">69 119.485</td>
+                      <td class="text-right">69 062.635</td>
+                      <td class="text-right">56.850</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0043</td>
+                      <td>Tiba Export</td>
+                      <td class="text-right">456.000</td>
+                      <td class="text-right">321.000</td>
+                      <td class="text-right">135.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0044</td>
+                      <td>Groupement Khmir</td>
+                      <td class="text-right">832.900</td>
+                      <td class="text-right">815.100</td>
+                      <td class="text-right">17.800</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0045</td>
+                      <td>Aromates du Nord</td>
+                      <td class="text-right">3 426.500</td>
+                      <td class="text-right">3 259.300</td>
+                      <td class="text-right">167.200</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0046</td>
+                      <td>Poisson d'or</td>
+                      <td class="text-right">321.500</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">321.500</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0047</td>
+                      <td>S I C A T</td>
+                      <td class="text-right">12 924.885</td>
+                      <td class="text-right">12 924.885</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0048</td>
+                      <td>Chaudra</td>
+                      <td class="text-right">189.300</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">189.300</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0049</td>
+                      <td>S.G.E.</td>
+                      <td class="text-right">647.450</td>
+                      <td class="text-right">647.450</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0050</td>
+                      <td>SOTIPAPIER</td>
+                      <td class="text-right">21 939.957</td>
+                      <td class="text-right">21 886.857</td>
+                      <td class="text-right">53.100</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0051</td>
+                      <td>Sun Fruit Trade</td>
+                      <td class="text-right">322.000</td>
+                      <td class="text-right">322.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0052</td>
+                      <td>S.P.S.</td>
+                      <td class="text-right">12 074.057</td>
+                      <td class="text-right">12 355.620</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">281.563</td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0053</td>
+                      <td>A T C</td>
+                      <td class="text-right">220 877.700</td>
+                      <td class="text-right">220 877.700</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0054</td>
+                      <td>T U N I M A R C O</td>
+                      <td class="text-right">3 059.600</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">3 059.600</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0055</td>
+                      <td>BMS Building Materiel Solution</td>
+                      <td class="text-right">132 428.574</td>
+                      <td class="text-right">132 007.112</td>
+                      <td class="text-right">421.462</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0056</td>
+                      <td>Soturec Gros</td>
+                      <td class="text-right">85 070.123</td>
+                      <td class="text-right">85 070.123</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0057</td>
+                      <td>P A C O</td>
+                      <td class="text-right">127 753.704</td>
+                      <td class="text-right">97 267.844</td>
+                      <td class="text-right">30 485.860</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0058</td>
+                      <td>Brandt Tunisie</td>
+                      <td class="text-right">4 177 702.284</td>
+                      <td class="text-right">4 177 702.284</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0059</td>
+                      <td>Cartonnerie tunisienne</td>
+                      <td class="text-right">330 721.298</td>
+                      <td class="text-right">313 184.488</td>
+                      <td class="text-right">17 536.810</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0060</td>
+                      <td>S A V I N O R D</td>
+                      <td class="text-right">2 458.480</td>
+                      <td class="text-right">1 753.960</td>
+                      <td class="text-right">704.520</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0061</td>
+                      <td>Hydropro Tunisie</td>
+                      <td class="text-right">46 576.687</td>
+                      <td class="text-right">49 135.631</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">2 558.944</td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0062</td>
+                      <td>S O G E C O</td>
+                      <td class="text-right">284 738.377</td>
+                      <td class="text-right">284 738.377</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0063</td>
+                      <td>Wassim International Trade</td>
+                      <td class="text-right">701.390</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">701.390</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0064</td>
+                      <td>STV Société technologique</td>
+                      <td class="text-right">679 548.509</td>
+                      <td class="text-right">679 548.509</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0065</td>
+                      <td>Rayen Food Industries</td>
+                      <td class="text-right">575.850</td>
+                      <td class="text-right">575.850</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0066</td>
+                      <td>O R L A I T Tunisie</td>
+                      <td class="text-right">23 993.961</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">23 993.961</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0067</td>
+                      <td>C A P Industry</td>
+                      <td class="text-right">1 037.580</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">1 037.580</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0068</td>
+                      <td>E R O S Trading</td>
+                      <td class="text-right">461 016.012</td>
+                      <td class="text-right">319 372.029</td>
+                      <td class="text-right">141 643.983</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0069</td>
+                      <td>C O L O R I</td>
+                      <td class="text-right">719.900</td>
+                      <td class="text-right">719.900</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0070</td>
+                      <td>C H I K K A</td>
+                      <td class="text-right">11 439.142</td>
+                      <td class="text-right">11 439.142</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0071</td>
+                      <td>El Baraka</td>
+                      <td class="text-right">431.600</td>
+                      <td class="text-right">203.300</td>
+                      <td class="text-right">228.300</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0072</td>
+                      <td>M &amp; H Textile sarl</td>
+                      <td class="text-right">19 650.400</td>
+                      <td class="text-right">11 987.350</td>
+                      <td class="text-right">7 663.050</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0073</td>
+                      <td>P R O M O V E R R E</td>
+                      <td class="text-right">473 257.589</td>
+                      <td class="text-right">452 165.538</td>
+                      <td class="text-right">21 092.051</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0074</td>
+                      <td>S O K A P O</td>
+                      <td class="text-right">616.400</td>
+                      <td class="text-right">596.400</td>
+                      <td class="text-right">20.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0076</td>
+                      <td>Le Lagon Bleu</td>
+                      <td class="text-right">1 995.918</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">1 995.918</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0077</td>
+                      <td>Mégrine S E T E</td>
+                      <td class="text-right">2 551.252</td>
+                      <td class="text-right">2 551.252</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0078</td>
+                      <td>COTUVEM</td>
+                      <td class="text-right">33 017.112</td>
+                      <td class="text-right">28 600.360</td>
+                      <td class="text-right">4 416.752</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0079</td>
+                      <td>U N I T E C</td>
+                      <td class="text-right">96 821.124</td>
+                      <td class="text-right">96 798.770</td>
+                      <td class="text-right">22.354</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0080</td>
+                      <td>Recy Paper Tunisia</td>
+                      <td class="text-right">10 364.027</td>
+                      <td class="text-right">8 675.290</td>
+                      <td class="text-right">1 688.737</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0081</td>
+                      <td>Société Nouvelle Textiles</td>
+                      <td class="text-right">180.600</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">180.600</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0082</td>
+                      <td>A.T.C. Amena Trading Compa</td>
+                      <td class="text-right">147.600</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">147.600</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0083</td>
+                      <td>Société Equipement Hotelie</td>
+                      <td class="text-right">215.200</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">215.200</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0084</td>
+                      <td>M A F C O M</td>
+                      <td class="text-right">3 241.515</td>
+                      <td class="text-right">3 241.515</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0085</td>
+                      <td>M U L T I P A R A +</td>
+                      <td class="text-right">25 903.992</td>
+                      <td class="text-right">25 903.992</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0086</td>
+                      <td>Cactus Trading Company</td>
+                      <td class="text-right">4 500.529</td>
+                      <td class="text-right">4 500.529</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0087</td>
+                      <td>A L P H A P R I N T</td>
+                      <td class="text-right">9 210.000</td>
+                      <td class="text-right">9 210.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0088</td>
+                      <td>Al Yosr</td>
+                      <td class="text-right">2 006.600</td>
+                      <td class="text-right">2 006.600</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0089</td>
+                      <td>O M S Maghreb</td>
+                      <td class="text-right">2 316.400</td>
+                      <td class="text-right">2 316.400</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0090</td>
+                      <td>Maha Industrie</td>
+                      <td class="text-right">5 089.550</td>
+                      <td class="text-right">5 089.550</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0091</td>
+                      <td>Utic Gaz</td>
+                      <td class="text-right">234.250</td>
+                      <td class="text-right">234.250</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0092</td>
+                      <td>KATRAD Knauf Africa Trade</td>
+                      <td class="text-right">269.250</td>
+                      <td class="text-right">269.250</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0093</td>
+                      <td>TEJ commerce</td>
+                      <td class="text-right">1 260.316</td>
+                      <td class="text-right">1 260.316</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0095</td>
+                      <td>M B S Maghreb bio services</td>
+                      <td class="text-right">5 253.988</td>
+                      <td class="text-right">5 253.988</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0096</td>
+                      <td>K Y L O G</td>
+                      <td class="text-right">949.000</td>
+                      <td class="text-right">949.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0097</td>
+                      <td>N E U B E R T E X</td>
+                      <td class="text-right">48.600</td>
+                      <td class="text-right">48.600</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0098</td>
+                      <td>Digital Satellite</td>
+                      <td class="text-right">23 591.138</td>
+                      <td class="text-right">23 591.138</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0099</td>
+                      <td>V I T A L sarl</td>
+                      <td class="text-right">2 114.300</td>
+                      <td class="text-right">2 114.300</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0100</td>
+                      <td>ventes de biens ou presta</td>
+                      <td class="text-right">496.184</td>
+                      <td class="text-right">496.184</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0101</td>
+                      <td>LAB PHARMADEP</td>
+                      <td class="text-right">197.100</td>
+                      <td class="text-right">197.100</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0102</td>
+                      <td>VOILERIES TUNISIENNE</td>
+                      <td class="text-right">12 101.367</td>
+                      <td class="text-right">11 366.421</td>
+                      <td class="text-right">734.946</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL0105</td>
+                      <td>SOVEP</td>
+                      <td class="text-right">495 354.670</td>
+                      <td class="text-right">520 016.943</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">24 662.273</td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CL9999</td>
+                      <td>Clients Divers</td>
+                      <td class="text-right">376.000</td>
+                      <td class="text-right">376.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0011</td>
+                      <td>UNIFIL</td>
+                      <td class="text-right">291.100</td>
+                      <td class="text-right">291.100</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0018</td>
+                      <td>ETABLISSEMENT SIALA</td>
+                      <td class="text-right">523 771.792</td>
+                      <td class="text-right">465 594.329</td>
+                      <td class="text-right">58 177.463</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0019</td>
+                      <td>CERAM MG</td>
+                      <td class="text-right">108 105.329</td>
+                      <td class="text-right">108 561.405</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">456.076</td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0020</td>
+                      <td>EMNA DE COMMERCE MEDITERRANEEN</td>
+                      <td class="text-right">42 340.000</td>
+                      <td class="text-right">33 528.936</td>
+                      <td class="text-right">8 811.064</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0021</td>
+                      <td>EXTRA GLASS SARL</td>
+                      <td class="text-right">9 521.400</td>
+                      <td class="text-right">5 712.800</td>
+                      <td class="text-right">3 808.600</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0022</td>
+                      <td>PHOENIX LOGISTIQUE</td>
+                      <td class="text-right">9 403.100</td>
+                      <td class="text-right">1 280.000</td>
+                      <td class="text-right">8 123.100</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0023</td>
+                      <td>SANIBEL</td>
+                      <td class="text-right">2 044.200</td>
+                      <td class="text-right">318.100</td>
+                      <td class="text-right">1 726.100</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0024</td>
+                      <td>AHRAR DISTRIBUTION</td>
+                      <td class="text-right">23 520.400</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">23 520.400</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0025</td>
+                      <td>SOCIETE SIVEM</td>
+                      <td class="text-right">34 943.600</td>
+                      <td class="text-right">42 449.718</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">7 506.118</td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0026</td>
+                      <td>ETS M'HIRSI DES ABRASIFS</td>
+                      <td class="text-right">275.100</td>
+                      <td class="text-right">275.100</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0028</td>
+                      <td>LINDE GAS TUNIS</td>
+                      <td class="text-right">2 044.500</td>
+                      <td class="text-right">1 983.165</td>
+                      <td class="text-right">61.335</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0032</td>
+                      <td>SOFAM</td>
+                      <td class="text-right">1 214.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">1 214.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0033</td>
+                      <td>STE FATIMED COMMERCE ET DISTRIBUTIO</td>
+                      <td class="text-right">21 328.002</td>
+                      <td class="text-right">10 819.420</td>
+                      <td class="text-right">10 508.582</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0034</td>
+                      <td>STE IZARTEX HOME</td>
+                      <td class="text-right">3 058.700</td>
+                      <td class="text-right">3 400.600</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">341.900</td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0035</td>
+                      <td>GROW IT YOURESELF</td>
+                      <td class="text-right">27 769.549</td>
+                      <td class="text-right">27 542.868</td>
+                      <td class="text-right">226.681</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0036</td>
+                      <td>STE HAMDI CHEDLI DE VERRERIE</td>
+                      <td class="text-right">8 468.000</td>
+                      <td class="text-right">85.766</td>
+                      <td class="text-right">8 382.234</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0038</td>
+                      <td>STE FLEXIPACK LOGISTIQUE</td>
+                      <td class="text-right">4 199.244</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">4 199.244</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>CT0039</td>
+                      <td>ZANA TRANSITAIRE</td>
+                      <td class="text-right">536.100</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">536.100</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <th colspan="3">Total</th>
+                      <th>18 723 690.119</th>
+                      <th>18 281 735.603</th>
+                      <th>530 807.912</th>
+                      <th>88 853.396</th>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CL0001</td>
+                      <td>Client passager</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">5 385.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">5 385.000</td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0001</td>
+                      <td>S.T.R</td>
+                      <td class="text-right">46.000</td>
+                      <td class="text-right">46.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0002</td>
+                      <td>L.T.H</td>
+                      <td class="text-right">2 548.000</td>
+                      <td class="text-right">2 548.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0003</td>
+                      <td>SLAMA FRERES</td>
+                      <td class="text-right">288.000</td>
+                      <td class="text-right">288.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0004</td>
+                      <td>ITS</td>
+                      <td class="text-right">3 859.000</td>
+                      <td class="text-right">3 859.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0005</td>
+                      <td>E-COLLECT</td>
+                      <td class="text-right">1 294.000</td>
+                      <td class="text-right">1 294.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0006</td>
+                      <td>S H T P</td>
+                      <td class="text-right">82.000</td>
+                      <td class="text-right">82.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0007</td>
+                      <td>KNAUF AFRICA TRADE</td>
+                      <td class="text-right">135.000</td>
+                      <td class="text-right">135.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0008</td>
+                      <td>KYLOG</td>
+                      <td class="text-right">2 045.000</td>
+                      <td class="text-right">2 045.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0009</td>
+                      <td>TECHNO GLASS</td>
+                      <td class="text-right">1 983.000</td>
+                      <td class="text-right">1 983.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0010</td>
+                      <td>MEDEX</td>
+                      <td class="text-right">292.000</td>
+                      <td class="text-right">292.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0011</td>
+                      <td>UNIFIL</td>
+                      <td class="text-right">250.000</td>
+                      <td class="text-right">250.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0012</td>
+                      <td>WADDING INDUSTRIES</td>
+                      <td class="text-right">335.000</td>
+                      <td class="text-right">335.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0013</td>
+                      <td>KHALED ZAAFRANE</td>
+                      <td class="text-right">290.000</td>
+                      <td class="text-right">290.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0014</td>
+                      <td>ENERPEC</td>
+                      <td class="text-right">1 505.000</td>
+                      <td class="text-right">1 505.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0015</td>
+                      <td>MOUNIR HARZALLAH</td>
+                      <td class="text-right">50.000</td>
+                      <td class="text-right">50.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0016</td>
+                      <td>WETCO</td>
+                      <td class="text-right">341.000</td>
+                      <td class="text-right">341.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>CT0017</td>
+                      <td>SGAT</td>
+                      <td class="text-right">400.000</td>
+                      <td class="text-right">400.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <th colspan="3">Total</th>
+                      <th>15 743.000</th>
+                      <th>21 128.000</th>
+                      <th>0.000</th>
+                      <th>5 385.000</th>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th colspan="3">Total</th>
+                      <th>21 373 239.767</th>
+                      <th>21 092 179.093</th>
+                      <th>544 769.660</th>
+                      <th>263 708.986</th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-5">
+                <div
+                  class="dataTables_info"
+                  id="table_clients_info"
+                  role="status"
+                  aria-live="polite"
+                >
+                  Affichage de 1 à 10 sur 18 entrées
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-7">
+                <div
+                  class="text-right"
+                  class="dataTables_paginate paging_simple_numbers"
+                  id="table_clients_paginate"
+                >
+                  <ul class="pagination">
+                    <li
+                      class="paginate_button page-item previous disabled"
+                      id="table_clients_previous"
+                    >
+                      <a
+                        aria-controls="table_clients"
+                        data-dt-idx="0"
+                        tabindex="0"
+                        class="page-link"
+                        >Précédent</a
+                      >
+                    </li>
+                    <li class="paginate_button page-item active">
+                      <a
+                        aria-controls="table_clients"
+                        data-dt-idx="1"
+                        tabindex="0"
+                        class="page-link"
+                        >1</a
+                      >
+                    </li>
+
+                    <li class="paginate_button page-item">
+                      <a
+                        aria-controls="table_clients"
+                        data-dt-idx="2"
+                        tabindex="0"
+                        class="page-link"
+                        >2</a
+                      >
+                    </li>
+                    <li
+                      class="paginate_button page-item next"
+                      id="table_clients_next"
+                    >
+                      <a
+                        aria-controls="table_clients"
+                        data-dt-idx="3"
+                        tabindex="0"
+                        class="page-link"
+                        >Suivant</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

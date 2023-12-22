@@ -1,0 +1,1351 @@
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="tab-content">
+    <div role="tabpanel" id="" class="tab-pane active">
+      <div class="panel-body">
+        <div class="row mb-3">
+          <div class="col-12 col-sm-8 align-self-center">
+            <div class="row"></div>
+          </div>
+
+          <div
+            class="col-12 col-sm-4 align-self-center pt-1 pt-sm-0 text-right"
+          >
+            <button
+              type="button"
+              class="btn btn-outline btn-info dim save"
+              title="Enregistrer balance"
+            >
+              <i class="fa fa-save"></i>
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-outline btn-info dim"
+              data-toggle="modal"
+              data-target="#modal_balance_upload"
+              data-whatever="5"
+              title="Importer"
+            >
+              <i class="fa fa-upload"></i>
+            </button>
+
+            <button
+              class="btn btn-outline btn-info dim export_modele"
+              data-whatever="5"
+              title="Modèle"
+            >
+              <i class="fa fa-file-o"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <div
+            id="table_clients_wrapper"
+            class="dataTables_wrapper dt-bootstrap4 no-footer"
+          >
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="dataTables_length" id="table_clients_length">
+                  <label
+                    >Afficher
+                    <select
+                      name="table_clients_length"
+                      aria-controls="table_clients"
+                      class="custom-select custom-select-sm form-control form-control-sm"
+                    >
+                      <option value="10">10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                    </select>
+                    entrées
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div id="table_clients_filter" class="dataTables_filter">
+                  <label
+                    >Rechercher :
+                    <input
+                      type="search"
+                      class="form-control form-control-sm"
+                      placeholder=""
+                      aria-controls="table_clients"
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <table
+                  class="table table-striped table-bordered table-hover dataTables-example"
+                >
+                  <thead>
+                    <tr>
+                      <th class="text-center">Compte</th>
+                      <th class="text-center">Intitulé</th>
+                      <th class="text-center">Mvt Débit</th>
+                      <th class="text-center">Mvt Crédit</th>
+                      <th class="text-center">Solde Débiteur</th>
+                      <th class="text-center">Solde Créditeur</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>101000</td>
+                      <td>Capital Social</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">10 000.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">10 000.000</td>
+                    </tr>
+
+                    <tr>
+                      <td>121000</td>
+                      <td>Résultats Reportes</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">30 585.447</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">30 585.447</td>
+                    </tr>
+
+                    <tr>
+                      <td>162100</td>
+                      <td>Emprunts MHA</td>
+                      <td class="text-right">174 000.000</td>
+                      <td class="text-right">324 000.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">150 000.000</td>
+                    </tr>
+
+                    <tr>
+                      <td>224200</td>
+                      <td>Matériel De Transport De Personnes</td>
+                      <td class="text-right">173 243.193</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">173 243.193</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>228200</td>
+                      <td>Equipement De Bureau</td>
+                      <td class="text-right">587.395</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">587.395</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>228300</td>
+                      <td>Matériel Informatique</td>
+                      <td class="text-right">8 077.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">8 077.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>264000</td>
+                      <td>PRET WISSEM AYADI</td>
+                      <td class="text-right">80 000.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">80 000.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>282420</td>
+                      <td>Amort. Matériel Transport De Person</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">69 297.277</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">69 297.277</td>
+                    </tr>
+
+                    <tr>
+                      <td>282820</td>
+                      <td>Amort. Equipement De Bureau</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">117.479</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">117.479</td>
+                    </tr>
+
+                    <tr>
+                      <td>282830</td>
+                      <td>Amort. Matériel Informatique</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">222.117</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">222.117</td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>Frs dExploitation</td>
+                      <td class="text-right">2 631 963.005</td>
+                      <td class="text-right">2 787 471.847</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">155 508.842</td>
+                    </tr>
+
+                    <tr>
+                      <td>407000</td>
+                      <td>Frs Locaux Divers</td>
+                      <td class="text-right">1 843.643</td>
+                      <td class="text-right">1 866.638</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">22.995</td>
+                    </tr>
+
+                    <tr>
+                      <td>409000</td>
+                      <td>Frs - Avance &amp; Acompte</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">352.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">352.000</td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>Clients Ordinaires</td>
+                      <td class="text-right">18 723 690.119</td>
+                      <td class="text-right">18 283 141.681</td>
+                      <td class="text-right">440 548.438</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>Clients Au Comptant</td>
+                      <td class="text-right">15 743.000</td>
+                      <td class="text-right">21 128.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">5 385.000</td>
+                    </tr>
+
+                    <tr>
+                      <td>414000</td>
+                      <td>Clients Chèques Impayés</td>
+                      <td class="text-right">1 072.800</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">1 072.800</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>417000</td>
+                      <td>Clients Avances Et Acomptes</td>
+                      <td class="text-right">560.000</td>
+                      <td class="text-right">141 329.562</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">140 769.562</td>
+                    </tr>
+
+                    <tr>
+                      <td>421000</td>
+                      <td>Personnel Avances Et Acomptes</td>
+                      <td class="text-right">1 870.000</td>
+                      <td class="text-right">1 870.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>425000</td>
+                      <td>Personnel Rémunérations Dues</td>
+                      <td class="text-right">22 976.470</td>
+                      <td class="text-right">22 976.470</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>432100</td>
+                      <td>Retenue A La Source Sur Salaire</td>
+                      <td class="text-right">2 772.380</td>
+                      <td class="text-right">2 717.130</td>
+                      <td class="text-right">55.250</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>432200</td>
+                      <td>Etat Avance IRPP 1%</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">16.660</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">16.660</td>
+                    </tr>
+
+                    <tr>
+                      <td>432300</td>
+                      <td>Retenue à La Source 1%</td>
+                      <td class="text-right">1 847.877</td>
+                      <td class="text-right">4 425.137</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">2 577.260</td>
+                    </tr>
+
+                    <tr>
+                      <td>432600</td>
+                      <td>Retenue à La Source 10%</td>
+                      <td class="text-right">81.900</td>
+                      <td class="text-right">81.900</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>432910</td>
+                      <td>Contribution Sociale Solidaire</td>
+                      <td class="text-right">250.334</td>
+                      <td class="text-right">250.334</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>434100</td>
+                      <td>Retenues à La Source 1%-Clients</td>
+                      <td class="text-right">2 495.233</td>
+                      <td class="text-right">2 495.233</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>434102</td>
+                      <td>Retenues à La Source 3%-Clients</td>
+                      <td class="text-right">9 424.023</td>
+                      <td class="text-right">9 424.023</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>434110</td>
+                      <td>RETENUE A LA SOURCE NON PARVENU</td>
+                      <td class="text-right">5 124.449</td>
+                      <td class="text-right">5 124.449</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>434900</td>
+                      <td>Crédit d'IS</td>
+                      <td class="text-right">1 351.597</td>
+                      <td class="text-right">3 212.612</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">1 861.015</td>
+                    </tr>
+
+                    <tr>
+                      <td>436500</td>
+                      <td>Report de Tva</td>
+                      <td class="text-right">2 780.089</td>
+                      <td class="text-right">2 780.089</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>436510</td>
+                      <td>Tva A Payer</td>
+                      <td class="text-right">118 485.843</td>
+                      <td class="text-right">118 485.843</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>436607</td>
+                      <td>TVA DEDUCTIBLE 7%</td>
+                      <td class="text-right">22 602.123</td>
+                      <td class="text-right">22 602.123</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>436619</td>
+                      <td>TVA DEDUCTIBLE</td>
+                      <td class="text-right">74 880.184</td>
+                      <td class="text-right">74 880.184</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>436620</td>
+                      <td>TVA / Achats Locaux</td>
+                      <td class="text-right">32.897</td>
+                      <td class="text-right">32.897</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>436707</td>
+                      <td>TVA sur Services à 7%</td>
+                      <td class="text-right">7 833.000</td>
+                      <td class="text-right">7 833.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>436719</td>
+                      <td>TVA sur Services à 19%</td>
+                      <td class="text-right">197 161.173</td>
+                      <td class="text-right">197 161.173</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>436781</td>
+                      <td>Timbres sur Ventes</td>
+                      <td class="text-right">290.600</td>
+                      <td class="text-right">290.600</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>436783</td>
+                      <td>Etat TCL</td>
+                      <td class="text-right">2 408.950</td>
+                      <td class="text-right">2 408.950</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>437100</td>
+                      <td>Etat TFP</td>
+                      <td class="text-right">612.507</td>
+                      <td class="text-right">612.507</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>437200</td>
+                      <td>Etat FOPROLOS</td>
+                      <td class="text-right">306.251</td>
+                      <td class="text-right">306.251</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>439100</td>
+                      <td>Etat Receveur De Finance</td>
+                      <td class="text-right">119 750.604</td>
+                      <td class="text-right">146 127.071</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">26 376.467</td>
+                    </tr>
+
+                    <tr>
+                      <td>439105</td>
+                      <td>ETAT RECEVEUR 12/2020</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">18 170.722</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">18 170.722</td>
+                    </tr>
+
+                    <tr>
+                      <td>442000</td>
+                      <td>Associe Compte Courant</td>
+                      <td class="text-right">1 710.000</td>
+                      <td class="text-right">51 000.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">49 290.000</td>
+                    </tr>
+
+                    <tr>
+                      <td>450001</td>
+                      <td>DCD TITRES PRIVILEGES ET AUTRES</td>
+                      <td class="text-right">3 015.000</td>
+                      <td class="text-right">3 015.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450002</td>
+                      <td>DCD FRAIS DE DOSSIERS</td>
+                      <td class="text-right">6 390.000</td>
+                      <td class="text-right">6 390.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450003</td>
+                      <td>DCD ASSURANCE</td>
+                      <td class="text-right">31 520.987</td>
+                      <td class="text-right">17 636.058</td>
+                      <td class="text-right">13 884.929</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450005</td>
+                      <td>DCD Péages, Recherches et Débarq</td>
+                      <td class="text-right">8 210.000</td>
+                      <td class="text-right">8 210.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450006</td>
+                      <td>DCD TTN, SINDA et Réseaux</td>
+                      <td class="text-right">10 813.000</td>
+                      <td class="text-right">10 813.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450007</td>
+                      <td>DCD Timbres de dimension</td>
+                      <td class="text-right">6 240.000</td>
+                      <td class="text-right">6 240.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450008</td>
+                      <td>DCD Frais de visite et de constat</td>
+                      <td class="text-right">6 537.000</td>
+                      <td class="text-right">6 537.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450009</td>
+                      <td>DCD Droits et Taxes de Douane</td>
+                      <td class="text-right">2 939 535.698</td>
+                      <td class="text-right">2 840 531.003</td>
+                      <td class="text-right">99 004.695</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450010</td>
+                      <td>DCD Remise/ OC et Compléments des .</td>
+                      <td class="text-right">6 201.824</td>
+                      <td class="text-right">6 201.824</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450011</td>
+                      <td>DCD PV de Retard</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">1 400.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">1 400.000</td>
+                    </tr>
+
+                    <tr>
+                      <td>450012</td>
+                      <td>DCD PV pour fausse déclaration</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">2 800.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">2 800.000</td>
+                    </tr>
+
+                    <tr>
+                      <td>450014</td>
+                      <td>DCD Magasinage</td>
+                      <td class="text-right">482.374</td>
+                      <td class="text-right">482.374</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450015</td>
+                      <td>DCD Gardiennage</td>
+                      <td class="text-right">18.450</td>
+                      <td class="text-right">18.450</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450016</td>
+                      <td>DCD Surestarie, Consignation et Sim</td>
+                      <td class="text-right">23 334.198</td>
+                      <td class="text-right">23 334.198</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450017</td>
+                      <td>DCD Engins de Chargement/Déchargeme</td>
+                      <td class="text-right">350.000</td>
+                      <td class="text-right">350.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450018</td>
+                      <td>DCD Manutention</td>
+                      <td class="text-right">26 450.000</td>
+                      <td class="text-right">26 450.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450019</td>
+                      <td>DCD Enlèvement, Dépotage ou Empotag</td>
+                      <td class="text-right">51 884.800</td>
+                      <td class="text-right">51 884.800</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450020</td>
+                      <td>DCD Transport</td>
+                      <td class="text-right">40.000</td>
+                      <td class="text-right">40.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450021</td>
+                      <td>DCD Ceertification, Courrier et Fra</td>
+                      <td class="text-right">10 248.000</td>
+                      <td class="text-right">10 248.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>450100</td>
+                      <td>DCD TRANSPORT</td>
+                      <td class="text-right">21 153.313</td>
+                      <td class="text-right">20 424.613</td>
+                      <td class="text-right">728.700</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>453100</td>
+                      <td>CNSS</td>
+                      <td class="text-right">7 261.449</td>
+                      <td class="text-right">8 039.153</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">777.704</td>
+                    </tr>
+
+                    <tr>
+                      <td>453400</td>
+                      <td>RECEVEUR DES FINANCES</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">2 924.926</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">2 924.926</td>
+                    </tr>
+
+                    <tr>
+                      <td>458600</td>
+                      <td>Charges à Payer</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">6 335.186</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">6 335.186</td>
+                    </tr>
+
+                    <tr>
+                      <td>461000</td>
+                      <td>Compte d'Attente</td>
+                      <td class="text-right">35 575.259</td>
+                      <td class="text-right">205.000</td>
+                      <td class="text-right">35 370.259</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>461997</td>
+                      <td>COMPTE D ATTENTE 2019</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">60 124.647</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">60 124.647</td>
+                    </tr>
+
+                    <tr>
+                      <td>461998</td>
+                      <td>COMPTE D ATTENTE 2018</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">38 821.235</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">38 821.235</td>
+                    </tr>
+
+                    <tr>
+                      <td>461999</td>
+                      <td>COMPTE D ATTENTE 2017</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">38 873.196</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">38 873.196</td>
+                    </tr>
+
+                    <tr>
+                      <td>471000</td>
+                      <td>Charges Constatées d'avance</td>
+                      <td class="text-right">1 363.783</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">1 363.783</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>531200</td>
+                      <td>Chèque en Coffre</td>
+                      <td class="text-right">456.076</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">456.076</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>532001</td>
+                      <td>BH</td>
+                      <td class="text-right">42 343.367</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">42 343.367</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>532002</td>
+                      <td>ATTIJARI</td>
+                      <td class="text-right">4 600 903.804</td>
+                      <td class="text-right">4 495 238.100</td>
+                      <td class="text-right">105 665.704</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>540000</td>
+                      <td>CAISSE</td>
+                      <td class="text-right">728 617.048</td>
+                      <td class="text-right">721 246.400</td>
+                      <td class="text-right">7 370.648</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>580000</td>
+                      <td>Virements Internes</td>
+                      <td class="text-right">88 300.000</td>
+                      <td class="text-right">88 300.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>580100</td>
+                      <td>RETRAIT ESPECE</td>
+                      <td class="text-right">686 692.489</td>
+                      <td class="text-right">686 692.489</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>580200</td>
+                      <td>RETRAIT DAB</td>
+                      <td class="text-right">21 500.000</td>
+                      <td class="text-right">21 500.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>601001</td>
+                      <td>Achat Local Divers Produits</td>
+                      <td class="text-right">18 731.744</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">18 731.744</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>601002</td>
+                      <td>Sous Traitance Transpot</td>
+                      <td class="text-right">462 122.924</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">462 122.924</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>601003</td>
+                      <td>ACHAT TTN</td>
+                      <td class="text-right">4 174.780</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">4 174.780</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>606001</td>
+                      <td>SONEDE</td>
+                      <td class="text-right">40.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">40.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>606002</td>
+                      <td>STEG</td>
+                      <td class="text-right">462.824</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">462.824</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>606003</td>
+                      <td>Carburant</td>
+                      <td class="text-right">5 584.994</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">5 584.994</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>606004</td>
+                      <td>Fournitures De Bureau</td>
+                      <td class="text-right">5 728.826</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">5 728.826</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>606005</td>
+                      <td>Fournitures Informatiques</td>
+                      <td class="text-right">4 556.214</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">4 556.214</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>606007</td>
+                      <td>Petit Outillage</td>
+                      <td class="text-right">174.119</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">174.119</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>606010</td>
+                      <td>Autres Achats Non Stockes</td>
+                      <td class="text-right">20.480</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">20.480</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>613101</td>
+                      <td>Location Moyens de Transport</td>
+                      <td class="text-right">278 800.000</td>
+                      <td class="text-right">38 600.000</td>
+                      <td class="text-right">240 200.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>613102</td>
+                      <td>Loyer Local</td>
+                      <td class="text-right">2 379.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">2 379.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>615100</td>
+                      <td>Entretien et Réparation Mat.Transpo</td>
+                      <td class="text-right">23 537.796</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">23 537.796</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>615102</td>
+                      <td>Entretien et Réparation Constructio</td>
+                      <td class="text-right">264.234</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">264.234</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>615104</td>
+                      <td>Autres Frais D'entretien &amp; Réparati</td>
+                      <td class="text-right">4 950.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">4 950.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>615105</td>
+                      <td>Maintenance Logiciels</td>
+                      <td class="text-right">3 600.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">3 600.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>616100</td>
+                      <td>Assurance Matériel de Transport</td>
+                      <td class="text-right">6 378.117</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">6 378.117</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>617100</td>
+                      <td>Frais d'études Et Recherches</td>
+                      <td class="text-right">35.700</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">35.700</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>622100</td>
+                      <td>Rémunérations d'intermédiaire Et Ho</td>
+                      <td class="text-right">9 530.488</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">9 530.488</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>622201</td>
+                      <td>Honoraires</td>
+                      <td class="text-right">12 800.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">12 800.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>624000</td>
+                      <td>Transport De Biens Et Services</td>
+                      <td class="text-right">10 200.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">10 200.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>625100</td>
+                      <td>Déplacements</td>
+                      <td class="text-right">5 288.525</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">5 288.525</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>625101</td>
+                      <td>Missions</td>
+                      <td class="text-right">1 842.261</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">1 842.261</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>625102</td>
+                      <td>Réceptions</td>
+                      <td class="text-right">7 850.900</td>
+                      <td class="text-right">309.000</td>
+                      <td class="text-right">7 541.900</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>625103</td>
+                      <td>Cadeaux</td>
+                      <td class="text-right">1 381.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">1 381.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>626100</td>
+                      <td>Frais Postaux</td>
+                      <td class="text-right">593.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">593.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>626101</td>
+                      <td>Télécommunication</td>
+                      <td class="text-right">2 109.499</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">2 109.499</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>627100</td>
+                      <td>Commissions Bancaires</td>
+                      <td class="text-right">2 909.163</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">2 909.163</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>636000</td>
+                      <td>Différence de réglement</td>
+                      <td class="text-right">1 609.677</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">1 609.677</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>636101</td>
+                      <td>Autres Pertes Ordinaires</td>
+                      <td class="text-right">5.611</td>
+                      <td class="text-right">0.010</td>
+                      <td class="text-right">5.601</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>640100</td>
+                      <td>Salaires Personnel</td>
+                      <td class="text-right">30 625.342</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">30 625.342</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>647100</td>
+                      <td>Charges Patr. Cnss Personnel</td>
+                      <td class="text-right">5 074.620</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">5 074.620</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>647200</td>
+                      <td>Accident de Travail Personnel</td>
+                      <td class="text-right">153.125</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">153.125</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>651106</td>
+                      <td>Intérêts des Comptes Courants</td>
+                      <td class="text-right">296.867</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">296.867</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>652100</td>
+                      <td>Intérêts sur Paiements Diffères</td>
+                      <td class="text-right">687.184</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">687.184</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>661100</td>
+                      <td>TFP</td>
+                      <td class="text-right">612.508</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">612.508</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>661101</td>
+                      <td>FOPROLOS</td>
+                      <td class="text-right">306.260</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">306.260</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>665100</td>
+                      <td>TCL</td>
+                      <td class="text-right">2 605.817</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">2 605.817</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>665400</td>
+                      <td>Droits D'enregistrement et de Timbr</td>
+                      <td class="text-right">51.666</td>
+                      <td class="text-right">1.200</td>
+                      <td class="text-right">50.466</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>665402</td>
+                      <td>Timbres Fiscaux</td>
+                      <td class="text-right">59.400</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">59.400</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>665403</td>
+                      <td>Autres Droits D'enregt &amp; De Timbres</td>
+                      <td class="text-right">13.266</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">13.266</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>665803</td>
+                      <td>Autres Taxes</td>
+                      <td class="text-right">417.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">417.000</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>670000</td>
+                      <td>Pertes Extraordinaires</td>
+                      <td class="text-right">2 365.627</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">2 365.627</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>681110</td>
+                      <td>Dotat° Aux Amort Des Immo Corp</td>
+                      <td class="text-right">34 988.235</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">34 988.235</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>690000</td>
+                      <td>Impôts sur Les Bénéfices</td>
+                      <td class="text-right">35 484.300</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">35 484.300</td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>701100</td>
+                      <td>Prestation Locale 19%</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">136 455.383</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">136 455.383</td>
+                    </tr>
+
+                    <tr>
+                      <td>702100</td>
+                      <td>Transport Local 19%</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">901 235.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">901 235.000</td>
+                    </tr>
+
+                    <tr>
+                      <td>702110</td>
+                      <td>Transport Local 7%</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">111 900.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">111 900.000</td>
+                    </tr>
+
+                    <tr>
+                      <td>702200</td>
+                      <td>Transport en Suspension</td>
+                      <td class="text-right">1 700.000</td>
+                      <td class="text-right">1 700.000</td>
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                    </tr>
+
+                    <tr>
+                      <td>736001</td>
+                      <td>Différence de réglement</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">11.493</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">11.493</td>
+                    </tr>
+
+                    <tr>
+                      <td>736100</td>
+                      <td>Autres Gains Ordinaires</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">53.507</td>
+                      <td class="text-right"></td>
+                      <td class="text-right">53.507</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th colspan="2">Total :</th>
+                      <th class="text-right">32 766 369.651</th>
+                      <th class="text-right">32 766 369.651</th>
+                      <th class="text-right">1 962 265.120</th>
+                      <th class="text-right">1 962 265.120</th>
+                    </tr>
+
+                    <tr>
+                      <th colspan="4">Total Comptes de blian :</th>
+
+                      <th class="text-right">197 162.500</th>
+                      <th class="text-right"></th>
+                    </tr>
+
+                    <tr>
+                      <th colspan="4">Total comptes de gestion :</th>
+
+                      <th class="text-right"></th>
+                      <th class="text-right">197 162.500</th>
+                    </tr>
+                  </tfoot>
+                </table>
+                <div
+                  id="table_clients_processing"
+                  class="dataTables_processing card"
+                  style="display: none"
+                >
+                  Traitement...
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-5">
+                <div
+                  class="dataTables_info"
+                  id="table_clients_info"
+                  role="status"
+                  aria-live="polite"
+                >
+                  Affichage de 1 à 10 sur 18 entrées
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-7">
+                <div
+                  class="text-right"
+                  class="dataTables_paginate paging_simple_numbers"
+                  id="table_clients_paginate"
+                >
+                  <ul class="pagination">
+                    <li
+                      class="paginate_button page-item previous disabled"
+                      id="table_clients_previous"
+                    >
+                      <a
+                        aria-controls="table_clients"
+                        data-dt-idx="0"
+                        tabindex="0"
+                        class="page-link"
+                        >Précédent</a
+                      >
+                    </li>
+                    <li class="paginate_button page-item active">
+                      <a
+                        aria-controls="table_clients"
+                        data-dt-idx="1"
+                        tabindex="0"
+                        class="page-link"
+                        >1</a
+                      >
+                    </li>
+
+                    <li class="paginate_button page-item">
+                      <a
+                        aria-controls="table_clients"
+                        data-dt-idx="2"
+                        tabindex="0"
+                        class="page-link"
+                        >2</a
+                      >
+                    </li>
+                    <li
+                      class="paginate_button page-item next"
+                      id="table_clients_next"
+                    >
+                      <a
+                        aria-controls="table_clients"
+                        data-dt-idx="3"
+                        tabindex="0"
+                        class="page-link"
+                        >Suivant</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

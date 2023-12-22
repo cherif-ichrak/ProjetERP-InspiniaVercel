@@ -1,0 +1,565 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="tabs-container">
+      <div class="tab-content">
+        <div class="row">
+          <div class="col-12 text-center pb-3">
+            <h1>Contrat Cession N° &nbsp; <b>XXXXXX</b></h1>
+          </div>
+
+          <div class="table-responsive">
+            <div
+              id="table_clients_wrapper"
+              class="dataTables_wrapper dt-bootstrap4 no-footer"
+            >
+              <div class="col-12 text-center pb-3">
+                <form>
+                  <div class="from-row">
+                    <div class="col-lg-3">
+                      <label> Nom et Prénom du vendeur</label>
+                      <select class="form-control">
+                        <option>Sélectionnez Nom du vendeur</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                    <div class="col-lg-2">
+                      <label> Nombre de parts </label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        required="required"
+                        value=""
+                      />
+                    </div>
+                    <div class="col-lg-3">
+                      <label> Nom et Prénom de l'acquéreur</label>
+                      <div class="input-group">
+                        <select class="form-control">
+                          <option>Sélectionnez Nom de l'acquéreur</option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                        </select>
+                        <span class="input-group-btn">
+                          <button
+                            type="button"
+                            data-toggle="modal"
+                            data-target="#myModalAcquEreur"
+                            class="btn btn-primary"
+                          >
+                            <i class="fa fa-plus"></i>
+                          </button>
+                        </span>
+                        <div
+                          class="modal inmodal"
+                          id="myModalAcquEreur"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content animated bounceInRight">
+                              <div class="modal-header">
+                                <button
+                                  type="button"
+                                  class="close"
+                                  data-dismiss="modal"
+                                >
+                                  <span aria-hidden="true">&times;</span
+                                  ><span class="sr-only">Fermer</span>
+                                </button>
+
+                                <h4 class="modal-title">Ajouter acquéreur</h4>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group text-left">
+                                    <label class="">Nom</label>
+                                    <input
+                                      type="text"
+                                      placeholder="Nom"
+                                      class="form-control"
+                                    />
+                                  </div>
+                                  <div class="form-group text-left">
+                                    <label>Prénom</label>
+                                    <input
+                                      type="text"
+                                      placeholder="Prénom"
+                                      class="form-control"
+                                    />
+                                  </div>
+
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn btn-xs btn-white"
+                                      data-dismiss="modal"
+                                    >
+                                      Annuler
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="btn btn-xs btn-primary"
+                                    >
+                                      Ajouter
+                                    </button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <label> Nombre de parts a vendre </label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        required="required"
+                        value=""
+                      />
+                    </div>
+                    <div class="col-lg-1">
+                      <br />
+                      <br />
+                      <input
+                        class="form-control"
+                        type="submit"
+                        data-dismiss="modal"
+                        class="btn btn-xs btn-primary"
+                        value="Ajouter"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-12 pt-3 pb-3">
+                <div class="col-lg-12">
+                  <table
+                    id="table_clients"
+                    class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                    role="grid"
+                    aria-describedby="table_clients_info"
+                    style="width: 100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="table_clients"
+                          aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                          style="width: 10%"
+                          colspan="2"
+                          style="text-align: center"
+                        >
+                          vendeurs
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="table_clients"
+                          aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                          style="width: 10%"
+                          colspan="2"
+                          style="text-align: center"
+                        >
+                          Acquéreurs
+                        </th>
+                      </tr>
+                      <tr>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="table_clients"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                          style="width: 10%"
+                        >
+                          Nom et Prénom
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="table_clients"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                          style="width: 10%"
+                        >
+                          Nombres de parts
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="table_clients"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                          style="width: 10%"
+                        >
+                          Nom et Prénom
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="table_clients"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                          style="width: 10%"
+                        >
+                          Nombres de parts
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="table_clients"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                          style="width: 10%"
+                        >
+                          Actions
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>Ahmed Dali</td>
+                        <td>50</td>
+                        <td>Nizar Samet</td>
+                        <td>20</td>
+                        <td class="overflow-hidden">
+                          <div class="btn-group">
+                            <button
+                              data-toggle="dropdown"
+                              class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                            >
+                              Action <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a
+                                  data-toggle="modal"
+                                  data-target="#myModalModifier"
+                                  >Modifier</a
+                                >
+                              </li>
+                              <li><a href="#">Supprimer</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Mahmoud karabaka</td>
+                        <td>30</td>
+                        <td>Marieme</td>
+                        <td>28</td>
+                        <td class="overflow-hidden">
+                          <div class="btn-group">
+                            <button
+                              data-toggle="dropdown"
+                              class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                            >
+                              Action <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a
+                                  data-toggle="modal"
+                                  data-target="#myModalModifier"
+                                  >Modifier</a
+                                >
+                              </li>
+                              <li><a href="#">Supprimer</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Ahmed Dali</td>
+                        <td>12</td>
+                        <td>Manel ferchichi</td>
+                        <td>70</td>
+                        <td class="overflow-hidden">
+                          <div class="btn-group">
+                            <button
+                              data-toggle="dropdown"
+                              class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                            >
+                              Action <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a
+                                  data-toggle="modal"
+                                  data-target="#myModalModifier"
+                                  >Modifier</a
+                                >
+                              </li>
+                              <li><a href="#">Supprimer</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Ahmed Dali</td>
+                        <td>34</td>
+
+                        <td>xxxxxx</td>
+                        <td>26</td>
+                        <td class="overflow-hidden">
+                          <div class="btn-group">
+                            <button
+                              data-toggle="dropdown"
+                              class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                            >
+                              Action <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a
+                                  data-toggle="modal"
+                                  data-target="#myModalModifier"
+                                  >Modifier</a
+                                >
+                              </li>
+                              <li><a href="#">Supprimer</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th colspan="1">total</th>
+                        <td>118</td>
+                        <th colspan="1">total</th>
+                        <td>118</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <div
+                    class="modal inmodal"
+                    id="myModalModifier"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content animated bounceInRight">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                          >
+                            <span aria-hidden="true">&times;</span
+                            ><span class="sr-only">Fermer</span>
+                          </button>
+
+                          <h4 class="modal-title">Modifier acquéreur</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <form>
+                                <div class="from-row">
+                                  <div class="col-lg-6">
+                                    <label> Nom et Prénom du vendeur</label>
+                                    <select class="form-control">
+                                      <option>
+                                        Sélectionnez Nom du vendeur
+                                      </option>
+                                      <option></option>
+                                      <option></option>
+                                      <option></option>
+                                      <option></option>
+                                      <option></option>
+                                      <option></option>
+                                      <option></option>
+                                      <option></option>
+                                    </select>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <label> Nombre de parts </label>
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder=""
+                                      required="required"
+                                      value=""
+                                    />
+                                  </div>
+                                </div>
+                                <div class="from-row">
+                                  <div class="col-lg-6">
+                                    <label> Nom et Prénom de l'acquéreur</label>
+                                    <div class="input-group">
+                                      <select class="form-control">
+                                        <option>
+                                          Sélectionnez Nom de l'acquéreur
+                                        </option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                      </select>
+                                      <span class="input-group-btn">
+                                        <button
+                                          type="button"
+                                          data-toggle="modal"
+                                          data-target="#myModalAcquEreur"
+                                          class="btn btn-primary"
+                                        >
+                                          <i class="fa fa-plus"></i>
+                                        </button>
+                                      </span>
+                                      <div
+                                        class="modal inmodal"
+                                        id="myModalAcquEreur"
+                                        tabindex="-1"
+                                        role="dialog"
+                                        aria-hidden="true"
+                                      >
+                                        <div class="modal-dialog">
+                                          <div
+                                            class="modal-content animated bounceInRight"
+                                          >
+                                            <div class="modal-header">
+                                              <button
+                                                type="button"
+                                                class="close"
+                                                data-dismiss="modal"
+                                              >
+                                                <span aria-hidden="true"
+                                                  >&times;</span
+                                                ><span class="sr-only"
+                                                  >Fermer</span
+                                                >
+                                              </button>
+
+                                              <h4 class="modal-title">
+                                                Ajouter acquéreur
+                                              </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                              <form>
+                                                <div
+                                                  class="form-group text-left"
+                                                >
+                                                  <label class="">Nom</label>
+                                                  <input
+                                                    type="text"
+                                                    placeholder="Nom"
+                                                    class="form-control"
+                                                  />
+                                                </div>
+                                                <div
+                                                  class="form-group text-left"
+                                                >
+                                                  <label>Prénom</label>
+                                                  <input
+                                                    type="text"
+                                                    placeholder="Prénom"
+                                                    class="form-control"
+                                                  />
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                  <button
+                                                    type="button"
+                                                    class="btn btn-xs btn-white"
+                                                    data-dismiss="modal"
+                                                  >
+                                                    Annuler
+                                                  </button>
+                                                  <button
+                                                    type="button"
+                                                    class="btn btn-xs btn-primary"
+                                                  >
+                                                    Ajouter
+                                                  </button>
+                                                </div>
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <label> Nombre de parts a vendre </label>
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder=""
+                                      required="required"
+                                      value=""
+                                    />
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="col-lg-12">
+                              <br />
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-xs btn-white"
+                                  data-dismiss="modal"
+                                >
+                                  Annuler
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-xs btn-primary"
+                                >
+                                  Modifier
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="table_clients_processing"
+                    class="dataTables_processing card"
+                    style="display: none"
+                  >
+                    Traitement...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

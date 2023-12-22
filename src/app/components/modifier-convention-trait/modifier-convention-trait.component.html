@@ -1,0 +1,84 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Conventions</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a>Exploitation</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a>Traitement</a>
+      </li>
+
+      <li class="breadcrumb-item active">
+        <strong>Conventions-> Modifier</strong>
+      </li>
+    </ol>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="row">
+    <form>
+      <div class="form-row">
+        <div class="col-md-12 mb-3">
+          <label>Client</label>
+          <select class="form-control">
+            <option selected>Sélectionnez client</option>
+            <option value="flotte2">client X</option>
+            <option value="flotte3">client X</option>
+            <option value="flotte3">client X</option>
+            <option value="flotte3">client X</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-md-3 mb-3">
+          <label>Type Convention</label>
+          <select class="form-control">
+            <option selected>Sélectionnez Type Convention</option>
+            <option value="flotte2">Assistane</option>
+            <option value="flotte3">Consulting</option>
+          </select>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label>Mode de réglement</label>
+          <select class="form-control">
+            <option selected>Sélectionnez Votre mode</option>
+            <option value="flotte2">Espéces</option>
+            <option value="flotte3">chéque</option>
+            <option value="flotte3">virement</option>
+          </select>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label>Date début</label>
+          <input class="form-control" type="date" />
+        </div>
+        <div class="col-md-3 mb-3">
+          <label>Date fin</label>
+          <input class="form-control" type="date" />
+        </div>
+      </div>
+
+      <app-creer-convention></app-creer-convention>
+
+      <div class="row" class="text-right">
+        <div class="modal-footer">
+          <input
+            type="submit"
+            class="btn btn-default"
+            data-dismiss="modal"
+            value="Annuler"
+          />
+          <input
+            type="submit"
+            data-dismiss="modal"
+            class="btn btn-primary"
+            value="Modifier"
+          />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

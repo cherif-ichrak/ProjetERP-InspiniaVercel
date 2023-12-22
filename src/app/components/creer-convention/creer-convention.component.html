@@ -1,0 +1,369 @@
+<div class="wrapper wrapper-content animated fadeInUp">
+  <div class="ibox">
+    <div class="ibox-content">
+      <div class="row">
+        <div class="col-12 text-center pb-3">
+          <h1>Convention N° &nbsp; <b>BC22001</b></h1>
+        </div>
+
+        <div class="table-responsive">
+          <div
+            id="table_clients_wrapper"
+            class="dataTables_wrapper dt-bootstrap4 no-footer"
+          >
+            <div class="col-12 text-center pb-3">
+              <h2 style="text-align: left">Objet</h2>
+              <form>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <select class="form-control">
+                      <option selected>Famille</option>
+                      <option>Com et Social Media</option>
+                      <option>Débours</option>
+                      <option>Honoraires Conventions</option>
+                      <option>Honoraires Mise en place SI</option>
+                      <option>Infographie et Design</option>
+                      <option>Intégration WEB</option>
+                      <option>Services</option>
+                      <option>Solutions de Gestion</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-3">
+                    <select class="form-control">
+                      <option selected>Article</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-4">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Montant Hors Tax"
+                      required="required"
+                      value=""
+                    />
+                  </div>
+                  <div class="col-lg-2">
+                    <input
+                      class="form-control"
+                      type="submit"
+                      data-dismiss="modal"
+                      class="btn btn-xs btn-primary"
+                      value="Ajouter"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 pt-3 pb-3">
+              <table
+                id="table_clients"
+                class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                role="grid"
+                aria-describedby="table_clients_info"
+                style="width: 100%"
+              >
+                <thead>
+                  <tr>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    ></th>
+
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Actions
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Elaboration plan de stratégie de com Digital</td>
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Modifier</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-12 text-center pb-3">
+              <form>
+                <h2 style="text-align: left">Echéances</h2>
+
+                <div class="row">
+                  <div class="col-lg-3">
+                    <input
+                      class="form-control"
+                      type="date"
+                      placeholder="Echéance"
+                      required="required"
+                      value=""
+                    />
+                  </div>
+                  <div class="col-lg-3">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder=" Article"
+                      required="required"
+                      value=""
+                    />
+                  </div>
+
+                  <div class="col-lg-4">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Montant Echéance"
+                      required="required"
+                      value=""
+                    />
+                  </div>
+                  <div class="col-lg-2">
+                    <input
+                      class="form-control"
+                      type="submit"
+                      data-dismiss="modal"
+                      class="btn btn-xs btn-primary"
+                      value="Ajouter"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 pt-3 pb-3">
+              <table
+                id="table_clients"
+                class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                role="grid"
+                aria-describedby="table_clients_info"
+                style="width: 100%"
+              >
+                <thead>
+                  <tr>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    ></th>
+
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Actions
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Elaboration plan de stratégie de com Digital</td>
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Modifier</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              id="table_clients_wrapper"
+              class="dataTables_wrapper dt-bootstrap4 no-footer"
+            >
+              <div class="col-12 text-center pb-3">
+                <h2 style="text-align: left">
+                  Prestations forfaitaires a la demande hors tax
+                </h2>
+                <form>
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <select class="form-control">
+                        <option selected>Article</option>
+                        <option>Procès verbal</option>
+
+                        <option>Contrat cession des parts</option>
+
+                        <option>Mise à jour dossier juridique</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=" Désignation"
+                        required="required"
+                        value=""
+                      />
+                    </div>
+
+                    <div class="col-lg-4">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=" Montant"
+                        required="required"
+                        value=""
+                      />
+                    </div>
+                    <div class="col-lg-2">
+                      <input
+                        class="form-control"
+                        type="submit"
+                        data-dismiss="modal"
+                        class="btn btn-xs btn-primary"
+                        value="Ajouter"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 pt-3 pb-3">
+                    <table
+                      id="table_clients"
+                      class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                      role="grid"
+                      aria-describedby="table_clients_info"
+                      style="width: 100%"
+                    >
+                      <thead>
+                        <tr>
+                          <th
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="table_clients"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                            style="width: 10%"
+                          >
+                            Article
+                          </th>
+                          <th
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="table_clients"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                            style="width: 10%"
+                          >
+                            Désignation
+                          </th>
+                          <th
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="table_clients"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                            style="width: 10%"
+                          >
+                            Montant
+                          </th>
+                          <th
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="table_clients"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                            style="width: 10%"
+                          >
+                            Actions
+                          </th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>Contrat cession des parts</td>
+                          <td></td>
+                          <td class="text-right">3 000</td>
+
+                          <td class="overflow-hidden">
+                            <div class="btn-group">
+                              <button
+                                data-toggle="dropdown"
+                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                              >
+                                Action <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    data-toggle="modal"
+                                    data-target="#myModalModifier"
+                                    >Modifier</a
+                                  >
+                                </li>
+                                <li><a href="#">Supprimer</a></li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

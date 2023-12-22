@@ -1,0 +1,946 @@
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="tab-content">
+    <div role="tabpanel" id="" class="tab-pane active">
+      <div class="panel-body">
+        <div class="form-group row">
+          <div class="col-sm-11">
+            <select class="form-control">
+              <option value="">-- Etats Financiers --</option>
+              <option value="83">Actif</option>
+              <option value="84">Passif</option>
+              <option value="85">Etat de résultat</option>
+              <option value="86">SIG</option>
+            </select>
+          </div>
+          <div class="col-sm-1">
+            <button
+              id="search"
+              type="button"
+              class="btn btn-outline btn-info dim"
+              title="Rechercher"
+            >
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-12 col-sm-8 align-self-center">
+            <div class="row"></div>
+          </div>
+
+          <div
+            class="col-12 col-sm-4 align-self-center pt-1 pt-sm-0 text-right"
+          >
+            <button
+              type="button"
+              class="btn btn-outline btn-info dim save"
+              title="Enregistrer balance"
+            >
+              <i class="fa fa-save"></i>
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-outline btn-info dim"
+              data-toggle="modal"
+              data-target="#modal_ecriture_comptable_upload"
+              data-whatever="5"
+              title="Importer"
+            >
+              <i class="fa fa-upload"></i>
+            </button>
+            <button
+              class="btn btn-outline btn-info dim export_modele"
+              data-whatever="5"
+              title="Modèle"
+            >
+              <i class="fa fa-file"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <div
+            id="table_clients_wrapper"
+            class="dataTables_wrapper dt-bootstrap4 no-footer"
+          >
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="dataTables_length" id="table_clients_length">
+                  <label
+                    >Afficher
+                    <select
+                      name="table_clients_length"
+                      aria-controls="table_clients"
+                      class="custom-select custom-select-sm form-control form-control-sm"
+                    >
+                      <option value="10">10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                    </select>
+                    entrées
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div id="table_clients_filter" class="dataTables_filter">
+                  <label
+                    >Rechercher :
+                    <input
+                      type="search"
+                      class="form-control form-control-sm"
+                      placeholder=""
+                      aria-controls="table_clients"
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <table
+                  id="table_clients"
+                  class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                  role="grid"
+                  aria-describedby="table_clients_info"
+                  style="width: 100%"
+                >
+                  <thead>
+                    <tr>
+                      <th
+                        class="sorting"
+                        tabindex="0"
+                        aria-controls="table_clients"
+                        rowspan="1"
+                        colspan="1"
+                        aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                        style="width: 10%"
+                        class="text-center"
+                      >
+                        Compte
+                      </th>
+                      <th
+                        class="sorting"
+                        tabindex="0"
+                        aria-controls="table_clients"
+                        rowspan="1"
+                        colspan="1"
+                        aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                        style="width: 10%"
+                        class="text-center"
+                      >
+                        Intitulé
+                      </th>
+                      <th
+                        class="sorting"
+                        tabindex="0"
+                        aria-controls="table_clients"
+                        rowspan="1"
+                        colspan="1"
+                        aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                        style="width: 10%"
+                        class="text-center"
+                      >
+                        Solde Débiteur
+                      </th>
+                      <th
+                        class="sorting"
+                        tabindex="0"
+                        aria-controls="table_clients"
+                        rowspan="1"
+                        colspan="1"
+                        aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                        style="width: 10%"
+                        class="text-center"
+                      >
+                        Solde Créditeur
+                      </th>
+                      <th
+                        class="sorting"
+                        tabindex="0"
+                        aria-controls="table_clients"
+                        rowspan="1"
+                        colspan="1"
+                        aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                        style="width: 10%"
+                        class="text-center"
+                      >
+                        Affectation
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>101000</td>
+                      <td>Capital Social</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">10 000.000</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>121000</td>
+                      <td>Résultats Reportes</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">30 585.447</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>162100</td>
+                      <td>Emprunts MHA</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">150 000.000</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>224200</td>
+                      <td>Matériel De Transport De Personnes</td>
+
+                      <td class="text-right">173 243.193</td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>228200</td>
+                      <td>Equipement De Bureau</td>
+
+                      <td class="text-right">587.395</td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>228300</td>
+                      <td>Matériel Informatique</td>
+
+                      <td class="text-right">8 077.000</td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>264000</td>
+                      <td>PRET WISSEM AYADI</td>
+
+                      <td class="text-right">80 000.000</td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>282420</td>
+                      <td>Amort. Matériel Transport De Person</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">69 297.277</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>282820</td>
+                      <td>Amort. Equipement De Bureau</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">117.479</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>282830</td>
+                      <td>Amort. Matériel Informatique</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">222.117</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>401000</td>
+                      <td>Frs d'Exploitation</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">155 508.842</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>407000</td>
+                      <td>Frs Locaux Divers</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">22.995</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>409000</td>
+                      <td>Frs - Avance &amp; Acompte</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">352.000</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>411000</td>
+                      <td>Clients Ordinaires</td>
+
+                      <td class="text-right">440 548.438</td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>412000</td>
+                      <td>Clients Au Comptant</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">5 385.000</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>414000</td>
+                      <td>Clients Chèques Impayés</td>
+
+                      <td class="text-right">1 072.800</td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>417000</td>
+                      <td>Clients Avances Et Acomptes</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">140 769.562</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>421000</td>
+                      <td>Personnel Avances Et Acomptes</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>425000</td>
+                      <td>Personnel Rémunérations Dues</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>432100</td>
+                      <td>Retenue A La Source Sur Salaire</td>
+
+                      <td class="text-right">55.250</td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>432200</td>
+                      <td>Etat Avance IRPP 1%</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">16.660</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>432300</td>
+                      <td>Retenue à La Source 1%</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">2 577.260</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>432600</td>
+                      <td>Retenue à La Source 10%</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>432910</td>
+                      <td>Contribution Sociale Solidaire</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>434100</td>
+                      <td>Retenues à La Source 1%-Clients</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>434102</td>
+                      <td>Retenues à La Source 3%-Clients</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>434110</td>
+                      <td>RETENUE A LA SOURCE NON PARVENU</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>434900</td>
+                      <td>Crédit d'IS</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">1 861.015</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>436500</td>
+                      <td>Report de Tva</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>436510</td>
+                      <td>Tva A Payer</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>436607</td>
+                      <td>TVA DEDUCTIBLE 7%</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>436619</td>
+                      <td>TVA DEDUCTIBLE</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>436620</td>
+                      <td>TVA / Achats Locaux</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>436707</td>
+                      <td>TVA sur Services à 7%</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>436719</td>
+                      <td>TVA sur Services à 19%</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td></td>
+                    </tr>
+
+                    <tr>
+                      <td>436781</td>
+                      <td>Timbres sur Ventes</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>436783</td>
+                      <td>Etat TCL</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>437100</td>
+                      <td>Etat TFP</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>437200</td>
+                      <td>Etat FOPROLOS</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>439100</td>
+                      <td>Etat Receveur De Finance</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">26 376.467</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>439105</td>
+                      <td>ETAT RECEVEUR 12/2020</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">18 170.722</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>442000</td>
+                      <td>Associe Compte Courant</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right">49 290.000</td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>450001</td>
+                      <td>DCD TITRES PRIVILEGES ET AUTRES</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>450002</td>
+                      <td>DCD FRAIS DE DOSSIERS</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>450003</td>
+                      <td>DCD ASSURANCE</td>
+
+                      <td class="text-right">13 884.929</td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>450005</td>
+                      <td>DCD Péages, Recherches et Débarq</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>450006</td>
+                      <td>DCD TTN, SINDA et Réseaux</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>450007</td>
+                      <td>DCD Timbres de dimension</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>450008</td>
+                      <td>DCD Frais de visite et de constat</td>
+
+                      <td class="text-right"></td>
+                      <td class="text-right"></td>
+                      <td>
+                        <select class="form-control">
+                          <option>Autre actif courant</option>
+                          <option>Autre Passif courant</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th colspan="2">Total :</th>
+                      <th class="text-right">32 766 369.651</th>
+                      <th class="text-right">32 766 369.651</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3">Solde :</th>
+                      <th class="text-right">1 962 265.120</th>
+                    </tr>
+                  </tfoot>
+                </table>
+                <div
+                  id="table_clients_processing"
+                  class="dataTables_processing card"
+                  style="display: none"
+                >
+                  Traitement...
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-5">
+                <div
+                  class="dataTables_info"
+                  id="table_clients_info"
+                  role="status"
+                  aria-live="polite"
+                >
+                  Affichage de 1 à 10 sur 18 entrées
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-7">
+                <div
+                  class="text-right"
+                  class="dataTables_paginate paging_simple_numbers"
+                  id="table_clients_paginate"
+                >
+                  <ul class="pagination">
+                    <li
+                      class="paginate_button page-item previous disabled"
+                      id="table_clients_previous"
+                    >
+                      <a
+                        aria-controls="table_clients"
+                        data-dt-idx="0"
+                        tabindex="0"
+                        class="page-link"
+                        >Précédent</a
+                      >
+                    </li>
+                    <li class="paginate_button page-item active">
+                      <a
+                        aria-controls="table_clients"
+                        data-dt-idx="1"
+                        tabindex="0"
+                        class="page-link"
+                        >1</a
+                      >
+                    </li>
+
+                    <li class="paginate_button page-item">
+                      <a
+                        aria-controls="table_clients"
+                        data-dt-idx="2"
+                        tabindex="0"
+                        class="page-link"
+                        >2</a
+                      >
+                    </li>
+                    <li
+                      class="paginate_button page-item next"
+                      id="table_clients_next"
+                    >
+                      <a
+                        aria-controls="table_clients"
+                        data-dt-idx="3"
+                        tabindex="0"
+                        class="page-link"
+                        >Suivant</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

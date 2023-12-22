@@ -10,13 +10,13 @@
                 class="img-circle"
                 width="50%"
                 height="50%"
-                src="assets/img/clubaf.png"
+                src="assets/img/default.png"
               />
             </span>
             <a data-toggle="dropdown" class="dropdown-toggle">
               <span class="clear">
                 <span class="block m-t-xs">
-                  <strong class="font-bold">Club Africain</strong>
+                  <strong class="font-bold">Murex ERP</strong>
                 </span>
                 <span class="text-muted text-xs block"
                   >Abonné <b class="caret"></b
@@ -24,7 +24,7 @@
               </span>
             </a>
             <ul class="dropdown-menu animated fadeInRight m-t-xs">
-              <li><a routerLink="Parametrage">Mon Profil</a></li>
+              <li><a routerLink="Profile">Mon Profil</a></li>
               <li><a routerLink="ParametragePwd">Mot de Passe</a></li>
               <li class="divider"></li>
               <li><a>Déconnexion</a></li>
@@ -39,77 +39,155 @@
         </li>
         <li>
           <a
-            ><i class="fa fa-futbol-o"></i>
-            <span class="nav-label">Saison Sportive</span
+            ><i class="fa fa-bar-chart-o"></i>
+            <span class="nav-label">Exploitations </span
             ><span class="fa arrow"></span
           ></a>
           <ul class="nav nav-second-level collapse">
-            <li><a routerLink="Competition">Compétitions</a></li>
-            <li><a routerLink="Adversaire">Adversaires</a></li>
-            <li><a routerLink="Matches">Matchs</a></li>
-            <li><a routerLink="Arbitre">Arbitres</a></li>
+            <li>
+              <a
+                ><span class="nav-label">Structure</span
+                ><span class="fa arrow"></span
+              ></a>
+              <ul class="nav nav-third-level">
+                <li><a routerLink="Client">Clients </a></li>
+                <li><a routerLink="Fournisseurs">Fournisseurs</a></li>
+                <li><a routerLink="Articles">Articles</a></li>
+                <li><a routerLink="FamilleArticle">Familles Articles</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                ><span class="nav-label">Traitement</span
+                ><span class="fa arrow"></span
+              ></a>
+              <ul class="nav nav-third-level">
+                <li><a routerLink="DocAchats">Documents Achats</a></li>
+                <li>
+                  <a routerLink="DocVentes">Doucments Vents</a>
+                </li>
+
+                <li>
+                  <a routerLink="ContratDomiciliation"
+                    >Contrats Domiciliation</a
+                  >
+                </li>
+                <li><a routerLink="Convention">Conventions</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
-
         <li>
           <a
-            ><i class="fa fa-users"></i> <span class="nav-label">Effectif </span
+            ><i class="fa fa-gavel"></i>
+            <span class="nav-label">Juridique </span
             ><span class="fa arrow"></span
           ></a>
           <ul class="nav nav-second-level collapse">
-            <li><a routerLink="Joueurs">Joueurs</a></li>
-            <li><a routerLink="Staff">Staffs</a></li>
+            <li>
+              <a
+                ><span class="nav-label">Structure</span
+                ><span class="fa arrow"></span
+              ></a>
+              <ul class="nav nav-third-level">
+                <li><a routerLink="JuridiqueClients">Clients </a></li>
+                <li><a routerLink="PV">Procés Verbal</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                ><span class="nav-label">Traitement</span
+                ><span class="fa arrow"></span
+              ></a>
+              <ul class="nav nav-third-level">
+                <li><a routerLink="Constitution">Constitution Société</a></li>
+                <li>
+                  <a routerLink="ProcesVerbalTrait">Procés Verbal</a>
+                </li>
+
+                <li>
+                  <a>Dépots Etats Financiers</a>
+                </li>
+                <li><a routerLink="Cession">Cession des parts</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                ><span class="nav-label">Suivi</span
+                ><span class="fa arrow"></span
+              ></a>
+              <ul class="nav nav-third-level">
+                <li><a>Dépots Etats Financiers</a></li>
+                <li>
+                  <a>Constitution Société</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                ><span class="nav-label">Etats</span
+                ><span class="fa arrow"></span
+              ></a>
+            </li>
           </ul>
-        </li>
-
-        <li>
-          <a routerLink="Caisse"
-            ><i class="fa fa-usd"></i> <span class="nav-label">Caisse</span></a
-          >
-        </li>
-
-        <li>
-          <a routerLink="belssures"
-            ><i class="fa fa-medkit"></i>
-            <span class="nav-label">Blessures</span></a
-          >
         </li>
         <li>
           <a
-            ><i class="fa fa-warning"></i>
-            <span class="nav-label">Sanctions</span
+            ><i class="fa fa-light fa-calculator"></i>
+            <span class="nav-label">Comptabilité </span
             ><span class="fa arrow"></span
           ></a>
           <ul class="nav nav-second-level collapse">
-            <li><a routerLink="sanctions">Nouvelle Sanction</a></li>
+            <li>
+              <a
+                ><span class="nav-label">Structure</span
+                ><span class="fa arrow"></span
+              ></a>
+              <ul class="nav nav-third-level">
+                <li><a routerLink="ClientComtabilite">Clients </a></li>
 
-            <li><a routerLink="DetailleSanction">Détails Sanctions</a></li>
+                <li><a routerLink="Exercices">Exercices</a></li>
+                <li><a routerLink="CodeJournaux">Journaux</a></li>
+                <li><a routerLink="PlanComptable">Plan Comptable</a></li>
+                <li><a routerLink="PlanTiers">Plan Tiers</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                ><span class="nav-label">Traitement</span
+                ><span class="fa arrow"></span
+              ></a>
+              <ul class="nav nav-third-level">
+                <li><a routerLink="Annexes">Annexes</a></li>
+                <li>
+                  <a routerLink="Importer">Importer</a>
+                </li>
+
+                <li><a routerLink="Affectation">Affecter</a></li>
+                <li><a routerLink="Affectation">Génération Etat</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
-
         <li>
           <a
-            ><i class="fa fa-laptop"> </i>
-            <span class="nav-label">Logistique</span
-            ><span class="fa arrow"></span
+            ><i class="fa fa-envelope-open-o"></i>
+            <span class="nav-label">Support </span><span class="fa arrow"></span
           ></a>
           <ul class="nav nav-second-level collapse">
-            <li><a routerLink="Complexe">Complexe</a></li>
-            <li><a routerLink="hebergement">Hébergements</a></li>
+            <li>
+              <a routerLink="TicketSupport"
+                ><span class="nav-label">Tickets</span></a
+              >
+            </li>
+            <li>
+              <a routerLink="FicheIntervention"
+                ><span class="nav-label">Fiche d'intervention</span>
+              </a>
+            </li>
           </ul>
         </li>
-        <li>
-          <a routerLink="Evenement"
-            ><i class="fa fa-table"></i>
-            <span class="nav-label">Évènements</span></a
-          >
-        </li>
-        <li>
-          <a routerLink="calendrier"
-            ><i class="fa fa-calendar"></i>
-            <span class="nav-label">Calendrier</span></a
-          >
-        </li>
+
         <li>
           <a routerLink="Biblio"
             ><i class="fa fa-folder"></i>
@@ -123,31 +201,29 @@
           >
         </li>
         <li>
-          <a
-            ><i class="fa fa-laptop"> </i> <span class="nav-label">Etats</span
-            ><span class="fa arrow"></span
-          ></a>
-          <ul class="nav nav-second-level collapse">
-            <li><a routerLink="EtatAbsence">Etat Présence</a></li>
-
-            <li><a routerLink="FicheContacts">Contacts Club</a></li>
-            <li><a routerLink="FicheContrats">Contrats Club</a></li>
-            <li><a routerLink="FicheRomming">Romming</a></li>
-
-            <li><a routerLink="FicheCalendrier">Calendrier</a></li>
-            <li><a routerLink="FicheProgrammeDate">Programme Par Date</a></li>
-          </ul>
+          <a routerLink="Repertoire"
+            ><i class="fa fa-paste"></i>
+            <span class="nav-label">Repertoire</span></a
+          >
         </li>
+
         <li>
           <a
             ><i class="fa fa-sign-out"></i>
             <span class="nav-label">Déconnexion </span></a
           >
         </li>
+        <br /><br />
+        <div class="col-12 ownerCard text-center">
+          Powered BY
+          <br />
+          <img src="assets/img/murex.png" class="mw-100" />
+          <br />
+          © 2023 - ALL RIGHTS RESERVED<br />Murex business solutions
+        </div>
       </ul>
     </div>
   </nav>
-
   <div id="page-wrapper" class="gray-bg">
     <div class="row border-bottom">
       <nav
@@ -298,22 +374,13 @@
       </nav>
     </div>
 
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="wrapper wrapper-content">
-          <div class="row">
-            <router-outlet></router-outlet>
-          </div>
-        </div>
-      </div>
-    </div>
+    <router-outlet></router-outlet>
 
     <div class="footer">
       <div class="pull-right">
         Date Fin Abonnement <strong>12/12/2024</strong>
       </div>
       <div class="pull-Center">10GB of <strong>250GB</strong> Free.</div>
-      <div><strong>Copyright</strong> Murex Business Solutions &copy; 2023</div>
     </div>
   </div>
 </div>

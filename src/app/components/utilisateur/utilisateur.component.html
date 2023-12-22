@@ -1,0 +1,352 @@
+<div class="row">
+  <div class="row mb-3">
+    <div class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-right">
+      <button
+        data-toggle="modal"
+        data-target="#myModalUtilisateur"
+        class="btn btn-lg btn-primary"
+        class="btn btn-outline btn-info add dim"
+        title="Ajouter"
+      >
+        <i class="fa fa-plus"></i>
+      </button>
+    </div>
+    <div
+      class="modal inmodal"
+      id="myModalUtilisateur"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content animated bounceInRight">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span
+              ><span class="sr-only">Fermer</span>
+            </button>
+            <h6 class="modal-title">Ajouter Utilisateur</h6>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <form>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label>Nom </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault04"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label> Prénom </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault04"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label>Email </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault04"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label>Niveau </label>
+                    <select class="form-control">
+                      <option>Sous-Traitant</option>
+                      <option>Collaborateur</option>
+                      <option>Client</option>
+                      <option>Employé</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="row" class="text-right">
+                    <br />
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-white btn-xs dropdown-toggle"
+                        data-dismiss="modal"
+                      >
+                        Annuler
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-xs dropdown-toggle"
+                      >
+                        Ajouter
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 pull-right">
+    <div class="input-group">
+      <input
+        type="text"
+        placeholder="Rechercher"
+        class="input-sm form-control"
+      />
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-sm btn-primary">
+          <i class="fa fa-search"></i>
+        </button>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nom et Prénom</th>
+        <th>Email</th>
+        <th>Niveau</th>
+        <th>N° Tel</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ichrak Cherif</td>
+        <td>ichrak22@gmail.com</td>
+        <td>Sous-Traitant</td>
+        <td>23 454 543</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalUtilisateurModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a>Supprimer</a></li>
+
+              <li><a>difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Ichrak Cherif</td>
+        <td>ichrak22@gmail.com</td>
+        <td>Sous-Traitant</td>
+        <td>23 454 543</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalUtilisateurModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a>Supprimer</a></li>
+
+              <li><a>difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Ichrak Cherif</td>
+        <td>ichrak22@gmail.com</td>
+        <td>Sous-Traitant</td>
+        <td>23 454 543</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalUtilisateurModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a>Supprimer</a></li>
+
+              <li><a>difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Ichrak Cherif</td>
+        <td>ichrak22@gmail.com</td>
+        <td>Sous-Traitant</td>
+        <td>23 454 543</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalUtilisateurModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a>Supprimer</a></li>
+
+              <li><a>difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Ichrak Cherif</td>
+        <td>ichrak22@gmail.com</td>
+        <td>Sous-Traitant</td>
+        <td>23 454 543</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalUtilisateurModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a>Supprimer</a></li>
+
+              <li><a>difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div
+  class="modal inmodal"
+  id="myModalUtilisateurModifier"
+  tabindex="-1"
+  role="dialog"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content animated bounceInRight">
+      <div class="modal-header">
+        <h6 class="modal-title">Modifier Utilisateur</h6>
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span
+          ><span class="sr-only">Fermer</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <form>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label>Nom </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault04"
+                  placeholder=""
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label> Prénom </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault04"
+                  placeholder=""
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label>Email </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault04"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label>Niveau </label>
+                <select class="form-control">
+                  <option>Sous-Traitant</option>
+                  <option>Collaborateur</option>
+                  <option>Client</option>
+                  <option>Employé</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="row" class="text-right">
+                <br />
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-white btn-xs dropdown-toggle"
+                    data-dismiss="modal"
+                  >
+                    Annuler
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-xs dropdown-toggle"
+                  >
+                    Modifier
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

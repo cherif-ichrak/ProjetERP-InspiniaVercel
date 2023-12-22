@@ -1,0 +1,230 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: none;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #313233;
+  text-align: left;
+  background: #f5f7fb;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (max-width: 599px) {
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/**
+SHOW DOCUEMENTS
+**/
+.docBody {
+  height: auto;
+  scroll-behavior: all;
+  font-family: "Oswald", sans-serif;
+}
+.docPage {
+  font-family: "Oswald", sans-serif;
+  padding: 0px;
+  width: 1024px;
+  font-size: 15px;
+  height: 1449px;
+  border: 1px solid #e1e2e3;
+  padding: 27px;
+  overflow: hidden;
+} /** min-height: 1449px; **/
+@media print {
+  .docPage {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000000000000000000;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: 0px;
+    padding: 27px;
+  }
+}
+
+.docHeaderSlogan {
+  color: #dadad9;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 27px;
+  text-align: right;
+}
+
+.docTitle {
+  text-align: right;
+  padding: 43px;
+  font-size: 37px;
+  font-weight: 500;
+  color: #baa172;
+  text-transform: uppercase;
+}
+.docTitle b {
+  font-weight: 900;
+}
+
+.docContent {
+  padding: 43px;
+  padding-top: 0px;
+}
+
+table.detailsDocContainer {
+  background: #f1f2f3;
+  min-height: 447px;
+}
+table.detailsDoc {
+  background: #f1f2f3;
+  color: #191c1f;
+  font-size: 16px;
+  font-weight: 300;
+}
+table.detailsDoc th {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 7px;
+  padding-left: 11px;
+}
+table.detailsDoc td {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 7px;
+  padding-left: 11px;
+}
+table.detailsDoc td.last {
+  border-right: 0px;
+}
+table.detailsDoc td.detailsDocTitle {
+  background: #8390a0;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+table.detailsDoc td.sep {
+  background: #fff;
+  height: 4px;
+  border: 0px;
+}
+
+table.detailsIntervContainer {
+  color: #000;
+}
+table.detailsInterv {
+  border: 1px solid #515253;
+  font-size: 16px;
+  font-weight: 300;
+}
+table.detailsInterv b {
+  font-weight: 500;
+}
+table.detailsInterv p {
+  min-height: 157px;
+  line-height: 27px;
+}
+table.detailsInterv td {
+  border-right: 1px solid #515253;
+  border-bottom: 1px solid #515253;
+  padding: 7px;
+  padding-left: 11px;
+}
+table.detailsInterv td.last {
+  border-right: 0px;
+}
+table.detailsInterv td.sep {
+  height: 17px;
+  border: 0px;
+}
+
+.docSignature {
+  z-index: 6;
+  position: absolute;
+  text-align: right;
+  padding-right: 47px;
+  bottom: 127px;
+  max-width: 970px;
+}
+
+.docSignature img {
+  max-width: 257px;
+}
+
+.docFooter {
+  z-index: 7;
+  position: absolute;
+  bottom: 37px;
+  max-width: 970px;
+  color: #8390a0;
+  line-height: 21px;
+}
+.docFooter b {
+  text-transform: uppercase;
+  color: #19293d;
+}
+.docFooter span {
+  color: #baa172;
+  font-size: 16px;
+  font-weight: 900;
+  display: inline-block;
+  padding-right: 13px;
+}
+
+.docContent b {
+  font-weight: 700;
+}
+.docContent .signature {
+  font-weight: 700;
+  display: inline-block;
+
+  text-align: center;
+}
+input.savedoc {
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  max-width: 327px;
+  color: #313233;
+  font-size: 13px;
+  padding: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 0px;
+  border-radius: 1px;
+  background: #ffd800;
+  width: 100%;
+  cursor: pointer;
+}
+.docPageAction {
+  font-family: "Oswald", sans-serif;
+  padding: 0px;
+  padding-bottom: 4px;
+  padding-top: 17px;
+  width: 1024px;
+  font-size: 15px;
+}
+
+.docPagePdf {
+  font-family: "Tahoma", sans-serif;
+  padding: 0px;
+  width: 1024px;
+  font-size: 15px;
+
+  border: 1px solid #e1e2e3;
+  padding: 107px;
+  padding-top: 207px;
+  overflow: hidden;
+}

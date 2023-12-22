@@ -1,0 +1,291 @@
+<div class="wrapper wrapper-content animated fadeInUp">
+  <div class="ibox">
+    <div class="ibox-content">
+      <div class="row">
+        <div class="col-12 text-center pb-3">
+          <h1>N° Document &nbsp; <b>BC22001</b></h1>
+        </div>
+
+        <div class="table-responsive">
+          <div
+            id="table_clients_wrapper"
+            class="dataTables_wrapper dt-bootstrap4 no-footer"
+          >
+            <div class="col-12 text-center pb-3">
+              <div class="row">
+                <form>
+                  <div class="form-row">
+                    <div class="col-12 col-md-2">
+                      Famille
+                      <select class="form-control">
+                        <option selected>Famille</option>
+                        <option>Com et Social Media</option>
+                        <option>Débours</option>
+                        <option>Honoraires Conventions</option>
+                        <option>Honoraires Mise en place SI</option>
+                        <option>Infographie et Design</option>
+                        <option>Intégration WEB</option>
+                        <option>Services</option>
+                        <option>Solutions de Gestion</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-2">
+                      Article
+                      <select class="form-control">
+                        <option selected>Article</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-2">
+                      Prix Unitaire HT
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Prix Unitaire HT "
+                        required="required"
+                      />
+                    </div>
+                    <div class="col-12 col-md-2">
+                      Remise
+                      <input
+                        class="form-control"
+                        placeholder="Remise "
+                        required="required"
+                      />
+                    </div>
+                    <div class="col-12 col-md-2">
+                      Qte Livré
+                      <input
+                        class="form-control"
+                        placeholder="Qte Livré"
+                        required="required"
+                      />
+                    </div>
+                    <div class="col-12 col-md-2">
+                      Quantité
+                      <input
+                        class="form-control"
+                        placeholder="Quantité "
+                        required="required"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-12 col-md-2">
+                      N° Lot
+                      <input
+                        class="form-control"
+                        placeholder="N° Lot"
+                        required="required"
+                      />
+                    </div>
+                    <div class="col-12 col-md-2">
+                      N° Série
+                      <input
+                        class="form-control"
+                        placeholder=" N° Série"
+                        required="required"
+                      />
+                    </div>
+                    <div class="col-12 col-md-2 text-center">
+                      <br />
+                      <input
+                        type="submit"
+                        class="btn btn-xs btn-primary"
+                        value="Afficher"
+                      />
+                      <input type="hidden" value="1" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <table
+                id="table_clients"
+                class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                role="grid"
+                aria-describedby="table_clients_info"
+                style="width: 100%"
+              >
+                <thead>
+                  <tr>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Famille
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Article
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Prix Unitaire HT
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Remise
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Quantité
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Quantité Livré
+                    </th>
+
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      N° Lot
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      N° Série
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_clients"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Type : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Actions
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Modifier</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="row">
+                <table style="width: 100%">
+                  <td style="width: 10%"><b>Total HT</b></td>
+                  <td style="width: 10%">-2 380,000</td>
+                  <td style="width: 20%"><b>Total TVA</b></td>
+                  <td style="width: 10%">0,000</td>
+                  <td style="width: 20%"><b>Total Remise</b></td>
+                  <td style="width: 10%">0,000</td>
+                  <td style="width: 10%"><b>Total TTC</b></td>
+                  <td style="width: 10%">0,000</td>
+                </table>
+              </div>
+              <br /><br>
+              <div class="row">
+                <div class="from-row">
+                  <div class="col-12 col-md-3">
+                    <label for="validationDefault02"
+                      >Ventes en suspension</label
+                    >
+                  </div>
+
+                  <div class="col-12 col-md-2">
+                    <label>
+                      <input class="form-control" type="checkbox" /><i></i
+                    ></label>
+                  </div>
+                  <div class="col-12 col-md-2">
+                    <input class="form-control" type="date" />
+                  </div>
+                  <div class="col-12 col-md-2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="NUMERO"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

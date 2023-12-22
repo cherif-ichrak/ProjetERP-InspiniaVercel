@@ -1,0 +1,246 @@
+<div class="col-12 text-center pb-3">
+  <form>
+    <div class="row">
+      <div class="col-lg-3">
+        <select class="form-control">
+          <option>Fournisseur</option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+      </div>
+      <div class="col-lg-2">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Réference"
+          required="required"
+          value=""
+        />
+      </div>
+
+      <div class="col-lg-2">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Prix HT"
+          required="required"
+          value=""
+        />
+      </div>
+      <div class="col-lg-3">
+        <input
+          class="form-control"
+          placeholder="Taux Remise"
+          required="required"
+          value="Taux Remise"
+        />
+      </div>
+
+      <div class="col-lg-2">
+        <input class="btn btn-xs btn-primary" value="Ajouter" type="submit" />
+      </div>
+    </div>
+    <br />
+  </form>
+</div>
+<div class="col-12 pt-3 pb-3">
+  <table
+    id="table_clients"
+    class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+    role="grid"
+    aria-describedby="table_clients_info"
+    style="width: 100%"
+  >
+    <thead>
+      <tr>
+        <th
+          class="sorting"
+          tabindex="0"
+          aria-controls="table_clients"
+          rowspan="1"
+          colspan="1"
+          aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+          style="width: 10%"
+        >
+          Fournisseur
+        </th>
+        <th
+          class="sorting"
+          tabindex="0"
+          aria-controls="table_clients"
+          rowspan="1"
+          colspan="1"
+          aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+          style="width: 10%"
+        >
+          Réference
+        </th>
+        <th
+          class="sorting"
+          tabindex="0"
+          aria-controls="table_clients"
+          rowspan="1"
+          colspan="1"
+          aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+          style="width: 10%"
+        >
+          Prix HT
+        </th>
+        <th
+          class="sorting"
+          tabindex="0"
+          aria-controls="table_clients"
+          rowspan="1"
+          colspan="1"
+          aria-label="Type : activer pour trier la colonne par ordre croissant"
+          style="width: 10%"
+        >
+          Taux Remise
+        </th>
+
+        <th
+          class="sorting"
+          tabindex="0"
+          aria-controls="table_clients"
+          rowspan="1"
+          colspan="1"
+          aria-label="Type : activer pour trier la colonne par ordre croissant"
+          style="width: 10%"
+        >
+          Actions
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>70px0</td>
+        <td>70px0</td>
+        <td>12/02/2023</td>
+        <td>en cour</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a routerLink="ModifierClient">Modifier</a>
+              </li>
+              
+              <li><a href="#">Supprimer</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>70px0</td>
+        <td>70px0</td>
+        <td>12/02/2023</td>
+        <td>en cour</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a routerLink="ModifierClient">Modifier</a>
+              </li>
+              <li><a href="#">Supprimer</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>70px0</td>
+        <td>70px0</td>
+        <td>12/02/2023</td>
+        <td>en cour</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a routerLink="ModifierClient">Modifier</a>
+              </li>
+              
+              <li><a href="#">Supprimer</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>70px0</td>
+        <td>70px0</td>
+        <td>12/02/2023</td>
+        <td>en cour</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a routerLink="ModifierClient">Modifier</a>
+              </li>
+              
+              <li><a href="#">Supprimer</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <form class="form-horizontal" class="form-horizontal">
+    <div class="form-group row">
+      <label class="col-sm-4"> Achat en Suspension </label>
+      <div class="col-sm-6">
+        <select class="form-control">
+          <option></option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-4"> Achats exonore </label>
+      <div class="col-sm-6">
+        <select class="form-control">
+          <option></option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-4">Achats Soumis </label>
+      <div class="col-sm-6">
+        <select class="form-control">
+          <option></option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+      </div>
+    </div>
+  </form>
+  <b> champ Obligatoire</b>
+</div>

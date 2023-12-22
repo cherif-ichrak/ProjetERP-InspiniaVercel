@@ -1,0 +1,1024 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-sm-4">
+    <h2>Support</h2>
+    <ol class="breadcrumb">
+      <li>
+        <a>Tickets Support</a>
+      </li>
+    </ol>
+  </div>
+</div>
+<div class="wrapper wrapper-content">
+  <div class="row animated fadeInDown">
+    <div class="col-lg-4">
+      <div class="ibox float-e-margins">
+        <div class="ibox-title">
+          <h5>Détails du ticket</h5>
+          <div class="ibox-tools">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> </a>
+          </div>
+        </div>
+        <div class="ibox-content">
+          <div id="external-events">
+            <table style="width: 100%">
+              <tr>
+                <td style="width: 50%">Numéro :</td>
+                <td style="width: 50%">52</td>
+              </tr>
+              <tr>
+                <td style="width: 50%">Priorité :</td>
+                <td style="width: 50%">Haute</td>
+              </tr>
+              <tr>
+                <td style="width: 50%">Echeance :</td>
+                <td style="width: 50%">20/06/2023</td>
+              </tr>
+              <tr>
+                <td style="width: 50%">Statut : :</td>
+                <td style="width: 50%">Réponse reçue</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="ibox-content">
+          <div id="external-events">
+            <table style="width: 100%">
+              <tr>
+                <td style="width: 50%">Client :</td>
+                <td style="width: 50%">KR TECH</td>
+              </tr>
+              <tr>
+                <td style="width: 50%">Responsable :</td>
+                <td style="width: 50%">Mr. Aymen KSIBI</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="ibox-content">
+          <div id="external-events">
+            <table style="width: 100%">
+              <tr>
+                <td style="width: 50%">Sous-traitant :</td>
+                <td style="width: 50%">STRATEGY & MANAGEMENT SERVICES</td>
+              </tr>
+              <tr>
+                <td style="width: 50%">Collaborateur :</td>
+                <td style="width: 50%">Mlle. Itaf Charaabi</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="ibox-content">
+          <div id="external-events">
+            <button
+              data-toggle="modal"
+              data-target="#myModalDebour"
+              type="button"
+              class="btn btn-xs btn-primary"
+            >
+              <i class="fa fa-plus-square-o"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i
+              >Ajouter Débours &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>
+            <div
+              class="modal inmodal"
+              id="myModalDebour"
+              tabindex="-1"
+              role="dialog"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content animated bounceInRight">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      <span aria-hidden="true">&times;</span
+                      ><span class="sr-only">Fermer</span>
+                    </button>
+
+                    <h4 class="modal-title">Ajouter Débours</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <form>
+                          <div class="form-group text-left">
+                            <div class="col-md-3 mb-3">
+                              <label for="validationDefault03">Nature </label>
+                              <select class="form-control">
+                                <option>DEB03-Débours API</option>
+                                <option>DEB04-Débours CNSS</option>
+                                <option>DEB02-Débours Enregistrement</option>
+                                <option>DEB01-Débours RNE</option>
+                              </select>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                              <label for="validationDefault03">Date </label>
+                              <input type="date " class="form-control" />
+                            </div>
+                            <div class="col-md-2 mb-3">
+                              <label for="validationDefault03">Montant </label>
+                              <input type="text " class="form-control" />
+                            </div>
+                            <div class="col-md-2 mb-3">
+                              <label for="validationDefault03">Ficher </label>
+                              <input type="file " class="form-control" />
+                            </div>
+                            <div class="col-md-1 mb-3">
+                              <label for="validationDefault03"><br /> </label>
+                              <input
+                                type="submit "
+                                value="Ajouter"
+                                class="btn btn-xs btn-primary"
+                              />
+                            </div>
+                          </div>
+                        </form>
+                        <br />
+                        <br />
+                      </div>
+                      <div class="col-lg-12">
+                        <table
+                          id="table_clients"
+                          class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                          role="grid"
+                          aria-describedby="table_clients_info"
+                          style="width: 100%"
+                        >
+                          <thead>
+                            <tr>
+                              <th
+                                class="sorting"
+                                tabindex="0"
+                                aria-controls="table_clients"
+                                rowspan="1"
+                                colspan="1"
+                                aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                                style="width: 10%"
+                              >
+                                Nature
+                              </th>
+                              <th
+                                class="sorting"
+                                tabindex="0"
+                                aria-controls="table_clients"
+                                rowspan="1"
+                                colspan="1"
+                                aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                                style="width: 10%"
+                              >
+                                Date
+                              </th>
+                              <th
+                                class="sorting"
+                                tabindex="0"
+                                aria-controls="table_clients"
+                                rowspan="1"
+                                colspan="1"
+                                aria-label="Type : activer pour trier la colonne par ordre croissant"
+                                style="width: 10%"
+                              >
+                                Montant
+                              </th>
+                              <th
+                                class="sorting"
+                                tabindex="0"
+                                aria-controls="table_clients"
+                                rowspan="1"
+                                colspan="1"
+                                aria-label="Type : activer pour trier la colonne par ordre croissant"
+                                style="width: 10%"
+                              >
+                                Ficher
+                              </th>
+                              <th
+                                class="sorting"
+                                tabindex="0"
+                                aria-controls="table_clients"
+                                rowspan="1"
+                                colspan="1"
+                                aria-label="Type : activer pour trier la colonne par ordre croissant"
+                                style="width: 10%"
+                              >
+                                Actions
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>DEB03-Débours API</td>
+                              <td>12/03/2023</td>
+                              <td class="text-right">1 000</td>
+                              <td>
+                                <i
+                                  class="fa fa-download"
+                                  aria-hidden="true"
+                                ></i>
+                              </td>
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#myModalModifier"
+                                        >Modifier</a
+                                      >
+                                    </li>
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>DEB03-Débours API</td>
+                              <td>12/03/2023</td>
+                              <td class="text-right">1 000</td>
+                              <td>
+                                <i
+                                  class="fa fa-download"
+                                  aria-hidden="true"
+                                ></i>
+                              </td>
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#myModalModifier"
+                                        >Modifier</a
+                                      >
+                                    </li>
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row" class="text-right">
+                          <br />
+                          <br />
+                          <br />
+                          <div class="modal-footer">
+                            <input
+                              type="submit"
+                              class="btn btn-xs btn-default"
+                              data-dismiss="modal"
+                              value="Annuler"
+                            />
+                            <input
+                              type="submit"
+                              data-dismiss="modal"
+                              class="btn btn-xs btn-primary"
+                              value="Ajouter"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ibox-content">
+          <div id="external-events">
+            <button
+              data-toggle="modal"
+              data-target="#myModalCommentaire"
+              type="button"
+              class="btn btn-xs btn-primary"
+            >
+              <i class="fa fa-plus-square-o">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i
+              >Ajouter
+              Commentaire&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>
+            <div
+              class="modal inmodal"
+              id="myModalCommentaire"
+              tabindex="-1"
+              role="dialog"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content animated bounceInRight">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      <span aria-hidden="true">&times;</span
+                      ><span class="sr-only">Fermer</span>
+                    </button>
+
+                    <h4 class="modal-title">Ajouter Commentaire</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <form>
+                          <div class="form-group text-left">
+                            <div class="col-md-12 mb-3">
+                              <label for="validationDefault03"
+                                >Votre Réponse / Commentaire
+                              </label>
+                              <textarea
+                                type="text"
+                                class="form-control"
+                                id="validationDefault02"
+                                placeholder=""
+                                required
+                              ></textarea>
+                            </div>
+                          </div>
+                        </form>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row" class="text-right">
+                          <br />
+                          <br />
+                          <br />
+                          <div class="modal-footer">
+                            <input
+                              type="submit"
+                              class="btn btn-xs btn-default"
+                              data-dismiss="modal"
+                              value="Annuler"
+                            />
+                            <input
+                              type="submit"
+                              data-dismiss="modal"
+                              class="btn btn-xs btn-primary"
+                              value="Ajouter"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ibox-content">
+          <div id="external-events">
+            <div id="external-events">
+              <button
+                routerLink="Cloturer"
+                type="button"
+                class="btn btn-xs btn-white"
+              >
+                <i class="fa fa-cloud-upload">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </i>
+                Clôturer La Demande
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="ibox-content">
+          <div id="external-events">
+            <div id="external-events">
+              <button
+                data-toggle="modal"
+                data-target="#myModal"
+                type="button"
+                class="btn btn-xs btn-info"
+              >
+                <i class="fa fa-cloud-upload">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </i>
+                Convertir en Fiche d'intervention
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </button>
+              <div
+                class="modal inmodal"
+                id="myModal"
+                tabindex="-1"
+                role="dialog"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content animated bounceInRight">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span
+                        ><span class="sr-only">Fermer</span>
+                      </button>
+
+                      <h4 class="modal-title">
+                        Convertir En Fiche D'intervention
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <form>
+                            <div class="form-group text-left">
+                              <div class="col-md-12 mb-3">
+                                <label for="validationDefault02"
+                                  >Objet de la demande
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault02"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group text-left">
+                              <div class="col-md-6 mb-3">
+                                <label for="validationDefault03"
+                                  >Priorité
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault02"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+
+                              <div class="col-md-6 mb-3">
+                                <label for="validationDefault04"
+                                  >Echéance
+                                </label>
+                                <input
+                                  type="date"
+                                  class="form-control"
+                                  id="validationDefault02"
+                                  placeholder=""
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group text-left">
+                              <div class="col-md-6 mb-3">
+                                <label for="validationDefault03">Client </label>
+                                <select class="form-control">
+                                  <option selected>Client 1</option>
+                                  <option>Client 2</option>
+                                  <option>Client 3</option>
+                                  <option>Client 4</option>
+                                  <option>Client 5</option>
+                                </select>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <label for="validationDefault04"
+                                  >Responsable
+                                </label>
+                                <select class="form-control">
+                                  <option selected>Responsable 1</option>
+                                  <option>Responsable 2</option>
+                                  <option>Responsable 3</option>
+                                  <option>Responsable 4</option>
+                                  <option>Responsable 5</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group text-left">
+                              <div class="col-md-6 mb-3">
+                                <label for="validationDefault03"
+                                  >Sous-traitant
+                                </label>
+                                <select class="form-control">
+                                  <option selected>Sous-traitant 1</option>
+                                  <option>Sous-traitant 2</option>
+                                  <option>Sous-traitant 3</option>
+                                  <option>Sous-traitant 4</option>
+                                </select>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <label for="validationDefault03"
+                                  >Collaborateurs
+                                </label>
+                                <select class="form-control">
+                                  <option selected>Collaborateur 1</option>
+                                  <option>Collaborateur 2</option>
+                                  <option>Collaborateur 3</option>
+                                  <option>Collaborateur 4</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group text-left">
+                              <div class="col-md-12 mb-3">
+                                <label for="validationDefault03"
+                                  >Descriptif de la Mission
+                                </label>
+                                <textarea
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault02"
+                                  placeholder=""
+                                  required
+                                ></textarea>
+                              </div>
+                            </div>
+                          </form>
+                          <br />
+                          <br />
+                          <br />
+                          <br />
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="row" class="text-right">
+                            <br />
+                            <br />
+                            <br />
+                            <div class="modal-footer">
+                              <input
+                                type="submit"
+                                class="btn btn-xs btn-default"
+                                data-dismiss="modal"
+                                value="Annuler"
+                              />
+                              <input
+                                type="submit"
+                                data-dismiss="modal"
+                                class="btn btn-xs btn-primary"
+                                value="Convertir"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ibox-content">
+          <div id="external-events">
+            <div id="external-events">
+              <button
+                data-toggle="modal"
+                data-target="#myModalObservations"
+                type="button"
+                class="btn btn-xs btn-info"
+              >
+                <i class="fa fa-cloud-upload">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </i>
+                Ajouter Commentaires/Observations
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </button>
+              <div
+                class="modal inmodal"
+                id="myModalObservations"
+                tabindex="-1"
+                role="dialog"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content animated bounceInRight">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span
+                        ><span class="sr-only">Fermer</span>
+                      </button>
+
+                      <h4 class="modal-title">
+                        Ajouter Commentaires / Observations
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <form>
+                            <div class="form-group text-left">
+                              <div class="col-md-12 mb-3">
+                                <label for="validationDefault03"
+                                  >Commentaires / Observations
+                                </label>
+                                <textarea
+                                  type="text"
+                                  class="form-control"
+                                  id="validationDefault02"
+                                  placeholder=""
+                                  required
+                                ></textarea>
+                              </div>
+                            </div>
+                          </form>
+                          <br />
+                          <br />
+                          <br />
+                          <br />
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="row" class="text-right">
+                            <br />
+                            <br />
+                            <br />
+                            <div class="modal-footer">
+                              <input
+                                type="submit"
+                                class="btn btn-xs btn-default"
+                                data-dismiss="modal"
+                                value="Annuler"
+                              />
+                              <input
+                                type="submit"
+                                data-dismiss="modal"
+                                class="btn btn-xs btn-primary"
+                                value="Ajouter"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <div class="ibox float-e-margins">
+        <div class="ibox-content">
+          <p><u>Réponse par Administrateur le 18/08/2023 à 17:47</u></p>
+          <br /><br />
+          <p>Manque documents</p>
+        </div>
+      </div>
+      <div class="ibox float-e-margins">
+        <div class="ibox-content">
+          <p><u>Créé par Administrateur le 12/06/2023</u></p>
+          <br /><br />
+          <p>PV transfert de siège Regler la situation CNSS gérant</p>
+        </div>
+      </div>
+      <div class="ibox float-e-margins">
+        <div class="ibox-content">
+          <h3>Débours</h3>
+
+          <div class="table-responsive">
+            <div
+              id="table_clients_wrapper"
+              class="dataTables_wrapper dt-bootstrap4 no-footer"
+            >
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="dataTables_length" id="table_clients_length">
+                    <label
+                      >Afficher
+                      <select
+                        name="table_clients_length"
+                        aria-controls="table_clients"
+                        class="custom-select custom-select-sm form-control form-control-sm"
+                      >
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                      </select>
+                      entrées
+                    </label>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div id="table_clients_filter" class="dataTables_filter">
+                    <label
+                      >Rechercher :
+                      <input
+                        type="search"
+                        class="form-control form-control-sm"
+                        placeholder=""
+                        aria-controls="table_clients"
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <table
+                    id="table_clients"
+                    class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                    role="grid"
+                    aria-describedby="table_clients_info"
+                    style="width: 100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="table_clients"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                          style="width: 10%"
+                        >
+                          Nature
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="table_clients"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                          style="width: 10%"
+                        >
+                          Date
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="table_clients"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Type : activer pour trier la colonne par ordre croissant"
+                          style="width: 10%"
+                        >
+                          Montant
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="table_clients"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Type : activer pour trier la colonne par ordre croissant"
+                          style="width: 10%"
+                        >
+                          Ficher
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="table_clients"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Type : activer pour trier la colonne par ordre croissant"
+                          style="width: 10%"
+                        >
+                          Actions
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>DEB03-Débours API</td>
+                        <td>12/03/2023</td>
+                        <td class="text-right">1 000</td>
+                        <td>
+                          <i class="fa fa-download" aria-hidden="true"></i>
+                        </td>
+                        <td class="overflow-hidden">
+                          <div class="btn-group">
+                            <button
+                              data-toggle="dropdown"
+                              class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                            >
+                              Action <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a
+                                  data-toggle="modal"
+                                  data-target="#myModalModifier"
+                                  >Modifier</a
+                                >
+                              </li>
+                              <li><a href="#">Supprimer</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>DEB03-Débours API</td>
+                        <td>12/03/2023</td>
+                        <td class="text-right">1 000</td>
+                        <td>
+                          <i class="fa fa-download" aria-hidden="true"></i>
+                        </td>
+                        <td class="overflow-hidden">
+                          <div class="btn-group">
+                            <button
+                              data-toggle="dropdown"
+                              class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                            >
+                              Action <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a
+                                  data-toggle="modal"
+                                  data-target="#myModalModifier"
+                                  >Modifier</a
+                                >
+                              </li>
+                              <li><a href="#">Supprimer</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div
+                    class="modal inmodal"
+                    id="myModalModifier"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content animated bounceInRight">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                          >
+                            <span aria-hidden="true">&times;</span
+                            ><span class="sr-only">Fermer</span>
+                          </button>
+
+                          <h4 class="modal-title">Modifier Débours</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <form>
+                                <div class="form-group text-left">
+                                  <div class="col-md-6 mb-3">
+                                    <label for="validationDefault03"
+                                      >Nature
+                                    </label>
+                                    <select class="form-control">
+                                      <option>DEB03-Débours API</option>
+                                      <option>DEB04-Débours CNSS</option>
+                                      <option>
+                                        DEB02-Débours Enregistrement
+                                      </option>
+                                      <option>DEB01-Débours RNE</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label for="validationDefault03"
+                                      >Date
+                                    </label>
+                                    <input type="date " class="form-control" />
+                                  </div>
+                                </div>
+
+                                <div class="form-group text-left">
+                                  <div class="col-md-6 mb-3">
+                                    <label for="validationDefault03"
+                                      >Montant
+                                    </label>
+                                    <input type="text " class="form-control" />
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label for="validationDefault03"
+                                      >Ficher
+                                    </label>
+                                    <input type="file " class="form-control" />
+                                  </div>
+                                </div>
+                              </form>
+                              <br />
+                              <br />
+                            </div>
+
+                            <div class="col-lg-12">
+                              <div class="row" class="text-right">
+                                <br />
+                                <br />
+                                <br />
+                                <div class="modal-footer">
+                                  <input
+                                    type="submit"
+                                    class="btn btn-xs btn-default"
+                                    data-dismiss="modal"
+                                    value="Annuler"
+                                  />
+                                  <input
+                                    type="submit"
+                                    data-dismiss="modal"
+                                    class="btn btn-xs btn-primary"
+                                    value="Modifier"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="table_clients_processing"
+                    class="dataTables_processing card"
+                    style="display: none"
+                  >
+                    Traitement...
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-5">
+                  <div
+                    class="dataTables_info"
+                    id="table_clients_info"
+                    role="status"
+                    aria-live="polite"
+                  >
+                    Affichage de 1 à 10 sur 18 entrées
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                  <div
+                    class="text-right"
+                    class="dataTables_paginate paging_simple_numbers"
+                    id="table_clients_paginate"
+                  >
+                    <ul class="pagination">
+                      <li
+                        class="paginate_button page-item previous disabled"
+                        id="table_clients_previous"
+                      >
+                        <a
+                          aria-controls="table_clients"
+                          data-dt-idx="0"
+                          tabindex="0"
+                          class="page-link"
+                          >Précédent</a
+                        >
+                      </li>
+                      <li class="paginate_button page-item active">
+                        <a
+                          aria-controls="table_clients"
+                          data-dt-idx="1"
+                          tabindex="0"
+                          class="page-link"
+                          >1</a
+                        >
+                      </li>
+
+                      <li class="paginate_button page-item">
+                        <a
+                          aria-controls="table_clients"
+                          data-dt-idx="2"
+                          tabindex="0"
+                          class="page-link"
+                          >2</a
+                        >
+                      </li>
+                      <li
+                        class="paginate_button page-item next"
+                        id="table_clients_next"
+                      >
+                        <a
+                          aria-controls="table_clients"
+                          data-dt-idx="3"
+                          tabindex="0"
+                          class="page-link"
+                          >Suivant</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,622 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Documents Ventes</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a>Exploitation</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a>Traitement</a>
+      </li>
+
+      <li class="breadcrumb-item active">
+        <strong>Documents Ventes</strong>
+      </li>
+    </ol>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="tabs-container">
+        <div class="tab-content">
+          <div role="tabpanel" id="" class="tab-pane active">
+            <div class="panel-body">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-right"
+                >
+                  <button
+                    routerLink="AjouterDocVente"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Ajouter"
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                  <button
+                    routerLink="Regrouper"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Regrouper"
+                  >
+                    <i class="fa fa-bars"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <div
+                  id="table_clients_wrapper"
+                  class="dataTables_wrapper dt-bootstrap4 no-footer"
+                >
+                  <div class="row">
+                    <form>
+                      <div class="row">
+                        <div class="col-12 col-md-3 col-lg-3">
+                          Client
+                          <select required="required" class="form-control">
+                            <option value="">Sélectionnez le client</option>
+                            <option value="0" selected="selected">
+                              Tous les clients
+                            </option>
+                            <option value="5">
+                              CL0001 - LED DISPLAY SOLUTIONS
+                            </option>
+                            <option value="6">
+                              CL0002 - AJIEL EDITION ET DISTRIBUTION
+                            </option>
+                            <option value="8">CL0003 - LIBRERIYA</option>
+                            <option value="9">
+                              CL0004 - GLOBALL GPS SOLUTIONS
+                            </option>
+                            <option value="10">CL0005 - EDEN PLUS</option>
+                            <option value="11">CL0006 - DATA TRAINING</option>
+                            <option value="12">CL0007 - GETRAMI</option>
+                            <option value="14">
+                              CL0008 - NACEUR AUTOMOBILE SERVICES
+                            </option>
+                            <option value="27">CL0009 - MOHAMED SNOUSSI</option>
+                            <option value="15">CL0010 - K2A CONSULTING</option>
+                            <option value="17">CL0011 - EDEN SKY</option>
+                            <option value="28">CL0012 - I'MTECH</option>
+                            <option value="29">CL0013 - NOUHA EDITION</option>
+                            <option value="30">CL0014 - NACEUR RENT CAR</option>
+                            <option value="31">
+                              CL0015 - ZITOUNA LOGESTICS SERVICES
+                            </option>
+                            <option value="19">CL0016 - EDEN</option>
+                            <option value="20">
+                              CL0017 - SILVER INVESTMENT GROUP
+                            </option>
+                            <option value="32">
+                              CL0018 - CABINET MOUNIR ZAMMIT
+                            </option>
+                            <option value="21">CL0019 - WEST 52 AGENCY</option>
+                            <option value="22">
+                              CL0020 - AYADI TRANSITAIRE
+                            </option>
+                            <option value="23">CL0021 - TEAM BAT</option>
+                            <option value="33">
+                              CL0022 - WORLD LEADERS TRAINING
+                            </option>
+                            <option value="25">CL0023 - WARAM MEDICAL</option>
+                            <option value="18">CL0024 - TAYSIR CONSEILS</option>
+                            <option value="37">
+                              CL0025 - B SQUARE ADVISORS
+                            </option>
+                            <option value="24">
+                              CL0026 - GROW IT YOURSELF
+                            </option>
+                            <option value="38">
+                              CL0027 - TAYSIR MICROFINANCE
+                            </option>
+                            <option value="39">CL0028 - HOUDA TRIKI</option>
+                            <option value="1">
+                              CL0029 - SELENE TECHNOLOGY
+                            </option>
+                            <option value="40">
+                              CL0030 - CELLVITAL NUTRITION CONSULTING
+                            </option>
+                            <option value="41">
+                              CL0031 - TUNISIE TRANSFORMATEUR
+                            </option>
+                            <option value="16">
+                              CL0032 - MOULE PROTECTION
+                            </option>
+                            <option value="42">
+                              CL0033 - STE LARP ALUMINIU
+                            </option>
+                            <option value="43">CL0034 - PLASTISS</option>
+                            <option value="44">CL0035 - VM AGENCY</option>
+                            <option value="45">CL0036 - IMPBD</option>
+                            <option value="46">
+                              CL0037 - INTER DECOR INDUSTRIE
+                            </option>
+                            <option value="47">
+                              CL0038 - 3F COMMUNICATIONS
+                            </option>
+                            <option value="64">CL0039 - UP TAWER</option>
+                            <option value="48">CL0040 - PRO SERRES</option>
+                            <option value="49">
+                              CL0041 - MUREX DIGITAL AGENCY
+                            </option>
+                            <option value="50">
+                              CL0042 - MUREX BUSINESS SOLUTIONS
+                            </option>
+                            <option value="51">
+                              CL0043 - TUNISIE PRODUCTEUR DU VERRE TPV
+                            </option>
+                            <option value="52">CL0044 - A M IMMOBILIERE</option>
+                            <option value="53">
+                              CL0045 - LIMEM SERVICES COMPANY
+                            </option>
+                            <option value="54">CL0046 - MULTIPLOGY</option>
+                            <option value="55">CL0047 - KR TECH</option>
+                            <option value="60">CL0048 - 2L TRADE 2LT</option>
+                            <option value="34">CL0049 - CALISTA</option>
+                            <option value="35">CL0050 - EDEN SOLUTIONS</option>
+                            <option value="61">CL0051 - A VOUS DE VOIR</option>
+                            <option value="66">
+                              CL0052 - CELLVITAL NUTRITION
+                            </option>
+                            <option value="67">
+                              CL0053 - SOCIETE TUNISIENNE MEGRINE TEXTILE
+                            </option>
+                            <option value="26">
+                              CL0054 - STRATEGY AND MANAGEMENT SERVICES
+                            </option>
+                            <option value="68">CL0055 - 4 SEASON GREEN</option>
+                            <option value="69">CL0056 - PETIT PRIX</option>
+                            <option value="70">
+                              CL0057 - GLAM CHIC TRADING
+                            </option>
+                            <option value="71">
+                              CL0058 - CITRINE DEVELOPPEMENT AGRICOLE
+                            </option>
+                            <option value="72">
+                              CL0059 - BRILLANT TUNISIA
+                            </option>
+                            <option value="73">
+                              CL0060 - SOCIETE MONDIALE DE TISSUE
+                            </option>
+                            <option value="74">
+                              CL0061 - TUNISIAN SPORT WATER DISTRIBUTION
+                            </option>
+                            <option value="75">
+                              CL0062 - OUSSEMA D'ASSISTANCE LOGISTIQUE
+                            </option>
+                            <option value="76">CL0063 - BIJOUX PHARMA</option>
+                            <option value="77">
+                              CL0064 - SERVICES ET TRAVAUX MARITIMES
+                            </option>
+                            <option value="78">CL0065 - GIZ TUNISIA</option>
+                            <option value="79">
+                              CL0066 - MOHAMED HEDI AYADI
+                            </option>
+                            <option value="2">
+                              CL0067 - A.B.T.M.B SERVICES
+                            </option>
+                            <option value="3">
+                              CL0068 - JALLELI AND BEY COMPANY
+                            </option>
+                            <option value="4">
+                              CL0069 - KAYLAR EQUIPEMENT
+                            </option>
+                            <option value="7">CL0070 - M.S.C SERVICES</option>
+                            <option value="13">
+                              CL0071 - MELLISIMA TRAVAL
+                            </option>
+                            <option value="80">
+                              CL0072 - CAP MOTORCYCLE CMC
+                            </option>
+                            <option value="81">CL0073 - SOCOBIS</option>
+                            <option value="36">
+                              CL0074 - TUNISIAN GLOBAL ARTI
+                            </option>
+                            <option value="82">
+                              CL0075 - CYRINE BEN ATTIA
+                            </option>
+                            <option value="83">CL0076 - AYV STUDIO</option>
+                            <option value="84">
+                              CL0077 - AL RAHALI INTERNATIONAL
+                            </option>
+                            <option value="85">CL0078 - Aicha CHERIF</option>
+                            <option value="86">
+                              CL0079 - LA PERLE DE CARTHAGE
+                            </option>
+                            <option value="87">CL0080 - HANNACHI CHAIMA</option>
+                            <option value="88">
+                              CL0081 - FONDERIES REUNIES MAGREBINES -F.R.M-
+                            </option>
+                            <option value="89">CL0082 - GOMO SOLUTIONS</option>
+                            <option value="90">CL0083 - TRIO ABID</option>
+                            <option value="91">CL0084 - 2AMPLIFYX</option>
+                            <option value="92">
+                              CL085 - MKH DE COMMERCE ET DISTRIBUTION
+                            </option>
+                            <option value="93">
+                              CL086 - YASMINE CONFECTION
+                            </option>
+                            <option value="94">
+                              CL087 - WONVIZ CORPORATION
+                            </option>
+                            <option value="95">
+                              CL088 - NORTH AFRICA SHIPYARD SERVICES N.S.S
+                            </option>
+                            <option value="96">
+                              CL089 - KT BITO INTERNATIONAL BUSINESS
+                            </option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-3">
+                          Type de document
+                          <select required="required" class="form-control">
+                            <option value="0" selected="selected">
+                              Tous les types
+                            </option>
+                            <option value="1">Devis</option>
+                            <option value="2">Bon Livraison</option>
+                            <option value="3">Pré Facture</option>
+                            <option value="4">Facture</option>
+                            <option value="5">Avoir</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-2">
+                          Date début
+                          <input
+                            type="date"
+                            class="form-control"
+                            required="required"
+                          />
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-2">
+                          Date fin
+                          <input
+                            type="date"
+                            class="form-control"
+                            required="required"
+                          />
+                        </div>
+                        <div class="col-12 col-md-2 text-center">
+                          <br />
+                          <input
+                            type="submit"
+                            class="btn btn-xs btn-primary"
+                            value="Afficher"
+                          />
+                          <input type="hidden" name="docfilter" value="1" />
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <br />
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <div class="dataTables_length" id="table_clients_length">
+                        <label
+                          >Afficher
+                          <select
+                            name="table_clients_length"
+                            aria-controls="table_clients"
+                            class="custom-select custom-select-sm form-control form-control-sm"
+                          >
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select>
+                          entrées
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <div id="table_clients_filter" class="dataTables_filter">
+                        <label
+                          >Rechercher :
+                          <input
+                            type="search"
+                            class="form-control form-control-sm"
+                            placeholder=""
+                            aria-controls="table_clients"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="col-lg-12">
+                      <table
+                        id="table_clients"
+                        class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                        role="grid"
+                        aria-describedby="table_clients_info"
+                        style="width: 100%"
+                      >
+                        <thead>
+                          <tr>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              N° Doc
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Date
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Code
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Intitulé
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Dépôt
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Type Doc
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Montant TTC
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Actions
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>12/03/2023</td>
+                            <td>1124R4</td>
+                            <td>10%0</td>
+                            <td>12/02/2023</td>
+                            <td>12/02/2023</td>
+
+                            <td>en cour</td>
+                            <td>en cour</td>
+
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a routerLink="ModifierVente">Modifier</a>
+                                  </li>
+                                  <li><a href="#">Transformer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12/03/2023</td>
+                            <td>1124R4</td>
+                            <td>10%0</td>
+                            <td>12/02/2023</td>
+                            <td>12/02/2023</td>
+
+                            <td>en cour</td>
+                            <td>en cour</td>
+
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a routerLink="ModifierVente">Modifier</a>
+                                  </li>
+                                  <li><a href="#">Transformer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12/03/2023</td>
+                            <td>1124R4</td>
+                            <td>10%0</td>
+                            <td>12/02/2023</td>
+                            <td>12/02/2023</td>
+
+                            <td>en cour</td>
+                            <td>en cour</td>
+
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a routerLink="ModifierVente">Modifier</a>
+                                  </li>
+                                  <li><a href="#">Transformer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12/03/2023</td>
+                            <td>1124R4</td>
+                            <td>10%0</td>
+                            <td>12/02/2023</td>
+                            <td>12/02/2023</td>
+
+                            <td>en cour</td>
+                            <td>en cour</td>
+
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a routerLink="ModifierVente">Modifier</a>
+                                  </li>
+                                  <li><a href="#">Transformer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <div
+                        id="table_clients_processing"
+                        class="dataTables_processing card"
+                        style="display: none"
+                      >
+                        Traitement...
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                      <div
+                        class="dataTables_info"
+                        id="table_clients_info"
+                        role="status"
+                        aria-live="polite"
+                      >
+                        Affichage de 1 à 10 sur 18 entrées
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                      <div
+                        class="dataTables_paginate paging_simple_numbers"
+                        id="table_clients_paginate"
+                      >
+                        <ul class="pagination">
+                          <li
+                            class="paginate_button page-item previous disabled"
+                            id="table_clients_previous"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="0"
+                              tabindex="0"
+                              class="page-link"
+                              >Précédent</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item active">
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="1"
+                              tabindex="0"
+                              class="page-link"
+                              >1</a
+                            >
+                          </li>
+
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="2"
+                              tabindex="0"
+                              class="page-link"
+                              >2</a
+                            >
+                          </li>
+                          <li
+                            class="paginate_button page-item next"
+                            id="table_clients_next"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="3"
+                              tabindex="0"
+                              class="page-link"
+                              >Suivant</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

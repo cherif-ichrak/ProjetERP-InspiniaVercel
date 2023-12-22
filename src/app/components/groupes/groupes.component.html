@@ -1,500 +1,94 @@
-<div class="wrapper wrapper-content animated fadeInDown">
-  <div class="row">
-    <div class="ibox-content">
-      <div class="row">
-        <div class="row mb-3">
-          <div
-            class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-right"
-          >
-            <button
-              data-toggle="modal"
-              data-target="#myModal"
-              class="btn btn-lg btn-primary"
-              class="btn btn-outline btn-info add dim"
-              title="Ajouter"
-            >
-              <i class="fa fa-plus"></i>
+<div class="row">
+  <div class="row mb-3">
+    <div class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-right">
+      <button
+        data-toggle="modal"
+        data-target="#myModal"
+        class="btn btn-lg btn-primary"
+        class="btn btn-outline btn-info add dim"
+        title="Ajouter"
+      >
+        <i class="fa fa-plus"></i>
+      </button>
+    </div>
+    <div
+      class="modal inmodal"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content animated bounceInRight">
+          <div class="modal-header">
+            <h6 class="modal-title">Ajouter Groupe</h6>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span
+              ><span class="sr-only">Fermer</span>
             </button>
           </div>
-          <div
-            class="modal inmodal"
-            id="myModal"
-            tabindex="-1"
-            role="dialog"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content animated bounceInRight">
-                <div class="modal-header">
-                  <h6 class="modal-title">Ajouter Groupe</h6>
-                  <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span
-                    ><span class="sr-only">Fermer</span>
-                  </button>
-                </div>
 
-                <div class="modal-body">
-                  <form>
-                    <div class="form-row">
-                      <div class="col-md-4 mb-3">
-                        <label>Nom et Prénom </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="validationDefault04"
-                          placeholder=""
-                          required
-                        />
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <label>N° Tel 1</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="validationDefault04"
-                          placeholder=""
-                          required
-                        />
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <label>N° Tel 2</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="validationDefault04"
-                          placeholder=""
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="col-md-6 mb-3">
-                        <label>Qualité </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="validationDefault04"
-                          placeholder="Qualité"
-                          required
-                        />
-                      </div>
-
-                      <div class="col-md-6 mb-3">
-                        <label>Email </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="validationDefault04"
-                          placeholder="Email"
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="row" class="text-right">
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-white btn-xs dropdown-toggle"
-                          data-dismiss="modal"
-                        >
-                          Annuler
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-primary btn-xs dropdown-toggle"
-                        >
-                          Ajouter
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 pull-right">
-          <div class="input-group">
-            <input
-              type="text"
-              placeholder="Rechercher"
-              class="input-sm form-control"
-            />
-            <span class="input-group-btn">
-              <button type="button" class="btn btn-sm btn-primary">
-                <i class="fa fa-search"></i>
-              </button>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th style="width: 90%">Groupe</th>
-
-              <th style="width: 90%">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="gradeX">
-              <td>Groupe 1</td>
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a data-toggle="modal" data-target="#myModalModifier"
-                        >Modifier</a
-                      >
-                    </li>
-                    <li><a href="#">Supprimer</a></li>
-                    <li>
-                      <a routerLink="ConfigurerGroupe">Configurer</a>
-                    </li>
-                    <li><a href="#">difu</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr class="gradeX">
-              <td>Groupe 2</td>
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a data-toggle="modal" data-target="#myModalModifier"
-                        >Modifier</a
-                      >
-                    </li>
-                    <li><a href="#">Supprimer</a></li>
-                    <li>
-                      <a routerLink="ConfigurerGroupe">Configurer</a>
-                    </li>
-                    <li><a href="#">difu</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr class="gradeX">
-              <td>Groupe 3</td>
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a data-toggle="modal" data-target="#myModalModifier"
-                        >Modifier</a
-                      >
-                    </li>
-                    <li><a href="#">Supprimer</a></li>
-                    <li>
-                      <a routerLink="ConfigurerGroupe">Configurer</a>
-                    </li>
-                    <li><a href="#">difu</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr class="gradeX">
-              <td>Groupe 4</td>
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a data-toggle="modal" data-target="#myModalModifier"
-                        >Modifier</a
-                      >
-                    </li>
-                    <li><a href="#">Supprimer</a></li>
-                    <li>
-                      <a routerLink="ConfigurerGroupe">Configurer</a>
-                    </li>
-                    <li><a href="#">difu</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="gradeX">
-              <td>Groupe 5</td>
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a data-toggle="modal" data-target="#myModalModifier"
-                        >Modifier</a
-                      >
-                    </li>
-                    <li><a href="#">Supprimer</a></li>
-                    <li>
-                      <a routerLink="ConfigurerGroupe">Configurer</a>
-                    </li>
-                    <li><a href="#">difu</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr class="gradeX">
-              <td>Groupe 6</td>
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a data-toggle="modal" data-target="#myModalModifier"
-                        >Modifier</a
-                      >
-                    </li>
-                    <li><a href="#">Supprimer</a></li>
-                    <li>
-                      <a routerLink="ConfigurerGroupe">Configurer</a>
-                    </li>
-                    <li><a href="#">difu</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr class="gradeX">
-              <td>Groupe 7</td>
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a data-toggle="modal" data-target="#myModalModifier"
-                        >Modifier</a
-                      >
-                    </li>
-                    <li><a href="#">Supprimer</a></li>
-                    <li>
-                      <a routerLink="ConfigurerGroupe">Configurer</a>
-                    </li>
-                    <li><a href="#">difu</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr class="gradeX">
-              <td>Groupe 8</td>
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a data-toggle="modal" data-target="#myModalModifier"
-                        >Modifier</a
-                      >
-                    </li>
-                    <li><a href="#">Supprimer</a></li>
-                    <li>
-                      <a routerLink="ConfigurerGroupe">Configurer</a>
-                    </li>
-                    <li><a href="#">difu</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr class="gradeX">
-              <td>Groupe 9</td>
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a data-toggle="modal" data-target="#myModalModifier"
-                        >Modifier</a
-                      >
-                    </li>
-                    <li><a href="#">Supprimer</a></li>
-                    <li>
-                      <a routerLink="ConfigurerGroupe">Configurer</a>
-                    </li>
-                    <li><a href="#">difu</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr class="gradeX">
-              <td>Groupe 10</td>
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a data-toggle="modal" data-target="#myModalModifier"
-                        >Modifier</a
-                      >
-                    </li>
-                    <li><a href="#">Supprimer</a></li>
-                    <li>
-                      <a routerLink="ConfigurerGroupe">Configurer</a>
-                    </li>
-                    <li><a href="#">difu</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr class="gradeX">
-              <td>Groupe 11</td>
-              <td class="overflow-hidden">
-                <div class="btn-group">
-                  <button
-                    data-toggle="dropdown"
-                    class="btn btn-primary btn-xs dropdown-toggle"
-                  >
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a data-toggle="modal" data-target="#myModalModifier"
-                        >Modifier</a
-                      >
-                    </li>
-                    <li><a href="#">Supprimer</a></li>
-                    <li>
-                      <a routerLink="ConfigurerGroupe">Configurer</a>
-                    </li>
-                    <li><a href="#">difu</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div
-          class="modal inmodal"
-          id="myModalModifier"
-          tabindex="-1"
-          role="dialog"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content animated bounceInRight">
-              <div class="modal-header">
-                <h6 class="modal-title">Ajouter Groupe</h6>
-                <button type="button" class="close" data-dismiss="modal">
-                  <span aria-hidden="true">&times;</span
-                  ><span class="sr-only">Fermer</span>
-                </button>
-              </div>
-
-              <div class="modal-body">
-                <form>
-                  <div class="form-row">
-                    <div class="col-md-4 mb-3">
-                      <label>Nom et Prénom </label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="validationDefault04"
-                        placeholder=""
-                        required
-                      />
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <label>N° Tel 1</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="validationDefault04"
-                        placeholder=""
-                        required
-                      />
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <label>N° Tel 2</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="validationDefault04"
-                        placeholder=""
-                        required
-                      />
-                    </div>
+          <div class="modal-body">
+            <div class="row">
+              <form>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label>Nom et Prénom </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault04"
+                      placeholder=""
+                      required
+                    />
                   </div>
-                  <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                      <label>Qualité </label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="validationDefault04"
-                        placeholder="Qualité"
-                        required
-                      />
-                    </div>
-
-                    <div class="col-md-6 mb-3">
-                      <label>Email </label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="validationDefault04"
-                        placeholder="Email"
-                        required
-                      />
-                    </div>
+                  <div class="col-md-4 mb-3">
+                    <label>N° Tel 1</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault04"
+                      placeholder=""
+                      required
+                    />
                   </div>
-                  <br /><br />
+                  <div class="col-md-4 mb-3">
+                    <label>N° Tel 2</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault04"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label>Qualité </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault04"
+                      placeholder="Qualité"
+                      required
+                    />
+                  </div>
 
+                  <div class="col-md-6 mb-3">
+                    <label>Email </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault04"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12">
                   <div class="row" class="text-right">
+                    <br />
                     <div class="modal-footer">
                       <button
                         type="button"
@@ -507,13 +101,418 @@
                         type="button"
                         class="btn btn-primary btn-xs dropdown-toggle"
                       >
-                        Modifier
+                        Ajouter
                       </button>
                     </div>
                   </div>
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 pull-right">
+    <div class="input-group">
+      <input
+        type="text"
+        placeholder="Rechercher"
+        class="input-sm form-control"
+      />
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-sm btn-primary">
+          <i class="fa fa-search"></i>
+        </button>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th style="width: 90%">Groupe</th>
+
+        <th style="width: 90%">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="gradeX">
+        <td>Groupe 1</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a href="#">Supprimer</a></li>
+              <li>
+                <a routerLink="ConfigurerGroupe">Configurer</a>
+              </li>
+              <li><a href="#">difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr class="gradeX">
+        <td>Groupe 2</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a href="#">Supprimer</a></li>
+              <li>
+                <a routerLink="ConfigurerGroupe">Configurer</a>
+              </li>
+              <li><a href="#">difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr class="gradeX">
+        <td>Groupe 3</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a href="#">Supprimer</a></li>
+              <li>
+                <a routerLink="ConfigurerGroupe">Configurer</a>
+              </li>
+              <li><a href="#">difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr class="gradeX">
+        <td>Groupe 4</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a href="#">Supprimer</a></li>
+              <li>
+                <a routerLink="ConfigurerGroupe">Configurer</a>
+              </li>
+              <li><a href="#">difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+
+      <tr class="gradeX">
+        <td>Groupe 5</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a href="#">Supprimer</a></li>
+              <li>
+                <a routerLink="ConfigurerGroupe">Configurer</a>
+              </li>
+              <li><a href="#">difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr class="gradeX">
+        <td>Groupe 6</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a href="#">Supprimer</a></li>
+              <li>
+                <a routerLink="ConfigurerGroupe">Configurer</a>
+              </li>
+              <li><a href="#">difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr class="gradeX">
+        <td>Groupe 7</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a href="#">Supprimer</a></li>
+              <li>
+                <a routerLink="ConfigurerGroupe">Configurer</a>
+              </li>
+              <li><a href="#">difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr class="gradeX">
+        <td>Groupe 8</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a href="#">Supprimer</a></li>
+              <li>
+                <a routerLink="ConfigurerGroupe">Configurer</a>
+              </li>
+              <li><a href="#">difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr class="gradeX">
+        <td>Groupe 9</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a href="#">Supprimer</a></li>
+              <li>
+                <a routerLink="ConfigurerGroupe">Configurer</a>
+              </li>
+              <li><a href="#">difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr class="gradeX">
+        <td>Groupe 10</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a href="#">Supprimer</a></li>
+              <li>
+                <a routerLink="ConfigurerGroupe">Configurer</a>
+              </li>
+              <li><a href="#">difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr class="gradeX">
+        <td>Groupe 11</td>
+        <td class="overflow-hidden">
+          <div class="btn-group">
+            <button
+              data-toggle="dropdown"
+              class="btn btn-primary btn-xs dropdown-toggle"
+            >
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a data-toggle="modal" data-target="#myModalModifier"
+                  >Modifier</a
+                >
+              </li>
+              <li><a href="#">Supprimer</a></li>
+              <li>
+                <a routerLink="ConfigurerGroupe">Configurer</a>
+              </li>
+              <li><a href="#">difu</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    class="modal inmodal"
+    id="myModalModifier"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content animated bounceInRight">
+        <div class="modal-header">
+          <h6 class="modal-title">Ajouter Groupe</h6>
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span
+            ><span class="sr-only">Fermer</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <form>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label>Nom et Prénom </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationDefault04"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label>N° Tel 1</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationDefault04"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label>N° Tel 2</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationDefault04"
+                    placeholder=""
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label>Qualité </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationDefault04"
+                    placeholder="Qualité"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label>Email </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationDefault04"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="row" class="text-right">
+                  <br />
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-white btn-xs dropdown-toggle"
+                      data-dismiss="modal"
+                    >
+                      Annuler
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-xs dropdown-toggle"
+                    >
+                      Modifier
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

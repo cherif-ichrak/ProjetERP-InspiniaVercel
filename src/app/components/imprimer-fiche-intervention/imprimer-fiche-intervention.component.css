@@ -1,0 +1,80 @@
+.logo-center {
+  margin-right: 1px; /* Ajoutez la marge à droite selon vos besoins */
+  text-align: right; /* Alignez le texte à droite de la marge */
+}
+.custom-table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black; /* Ajoute une bordure noire de 1 pixel */
+}
+
+.signature-table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none; /* Supprime la bordure du tableau de signature */
+}
+
+.signature-table td {
+  width: 50%;
+  vertical-align: top; /* Alignement du contenu en haut */
+}
+.custom-table td {
+}
+.footer-table {
+  width: 80%;
+  border: none; /* Supprime la bordure du tableau de pied de page */
+}
+
+.footer-table td {
+  vertical-align: top; /* Alignement du contenu en haut */
+  padding-left: 10px; /* Ajoute un espace à gauche du texte */
+}
+
+.vertical-line {
+  border-left: 1px solid black; /* Ajoute une ligne verticale à gauche du texte */
+  padding-left: 10px; /* Ajoute un espace à gauche de la ligne verticale */
+}
+.signature-table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none; /* Supprime la bordure du tableau de signature */
+}
+
+.signature-table td {
+  width: 50%;
+  vertical-align: top; /* Alignement du contenu en haut */
+}
+.custom-table td {
+}
+.footer-table {
+  width: 80%;
+  border: none; /* Supprime la bordure du tableau de pied de page */
+}
+
+.footer-table td {
+  vertical-align: top; /* Alignement du contenu en haut */
+  padding-left: 10px; /* Ajoute un espace à gauche du texte */
+}
+
+.vertical-line {
+  border-left: 1px solid black; /* Ajoute une ligne verticale à gauche du texte */
+  padding-left: 10px; /* Ajoute un espace à gauche de la ligne verticale */
+}
+
+span {
+  color: #baa172;
+  font-size: 16px;
+  font-weight: 900;
+  display: inline-block;
+  padding-right: 13px;
+}
+
+.docContent .signature {
+  font-weight: 700;
+  display: inline-block;
+
+  text-align: center;
+}

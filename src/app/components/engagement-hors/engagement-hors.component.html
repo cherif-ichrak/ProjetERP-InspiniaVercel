@@ -1,0 +1,688 @@
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="tab-content">
+    <div role="tabpanel" id="" class="tab-pane active">
+      <h3>Engagements par signature</h3>
+      <form>
+        <div class="row">
+          <div class="col-lg-2">
+            <input class=" form-control input-sm" type="text" placeholder="Code " />
+          </div>
+          <div class="col-lg-3">
+            <input class=" form-control input-sm" type="text" placeholder="Intitulé" />
+          </div>
+          <div class="col-lg-3">
+            <input class=" form-control input-sm" type="text" placeholder="N° Document" />
+          </div>
+          <div class="col-lg-3">
+            <input class=" form-control input-sm" placeholder="Montant" />
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-5">
+            <input class=" form-control input-sm" type="text" placeholder="Echéance" />
+          </div>
+          <div class="col-lg-5">
+            <select class=" form-control input-sm">
+              <option>Effets éscomptés non échus</option>
+              <option>Lettre de crédit non échus</option>
+            </select>
+          </div>
+
+          <div class="col-lg-2">
+            <input
+              class="btn btn-xs btn-primary"
+              value="Ajouter"
+              type="submit"
+            />
+          </div>
+        </div>
+      </form>
+      <br /><br />
+      <h4>Effets éscomptés non échus</h4>
+
+      <div class="table-responsive">
+        <div
+          id="table_provisions_clients_wrapper"
+          class="dataTables_wrapper dt-bootstrap4 no-footer"
+        >
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div
+                class="dataTables_length"
+                id="table_provisions_clients_length"
+              >
+                <label
+                  >Afficher
+                  <select
+                    name="table_provisions_clients_length"
+                    aria-controls="table_provisions_clients"
+                    class="custom-select custom-select-sm  form-control input-sm  form-control input-sm-sm"
+                  >
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                  entrées</label
+                >
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div
+                id="table_provisions_clients_filter"
+                class="dataTables_filter"
+              >
+                <label
+                  >Rechercher :<input
+                    type="search"
+                    class=" form-control input-sm  form-control input-sm-sm"
+                    placeholder=""
+                    aria-controls="table_provisions_clients"
+                /></label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <table
+                id="table_provisions_clients"
+                class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                role="grid"
+                aria-describedby="table_provisions_clients_info"
+                style="width: 100%"
+              >
+                <thead>
+                  <tr role="row">
+                    <th
+                      class="sorting_asc"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-sort="ascending"
+                      aria-label="Code : activer pour trier la colonne par ordre décroissant"
+                      style="width: 10%"
+                    >
+                      Code
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Intitulé
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="N° Document : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      N° Document
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Montant : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Montant
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Echéance : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Echéance
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Type : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Type
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Actions : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Actions
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr role="row" class="odd">
+                    <td class="sorting_1">CL0001</td>
+                    <td>FEG</td>
+                    <td>654</td>
+                    <td>8 000.000</td>
+                    <td>15/02/2024</td>
+                    <td>Lettre de crédit non échus</td>
+
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Provisioner</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr role="row" class="even">
+                    <td class="sorting_1">CL0001</td>
+                    <td>FEG</td>
+                    <td>654</td>
+                    <td>8 000.000</td>
+                    <td>15/02/2024</td>
+                    <td>Lettre de crédit non échus</td>
+
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Provisioner</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr role="row" class="odd">
+                    <td class="sorting_1">CL0001</td>
+                    <td>FEG</td>
+                    <td>654</td>
+                    <td>8 000.000</td>
+                    <td>15/02/2024</td>
+                    <td>Lettre de crédit non échus</td>
+
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Provisioner</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div
+                id="table_provisions_clients_processing"
+                class="dataTables_processing card"
+                style="display: none"
+              >
+                Traitement...
+              </div>
+            </div>
+          </div>
+              <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                      <div
+                        class="dataTables_info"
+                        id="table_clients_info"
+                        role="status"
+                        aria-live="polite"
+                      >
+                        Affichage de 1 à 10 sur 18 entrées
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                      <div
+                        class="text-right"
+                        class="dataTables_paginate paging_simple_numbers"
+                        id="table_clients_paginate"
+                      >
+                        <ul class="pagination">
+                          <li
+                            class="paginate_button page-item previous disabled"
+                            id="table_clients_previous"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="0"
+                              tabindex="0"
+                              class="page-link"
+                              >Précédent</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item active">
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="1"
+                              tabindex="0"
+                              class="page-link"
+                              >1</a
+                            >
+                          </li>
+
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="2"
+                              tabindex="0"
+                              class="page-link"
+                              >2</a
+                            >
+                          </li>
+                          <li
+                            class="paginate_button page-item next"
+                            id="table_clients_next"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="3"
+                              tabindex="0"
+                              class="page-link"
+                              >Suivant</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+          <br />
+          <table>
+            <td style="width: 10%" colspan="3">
+              <b>Total Montant Créance :</b>
+            </td>
+            <td style="width: 10%"><span id="tot_creance"> 0.000</span></td>
+            <td style="width: 10%" colspan="3"><b> Total Provisions :</b></td>
+            <td style="width: 10%"><span id="tot_creance">0.000</span></td>
+            <td style="width: 10%" colspan="3"><b> Total VCN : </b></td>
+            <td style="width: 10%"><span id="tot_creance">0.000</span></td>
+          </table>
+        </div>
+      </div>
+
+      <h4>Lettre de crédit non échus</h4>
+
+      <div class="table-responsive">
+        <div
+          id="table_provisions_clients_wrapper"
+          class="dataTables_wrapper dt-bootstrap4 no-footer"
+        >
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div
+                class="dataTables_length"
+                id="table_provisions_clients_length"
+              >
+                <label
+                  >Afficher
+                  <select
+                    name="table_provisions_clients_length"
+                    aria-controls="table_provisions_clients"
+                    class="custom-select custom-select-sm  form-control input-sm  form-control input-sm-sm"
+                  >
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                  entrées</label
+                >
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div
+                id="table_provisions_clients_filter"
+                class="dataTables_filter"
+              >
+                <label
+                  >Rechercher :<input
+                    type="search"
+                    class=" form-control input-sm  form-control input-sm-sm"
+                    placeholder=""
+                    aria-controls="table_provisions_clients"
+                /></label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <table
+                id="table_provisions_clients"
+                class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                role="grid"
+                aria-describedby="table_provisions_clients_info"
+                style="width: 100%"
+              >
+                <thead>
+                  <tr role="row">
+                    <th
+                      class="sorting_asc"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-sort="ascending"
+                      aria-label="Code : activer pour trier la colonne par ordre décroissant"
+                      style="width: 10%"
+                    >
+                      Code
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Intitulé
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="N° Document : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      N° Document
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Montant : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Montant
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Echéance : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Echéance
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Type : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Type
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      aria-controls="table_engagement_hors_bilan_avec"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Actions : activer pour trier la colonne par ordre croissant"
+                      style="width: 10%"
+                    >
+                      Actions
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr role="row" class="odd">
+                    <td class="sorting_1">CL0001</td>
+                    <td>FEG</td>
+                    <td>654</td>
+                    <td>8 000.000</td>
+                    <td>15/02/2024</td>
+                    <td>Lettre de crédit non échus</td>
+
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Provisioner</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr role="row" class="even">
+                    <td class="sorting_1">CL0001</td>
+                    <td>FEG</td>
+                    <td>654</td>
+                    <td>8 000.000</td>
+                    <td>15/02/2024</td>
+                    <td>Lettre de crédit non échus</td>
+
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Provisioner</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr role="row" class="odd">
+                    <td class="sorting_1">CL0001</td>
+                    <td>FEG</td>
+                    <td>654</td>
+                    <td>8 000.000</td>
+                    <td>15/02/2024</td>
+                    <td>Lettre de crédit non échus</td>
+
+                    <td class="overflow-hidden">
+                      <div class="btn-group">
+                        <button
+                          data-toggle="dropdown"
+                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                        >
+                          Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              data-toggle="modal"
+                              data-target="#myModalModifier"
+                              >Provisioner</a
+                            >
+                          </li>
+                          <li><a href="#">Supprimer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div
+                id="table_provisions_clients_processing"
+                class="dataTables_processing card"
+                style="display: none"
+              >
+                Traitement...
+              </div>
+            </div>
+          </div>
+              <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                      <div
+                        class="dataTables_info"
+                        id="table_clients_info"
+                        role="status"
+                        aria-live="polite"
+                      >
+                        Affichage de 1 à 10 sur 18 entrées
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                      <div
+                        class="text-right"
+                        class="dataTables_paginate paging_simple_numbers"
+                        id="table_clients_paginate"
+                      >
+                        <ul class="pagination">
+                          <li
+                            class="paginate_button page-item previous disabled"
+                            id="table_clients_previous"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="0"
+                              tabindex="0"
+                              class="page-link"
+                              >Précédent</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item active">
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="1"
+                              tabindex="0"
+                              class="page-link"
+                              >1</a
+                            >
+                          </li>
+
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="2"
+                              tabindex="0"
+                              class="page-link"
+                              >2</a
+                            >
+                          </li>
+                          <li
+                            class="paginate_button page-item next"
+                            id="table_clients_next"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="3"
+                              tabindex="0"
+                              class="page-link"
+                              >Suivant</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+          <br />
+          <table>
+            <td style="width: 10%" colspan="3">
+              <b>Total Montant :</b>
+            </td>
+            <td style="width: 10%">
+              <span id="tot_creance"> 56 000.000</span>
+            </td>
+          </table>
+        </div>
+      </div>
+      <h3>Autres engagements:</h3>
+      <form>
+        <div class="row">
+          <div class="col-lg-10">
+            <textarea
+              placeholder="Autres engagements"
+              id="autres_engagement"
+              name="autres_engagement"
+              class=" form-control input-sm"
+            ></textarea>
+          </div>
+          <div class="col-lg-2">
+            <input
+              class="btn btn-xs btn-primary"
+              value="Enregistrer"
+              type="submit"
+            />
+          </div>
+        </div>
+        <br />
+      </form>
+    </div>
+  </div>
+</div>

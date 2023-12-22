@@ -1,0 +1,154 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Articles</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="https://murex-bs.tn/article/">Exploitation</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="https://murex-bs.tn/article/">Structure</a>
+      </li>
+
+      <li class="breadcrumb-item active">
+        <strong>Articles</strong>
+      </li>
+    </ol>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+<br />
+<div>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a
+        class="nav-link active"
+        id="Produit-tab"
+        data-toggle="tab"
+        href="#Produit"
+        role="tab"
+        >Identification</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="Info-tab"
+        data-toggle="tab"
+        href="#Info"
+        role="tab"
+        >Complément</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="Interrogation-tab"
+        data-toggle="tab"
+        href="#Interrogation"
+        role="tab"
+        >Interrogation</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="Suite-tab"
+        data-toggle="tab"
+        href="#Suite"
+        role="tab"
+        >Achats</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="Paramétrage-tab"
+        data-toggle="tab"
+        href="#Paramétrage"
+        role="tab"
+        >Ventes</a
+      >
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div
+      class="tab-pane fade show active"
+      id="Produit"
+      role="tabpanel"
+      aria-labelledby="Produit-tab"
+    >
+      <app-produit-article></app-produit-article>
+      <div class="row" class="text-right">
+        <div class="modal-footer">
+          <input
+            type="submit"
+            class="btn btn-default"
+            data-dismiss="modal"
+            value="Annuler"
+          />
+          <input
+            type="submit"
+            data-dismiss="modal"
+            class="btn btn-primary"
+            value="Modifier"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="Info"
+      role="tabpanel"
+      aria-labelledby="Info-tab"
+    >
+      <app-info-article-structure></app-info-article-structure>
+      <div class="row" class="text-right">
+        <div class="modal-footer">
+          <input
+            type="submit"
+            class="btn btn-default"
+            data-dismiss="modal"
+            value="Annuler"
+          />
+          <input
+            type="submit"
+            data-dismiss="modal"
+            class="btn btn-primary"
+            value="Modifier"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="Interrogation"
+      role="tabpanel"
+      aria-labelledby="Interrogation-tab"
+    >
+      <app-interrogation-article></app-interrogation-article>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="Suite"
+      role="tabpanel"
+      aria-labelledby="Suite-tab"
+    >
+      <app-suite-article></app-suite-article>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="Paramétrage"
+      role="tabpanel"
+      aria-labelledby="Paramétrage-tab"
+    >
+      <app-parametrage-article></app-parametrage-article>
+    </div>
+
+    <div
+      class="tab-pane fade"
+      id="Text"
+      role="tabpanel"
+      aria-labelledby="Text-tab"
+    ></div>
+  </div>
+</div>

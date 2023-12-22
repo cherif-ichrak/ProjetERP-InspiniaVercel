@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { PlanTiersComponent } from './plan-tiers.component';
+
+describe('PlanTiersComponent', () => {
+  let component: PlanTiersComponent;
+  let fixture: ComponentFixture<PlanTiersComponent>;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [PlanTiersComponent]
+    });
+    fixture = TestBed.createComponent(PlanTiersComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

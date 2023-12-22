@@ -1,0 +1,128 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <ol class="breadcrumb">
+      <li>
+        <a>Exploitation</a> / <a>Structure</a>/
+        <strong>Fournisseurs-> Modifier </strong>
+      </li>
+    </ol>
+  </div>
+  <br />
+</div>
+<br />
+<div>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a
+        class="nav-link active"
+        id="Générale-tab"
+        data-toggle="tab"
+        href="#Générale"
+        role="tab"
+        >Identification</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="Compléments-tab"
+        data-toggle="tab"
+        href="#Compléments"
+        role="tab"
+        >Complément</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="Interrogation-tab"
+        data-toggle="tab"
+        href="#Interrogation"
+        role="tab"
+        >Interrogation</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="Contacts-tab"
+        data-toggle="tab"
+        href="#Contacts"
+        role="tab"
+        >Contacts</a
+      >
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="ModelsetImprimés-tab"
+        data-toggle="tab"
+        href="#ModelsetImprimés"
+        role="tab"
+        >Models et Imprimés</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="AlertesetNotifications-tab"
+        data-toggle="tab"
+        href="#AlertesetNotifications"
+        role="tab"
+        >Alertes et Notifications</a
+      >
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div
+      class="tab-pane fade show active"
+      id="Générale"
+      role="tabpanel"
+      aria-labelledby="Générale-tab"
+    >
+      <app-generale-fournisseurs></app-generale-fournisseurs>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="Compléments"
+      role="tabpanel"
+      aria-labelledby="Compléments-tab"
+    >
+      <app-complements-fournisseur></app-complements-fournisseur>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="Interrogation"
+      role="tabpanel"
+      aria-labelledby="Interrogation-tab"
+    >
+      <app-interrogation-client></app-interrogation-client>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="Contacts"
+      role="tabpanel"
+      aria-labelledby="Contacts-tab"
+    >
+      <app-contacts-client></app-contacts-client>
+    </div>
+
+    <div
+      class="tab-pane fade"
+      id="ModelsetImprimés"
+      role="tabpanel"
+      aria-labelledby="ModelsetImprimés-tab"
+    >
+      <app-models-imprimes-fournisseurs></app-models-imprimes-fournisseurs>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="AlertesetNotifications"
+      role="tabpanel"
+      aria-labelledby="AlertesetNotifications-tab"
+    >
+      <app-alertes-fournisseurs></app-alertes-fournisseurs>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Procés Verbal</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a>Juridique</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a>Structure</a>
+      </li>
+
+      <li class="breadcrumb-item active">
+        <strong>Procés Verbal</strong>
+      </li>
+    </ol>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="wrapper wrapper-content animated fadeInUp">
+      <div class="ibox">
+        <div class="ibox-content">
+          <div class="row"></div>
+
+          <div class="row m-t-sm">
+            <div class="col-lg-12">
+              <div class="panel blank-panel">
+                <div class="panel-heading">
+                  <div class="panel-options">
+                    <ul class="nav nav-tabs">
+                      <li class="active">
+                        <a href="#tab-2" data-toggle="tab">Ordre du Jour </a>
+                      </li>
+                      <li class="">
+                        <a data-toggle="tab" href="#Resolutions"
+                          >Résolutions
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="tab-2">
+                      <app-ordre></app-ordre>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="row" class="text-right">
+                            <div class="modal-footer">
+                              <input
+                                type="submit"
+                                class="btn btn-xs btn-default"
+                                data-dismiss="modal"
+                                value="Annuler"
+                              />
+                              <input
+                                type="submit"
+                                data-dismiss="modal"
+                                class="btn btn-xs btn-primary"
+                                value="Suivant"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="Resolutions">
+                      <app-resolutions></app-resolutions>
+                    </div>
+                    <div class="tab-pane" id="Associes">
+                      <app-associes></app-associes>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

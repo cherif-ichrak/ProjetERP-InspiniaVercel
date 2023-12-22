@@ -1,0 +1,659 @@
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="tabs-container">
+        <div class="tab-content">
+          <div role="tabpanel" id="" class="tab-pane active">
+            <div class="panel-body">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-right"
+                >
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Ajouter"
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline btn-info dim"
+                    data-toggle="modal"
+                    data-target="#modal_ecriture_comptable_upload"
+                    data-whatever="5"
+                    title="Importer"
+                  >
+                    <i class="fa fa-upload"></i>
+                  </button>
+
+                  <button
+                    class="btn btn-outline btn-info dim export_modele"
+                    data-whatever="5"
+                    title="Modèle"
+                  >
+                    <i class="fa fa-file"></i>
+                  </button>
+
+                  <button
+                    class="btn btn-outline btn-info dim export_modele"
+                    data-whatever="5"
+                    title="Excel"
+                  >
+                    <i class="fa fa-file-excel-o"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <div
+                  id="table_ecriture_comptable_wrapper"
+                  class="dataTables_wrapper dt-bootstrap4 no-footer"
+                >
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <div
+                        class="dataTables_length"
+                        id="table_ecriture_comptable_length"
+                      >
+                        <label
+                          >Afficher
+                          <select
+                            name="table_ecriture_comptable_length"
+                            aria-controls="table_ecriture_comptable"
+                            class="custom-select custom-select-sm form-control form-control-sm"
+                          >
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select>
+                          entrées</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <div
+                        id="table_ecriture_comptable_filter"
+                        class="dataTables_filter"
+                      >
+                        <label
+                          >Rechercher :<input
+                            type="search"
+                            class="form-control form-control-sm"
+                            placeholder=""
+                            aria-controls="table_ecriture_comptable"
+                        /></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <table
+                        id="table_clients"
+                        class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                        role="grid"
+                        aria-describedby="table_clients_info"
+                        style="width: 100%"
+                      >
+                        <thead>
+                          <tr role="row">
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Code Journal
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Date Ecriture
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Num Ecriture
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Lettrage
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Compte Général
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Code tiers
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              libellé écriture
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Débit
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Crédit
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Actions
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr role="row" class="odd">
+                            <td class="sorting_1">CAC</td>
+                            <td>26/05/2022</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>411000</td>
+                            <td>CT000</td>
+                            <td>REM CHEQUE 0959684 BNA</td>
+                            <td>326.800</td>
+                            <td></td>
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr role="row" class="even">
+                            <td class="sorting_1">CAC</td>
+                            <td>26/05/2022</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>411000</td>
+                            <td>CT156</td>
+                            <td>REM CHEQUE 5861505 UBCI</td>
+                            <td>1 750.000</td>
+                            <td></td>
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr role="row" class="odd">
+                            <td class="sorting_1">CAC</td>
+                            <td>26/05/2022</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>411000</td>
+                            <td>CT156</td>
+                            <td>REM CHEQUE 5861506 UBCI</td>
+                            <td>1 750.000</td>
+                            <td></td>
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr role="row" class="even">
+                            <td class="sorting_1">CAC</td>
+                            <td>26/05/2022</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>411000</td>
+                            <td>CT156</td>
+                            <td>REM CH 5861507 UBCI</td>
+                            <td>1 750.000</td>
+                            <td></td>
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr role="row" class="odd">
+                            <td class="sorting_1">CAC</td>
+                            <td>26/05/2022</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>411000</td>
+                            <td>CT156</td>
+                            <td>REM CH 5448707 UBCI</td>
+                            <td>1 200.000</td>
+                            <td></td>
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr role="row" class="even">
+                            <td class="sorting_1">CAC</td>
+                            <td>26/05/2022</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>411000</td>
+                            <td>CT156</td>
+                            <td>REM CH 5448731 UBCI</td>
+                            <td>600.000</td>
+                            <td></td>
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr role="row" class="odd">
+                            <td class="sorting_1">CAC</td>
+                            <td>26/05/2022</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>411000</td>
+                            <td>CT000</td>
+                            <td>REM CH 9648416 BNA</td>
+                            <td>756.568</td>
+                            <td></td>
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr role="row" class="even">
+                            <td class="sorting_1">CAC</td>
+                            <td>26/05/2022</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>411000</td>
+                            <td>CT000</td>
+                            <td>REM CH 815 BIAT</td>
+                            <td>268.800</td>
+                            <td></td>
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr role="row" class="odd">
+                            <td class="sorting_1">CAC</td>
+                            <td>26/05/2022</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>411000</td>
+                            <td>CT000</td>
+                            <td>REM CH 212 BIAT</td>
+                            <td>151.000</td>
+                            <td></td>
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr role="row" class="even">
+                            <td class="sorting_1">CAC</td>
+                            <td>26/05/2022</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>411000</td>
+                            <td>CT000</td>
+                            <td>REM CH 1989370 UIB</td>
+                            <td>450.000</td>
+                            <td></td>
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div
+                        id="table_ecriture_comptable_processing"
+                        class="dataTables_processing card"
+                        style="display: none"
+                      >
+                        Traitement...
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                      <div
+                        class="dataTables_info"
+                        id="table_ecriture_comptable_info"
+                        role="status"
+                        aria-live="polite"
+                      >
+                        Affichage de 1 à 10 sur 6 138 entrées
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                      <div
+                        class="dataTables_paginate paging_simple_numbers"
+                        id="table_ecriture_comptable_paginate"
+                      >
+                        <ul class="pagination">
+                          <li
+                            class="paginate_button page-item previous disabled"
+                            id="table_ecriture_comptable_previous"
+                          >
+                            <a
+                              aria-controls="table_ecriture_comptable"
+                              data-dt-idx="0"
+                              tabindex="0"
+                              class="page-link"
+                              >Précédent</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item active">
+                            <a
+                              aria-controls="table_ecriture_comptable"
+                              data-dt-idx="1"
+                              tabindex="0"
+                              class="page-link"
+                              >1</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_ecriture_comptable"
+                              data-dt-idx="2"
+                              tabindex="0"
+                              class="page-link"
+                              >2</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_ecriture_comptable"
+                              data-dt-idx="3"
+                              tabindex="0"
+                              class="page-link"
+                              >3</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_ecriture_comptable"
+                              data-dt-idx="4"
+                              tabindex="0"
+                              class="page-link"
+                              >4</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_ecriture_comptable"
+                              data-dt-idx="5"
+                              tabindex="0"
+                              class="page-link"
+                              >5</a
+                            >
+                          </li>
+                          <li
+                            class="paginate_button page-item disabled"
+                            id="table_ecriture_comptable_ellipsis"
+                          >
+                            <a
+                              aria-controls="table_ecriture_comptable"
+                              data-dt-idx="6"
+                              tabindex="0"
+                              class="page-link"
+                              >…</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_ecriture_comptable"
+                              data-dt-idx="7"
+                              tabindex="0"
+                              class="page-link"
+                              >614</a
+                            >
+                          </li>
+                          <li
+                            class="paginate_button page-item next"
+                            id="table_ecriture_comptable_next"
+                          >
+                            <a
+                              aria-controls="table_ecriture_comptable"
+                              data-dt-idx="8"
+                              tabindex="0"
+                              class="page-link"
+                              >Suivant</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <table>
+                <td style="width: 30%" colspan="2"><b>Total débit :</b></td>
+                <td style="width: 30%" colspan="2"><b>3 380 837.117</b></td>
+                <td style="width: 30%" colspan="2"><b>Total crédit</b></td>
+                <td style="width: 30%" colspan="2"><b>3 380 837.117</b></td>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

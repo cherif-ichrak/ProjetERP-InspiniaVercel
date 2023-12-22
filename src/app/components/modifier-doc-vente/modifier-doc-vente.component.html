@@ -1,0 +1,180 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Documents Achats</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a>Exploitation</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a>Traitement</a>
+      </li>
+
+      <li class="breadcrumb-item active">
+        <strong> Modifier Document Vente</strong>
+      </li>
+    </ol>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+<div class="wrapper wrapper-content animated fadeInUp">
+  <div class="ibox">
+    <div class="ibox-content">
+      <div class="row">
+        <form>
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label>Type du Document</label>
+              <select class="form-control">
+                <option selected>Sélectionnez un type de document</option>
+                <option value="flotte2">Bon de Commande Client</option>
+                <option value="flotte2">Préparation bon de livraison</option>
+
+                <option value="flotte3">Bon de Livraison</option>
+                <option value="flotte3">Facture</option>
+                <option value="flotte3">Avoir</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label>Souche</label>
+              <select class="form-control">
+                <option selected>Sélectionnez Souche</option>
+                <option value="flotte2">en suspension</option>
+                <option value="flotte3">Assujetti</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label> Dépôt</label>
+              <select class="form-control">
+                <option selected>Sélectionnez Dépôt</option>
+                <option value="flotte2">
+                  Strategy & Management Service -SARL-
+                </option>
+                <option value="flotte3">Murex Business Solutions -SARL-</option>
+                <option value="flotte3">Murex Digital Agency -SARL-</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault02">Client </label>
+              <select class="form-control">
+                <option selected>Sélectionnez Client</option>
+                <option>Client X</option>
+                <option>Client X</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label>Référence </label>
+              <input class="form-control" type="text" />
+            </div>
+            <div class="col-md-4 mb-3">
+              <label>Document attaché </label>
+              <input class="form-control" type="file" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationDefault05">Timbre Fiscal </label>
+              <select class="form-control">
+                <option selected>Oui</option>
+                <option>Non</option>
+              </select>
+            </div>
+
+            <div class="col-md-3 mb-3">
+              <label for="validationDefault05">Cours </label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault05"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationDefault05">Dévise </label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault05"
+                placeholder=""
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-3 mb-3">
+              <label>N° BC </label>
+              <input class="form-control" type="text" />
+            </div>
+            <div class="col-md-3 mb-3">
+              <label>Date BC</label>
+              <input class="form-control" type="date" />
+            </div>
+            <div class="col-md-3 mb-3">
+              <label>Livreur</label>
+              <select class="form-control">
+                <option selected>Livreur 1</option>
+                <option selected>Livreur 2</option>
+
+                <option selected>Livreur 2</option>
+
+                <option selected>Livreur 3</option>
+              </select>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label>Véhicule</label>
+              <select class="form-control">
+                <option selected>Véhicule 1</option>
+                <option selected>Véhicule 2</option>
+
+                <option selected>Véhicule 2</option>
+
+                <option selected>Véhicule 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="nav nav-tabs" class="col-md-4 mb-3">
+              <input
+                href="#Generale"
+                data-toggle="tab"
+                type="submit"
+                class="btn btn-xs btn-primary"
+                value="Valider"
+              />
+            </div>
+          </div>
+          <div class="tab-pane" id="Generale">
+            <app-bonde-commande-vente></app-bonde-commande-vente>
+          </div>
+
+          <div class="row" class="text-right">
+            <div class="modal-footer">
+              <input
+                type="submit"
+                class="btn btn-xs btn-default"
+                data-dismiss="modal"
+                value="Annuler"
+              />
+              <input
+                type="submit"
+                routerLink="AfficherDocVente"
+                data-dismiss="modal"
+                class="btn btn-xs btn-primary"
+                value="Afficher"
+              />
+              <input
+                type="submit"
+                data-dismiss="modal"
+                class="btn btn-xs btn-primary"
+                value="Valider"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
